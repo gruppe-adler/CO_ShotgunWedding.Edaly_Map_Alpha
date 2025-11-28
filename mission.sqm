@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1585;
+		nextID=1960;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=282;
+		nextID=290;
 	};
 	class Camera
 	{
-		pos[]={3967.9329,162.09526,4042.5535};
-		dir[]={0.72623646,-0.68022525,-0.1005957};
-		up[]={0.6738295,0.73294425,-0.093331166};
-		aside[]={-0.13721743,-1.2956407e-06,-0.99066222};
+		pos[]={4185.8013,28.619579,1827.1515};
+		dir[]={0.50345916,-0.50690681,-0.69969696};
+		up[]={0.29606324,0.862001,-0.41146234};
+		aside[]={-0.81171238,-5.3551048e-09,-0.58405864};
 	};
 };
 binarizationWanted=0;
@@ -46,13 +46,23 @@ addons[]=
 	"A3_Modules_F",
 	"Edaly_Items_Config",
 	"Edaly_Furniture_Config",
-	"Edaly_Structures_config"
+	"Edaly_Structures_config",
+	"Edaly_Weapons_config",
+	"gm_weapons_equipment_binoculars_photocamera_01",
+	"A3_Weapons_F",
+	"Edaly_Wheeled_config",
+	"A3_Props_F_Oldman_Items",
+	"Edaly_Map_Categories",
+	"Edaly_Vegetation_Config",
+	"UK3CB_Factions_MEC_C",
+	"UK3CB_Factions_MDF_B",
+	"gm_vehicles_land_wheeled_k125_ge_army_k125"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=16;
+		items=26;
 		class Item0
 		{
 			className="A3_Modules_F_Heli";
@@ -161,13 +171,84 @@ class AddonsMetaData
 			author="Projects Edaly";
 			url="https://edaly.fr/en/";
 		};
+		class Item16
+		{
+			className="Edaly_Weapons_config";
+			name="Edaly_Weapons_config";
+			author="Projects Edaly";
+			url="https://edaly.fr/en/";
+		};
+		class Item17
+		{
+			className="gm_weapons_equipment_binoculars_photocamera_01";
+			name="gm_weapons_equipment_binoculars_photocamera_01";
+			author="Global Mobilization";
+			url="global-mobilization.com";
+		};
+		class Item18
+		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item19
+		{
+			className="Edaly_Wheeled_config";
+			name="Edaly_Wheeled_config";
+			author="Projects Edaly";
+			url="https://edaly.fr/en/";
+		};
+		class Item20
+		{
+			className="A3_Props_F_Oldman";
+			name="Arma 3 Old Man - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item21
+		{
+			className="Edaly_Map_Categories";
+			name="Edaly_Map_Categories";
+			author="Projects Edaly";
+			url="https://edaly.fr/en/";
+		};
+		class Item22
+		{
+			className="Edaly_Vegetation_Config";
+			name="Edaly_Vegetation_Config";
+			author="Projects Edaly";
+			url="https://edaly.fr/en/";
+		};
+		class Item23
+		{
+			className="UK3CB_Factions_MEC";
+			name="3CB Factions - MEC";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
+		};
+		class Item24
+		{
+			className="UK3CB_Factions_MDF";
+			name="3CB Factions - MDF";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
+		};
+		class Item25
+		{
+			className="gm_vehicles_land_wheeled_k125_ge_army_k125";
+			name="gm_vehicles_land_wheeled_k125_ge_army_k125";
+			author="Global Mobilization";
+			url="global-mobilization.com";
+		};
 	};
 };
 dlcs[]=
 {
 	"gm",
 	"Expansion",
-	"UK3CB_Factions"
+	"UK3CB_Factions",
+	"Oldman"
 };
 randomSeed=938738;
 class ScenarioData
@@ -4056,7 +4137,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=48;
+		items=377;
 		class Item0
 		{
 			dataType="Layer";
@@ -5086,7 +5167,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4161.9312,18.891766,1822.9127};
-				angles[]={-0,0,0.34656692};
+				angles[]={0,0,0.34656692};
 			};
 			title="Arrival via ...?";
 			id=1496;
@@ -5167,7 +5248,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4457.5161,9.4145308,1816.9558};
-				angles[]={-0,0,6.2101731};
+				angles[]={0,0,6.2101731};
 			};
 			side="Empty";
 			class Attributes
@@ -5313,7 +5394,7 @@ class Mission
 			};
 			title="Bank Hochzeitsring?";
 			id=1513;
-			atlOffset=0.00034809113;
+			atlOffset=8.7180004;
 		};
 		class Item13
 		{
@@ -5357,7 +5438,7 @@ class Mission
 			};
 			title="Kirche PRiester Attentant, Plot Twist";
 			id=1517;
-			atlOffset=0.43912268;
+			atlOffset=0.85500002;
 		};
 		class Item17
 		{
@@ -5365,7 +5446,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2729.2136,6.6808443,4122.9517};
-				angles[]={-0,3.9003518,0};
+				angles[]={0,3.9003518,0};
 			};
 			side="Empty";
 			flags=4;
@@ -5620,6 +5701,7 @@ class Mission
 			};
 			id=1542;
 			type="Land_Edaly_Item_Camera";
+			atlOffset=-7.6293945e-06;
 		};
 		class Item22
 		{
@@ -5635,6 +5717,7 @@ class Mission
 			};
 			id=1543;
 			type="Land_Cash_Register_Desk_01";
+			atlOffset=-7.6293945e-06;
 		};
 		class Item23
 		{
@@ -5697,6 +5780,7 @@ class Mission
 			};
 			id=1551;
 			type="Land_Edaly_dresser_04_F";
+			atlOffset=7.6293945e-06;
 		};
 		class Item27
 		{
@@ -5711,7 +5795,7 @@ class Mission
 			};
 			id=1559;
 			type="Land_Edaly_Item_Book_Communist";
-			atlOffset=1.1987534;
+			atlOffset=1.3003616;
 		};
 		class Item28
 		{
@@ -5749,7 +5833,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4004.4478,121.93015,4017.031};
-				angles[]={-0,2.6783576,0};
+				angles[]={0,2.6783576,0};
 			};
 			side="Empty";
 			flags=4;
@@ -5758,6 +5842,7 @@ class Mission
 			};
 			id=1564;
 			type="Land_Edaly_Safe_01_F";
+			atlOffset=7.6293945e-06;
 		};
 		class Item31
 		{
@@ -5804,6 +5889,7 @@ class Mission
 			};
 			id=1567;
 			type="Land_Edaly_Bolards_02_F";
+			atlOffset=7.6293945e-06;
 		};
 		class Item34
 		{
@@ -5819,6 +5905,7 @@ class Mission
 			};
 			id=1568;
 			type="Land_Edaly_Bolards_01_F";
+			atlOffset=7.6293945e-06;
 		};
 		class Item35
 		{
@@ -5834,6 +5921,7 @@ class Mission
 			};
 			id=1569;
 			type="Land_Gate_01_F";
+			atlOffset=-7.6293945e-06;
 		};
 		class Item36
 		{
@@ -5849,6 +5937,7 @@ class Mission
 			};
 			id=1570;
 			type="Land_Gate_02_F";
+			atlOffset=-7.6293945e-06;
 		};
 		class Item37
 		{
@@ -5856,7 +5945,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4002.1628,128.15103,3989.5452};
-				angles[]={0,3.1705248,-0};
+				angles[]={0,3.1705248,0};
 			};
 			side="Empty";
 			flags=5;
@@ -5872,7 +5961,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3981.2781,128.75511,3991.5278};
-				angles[]={0,3.1536558,-0};
+				angles[]={0,3.1536558,0};
 			};
 			side="Empty";
 			flags=5;
@@ -5881,6 +5970,7 @@ class Mission
 			};
 			id=1572;
 			type="Land_Edaly_havana_house_4_F";
+			atlOffset=7.6293945e-06;
 		};
 		class Item39
 		{
@@ -5888,7 +5978,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4023.2856,128.75511,3992.1724};
-				angles[]={0,3.1536558,-0};
+				angles[]={0,3.1536558,0};
 			};
 			side="Empty";
 			flags=5;
@@ -5897,6 +5987,7 @@ class Mission
 			};
 			id=1573;
 			type="Land_Edaly_havana_house_4_F";
+			atlOffset=7.6293945e-06;
 		};
 		class Item40
 		{
@@ -5904,7 +5995,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4040.8269,126.0684,4009.9136};
-				angles[]={0,1.5418552,-0};
+				angles[]={0,1.5418552,0};
 			};
 			side="Empty";
 			flags=5;
@@ -5921,7 +6012,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3992.8904,123.02658,4016.4163};
-				angles[]={-0,1.6036215,0};
+				angles[]={0,1.6036215,0};
 			};
 			side="Empty";
 			flags=4;
@@ -5945,6 +6036,7 @@ class Mission
 			};
 			id=1579;
 			type="Wall_02_Long_F";
+			atlOffset=-7.6293945e-06;
 		};
 		class Item43
 		{
@@ -5975,6 +6067,7 @@ class Mission
 			};
 			id=1581;
 			type="Wall_02_Long_B";
+			atlOffset=-7.6293945e-06;
 		};
 		class Item45
 		{
@@ -6020,6 +6113,5159 @@ class Mission
 			};
 			id=1584;
 			type="Wall_02_B";
+		};
+		class Item48
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4191.8418,19.922503,1818.4551};
+						angles[]={-0,1.8497812,6.2511969};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="Weapon_SVT40";
+								firemode="Weapon_SVT40:Single";
+								class primaryMuzzleMag
+								{
+									name="10Rnd_762x54_SVT40";
+									ammoLeft=10;
+								};
+							};
+							class handgun
+							{
+								name="Edaly_flashlight_01";
+							};
+							class binocular
+							{
+								name="gm_photocamera_01_blk";
+							};
+							class uniform
+							{
+								typeName="U_S_C_Mil_1stCl_01";
+								isBackpack=0;
+							};
+							class vest
+							{
+								typeName="Vest_S_C_Suitcase_01";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="Backpack_02_C_01";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							goggles="Edaly_Watch_01_F";
+						};
+					};
+					id=1602;
+					type="C_man_1";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1600;
+		};
+		class Item49
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4193.7354,21.281303,1819.5938};
+				angles[]={0.0022902426,1.8497812,6.2489138};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1601;
+			type="vespa_125_db";
+		};
+		class Item50
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4355,19.782528,1817.0293};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1617;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item51
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4219,19.783216,1817.1089};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1619;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item52
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4263,19.782742,1817.1903};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1620;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item53
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4287,19.782394,1817.274};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1621;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item54
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4536,19.780621,1817.3556};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1622;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item55
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4399,19.781309,1817.4352};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1623;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item56
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4443,19.780849,1817.5166};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1624;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item57
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4468,19.780504,1817.6003};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1625;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item58
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4463,19.780317,1817.6902};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1626;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item59
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4326,19.781023,1817.7698};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1627;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item60
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.437,19.780546,1817.8512};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1628;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item61
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4395,19.780201,1817.9349};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1629;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item62
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4355,19.779591,1818.3073};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1630;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=-1.5258789e-05;
+		};
+		class Item63
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4424,19.779722,1818.0625};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1631;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item64
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4287,19.780413,1818.1421};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1632;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=1.9073486e-06;
+		};
+		class Item65
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4331,19.779953,1818.2235};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1633;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item66
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6367,19.769686,1817.01};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1634;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item67
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.623,19.770374,1817.0896};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1635;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item68
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6274,19.769917,1817.171};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1636;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item69
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6299,19.769569,1817.2548};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1637;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item70
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6548,19.767796,1817.3363};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1638;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item71
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6411,19.768484,1817.4159};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1639;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item72
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6455,19.768009,1817.4973};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1640;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item73
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6479,19.767662,1817.5811};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1641;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item74
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6475,19.767492,1817.6709};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1642;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item75
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6338,19.768181,1817.7505};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1643;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item76
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6382,19.767723,1817.8319};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1644;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item77
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6406,19.767378,1817.9156};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1645;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item78
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6367,19.766764,1818.288};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1646;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item79
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6436,19.766897,1818.0432};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1647;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item80
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6299,19.767588,1818.1228};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1648;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=1.9073486e-06;
+		};
+		class Item81
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6343,19.767111,1818.2042};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1649;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item82
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.833,19.757143,1817.0026};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1650;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item83
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8193,19.757832,1817.0822};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1651;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item84
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8237,19.757372,1817.1636};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1652;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item85
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8262,19.757027,1817.2473};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1653;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item86
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8511,19.755251,1817.3289};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1654;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item87
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8374,19.755939,1817.4084};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1655;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item88
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8418,19.755465,1817.4899};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1656;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item89
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8442,19.755117,1817.5736};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1657;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item90
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8438,19.754948,1817.6635};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1658;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item91
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8301,19.755636,1817.743};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1659;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item92
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8345,19.755178,1817.8245};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1660;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item93
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8369,19.754831,1817.9082};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1661;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item94
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.833,19.754221,1818.2805};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1662;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item95
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8398,19.754354,1818.0358};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1663;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item96
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8262,19.755045,1818.1154};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1664;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=1.9073486e-06;
+		};
+		class Item97
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8306,19.754566,1818.1968};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1665;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item98
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0391,19.74165,1818.0162};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1666;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item99
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0254,19.742342,1818.0958};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1667;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=1.9073486e-06;
+		};
+		class Item100
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0298,19.741861,1818.1772};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1668;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item101
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0322,19.744438,1816.983};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1669;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item102
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0186,19.745129,1817.0626};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1670;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item103
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0229,19.744667,1817.144};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1671;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item104
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0254,19.744324,1817.2278};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1672;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item105
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0503,19.742529,1817.3093};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1673;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item106
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0366,19.743237,1817.3889};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1674;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item107
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.041,19.74276,1817.4703};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1675;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item108
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0435,19.742414,1817.5541};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1676;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item109
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.043,19.742243,1817.6439};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1677;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item110
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0293,19.742933,1817.7235};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1678;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item111
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0337,19.742474,1817.8049};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1679;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item112
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0361,19.742111,1817.8887};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1680;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item113
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0322,19.741518,1818.261};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1681;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item114
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2241,19.732193,1816.9637};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1682;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item115
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2104,19.732901,1817.0433};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1683;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item116
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2148,19.732424,1817.1248};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1684;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item117
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2173,19.732079,1817.2085};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1685;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item118
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2422,19.730303,1817.29};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1686;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item119
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2285,19.730993,1817.3696};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1687;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item120
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2329,19.730534,1817.451};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1688;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item121
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2354,19.730171,1817.5348};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1689;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item122
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2349,19.73,1817.6246};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1690;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item123
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2212,19.73069,1817.7042};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1691;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item124
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2256,19.73023,1817.7856};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1692;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item125
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.228,19.729885,1817.8694};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1693;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item126
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2241,19.729273,1818.2417};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1694;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item127
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.231,19.729404,1817.9969};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1695;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item128
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2173,19.730097,1818.0765};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1696;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=1.9073486e-06;
+		};
+		class Item129
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2217,19.729635,1818.158};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1697;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item130
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4302,19.716681,1817.9862};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1698;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item131
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4165,19.717373,1818.0658};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1699;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=1.9073486e-06;
+		};
+		class Item132
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4209,19.716911,1818.1472};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1700;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item133
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4233,19.719469,1816.953};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1701;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item134
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4097,19.720177,1817.0326};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1702;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item135
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4141,19.7197,1817.114};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1703;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item136
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4165,19.719355,1817.1978};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1704;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item137
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4414,19.717579,1817.2793};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1705;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item138
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4277,19.718269,1817.3589};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1706;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item139
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4321,19.71781,1817.4403};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1707;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item140
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4346,19.717447,1817.524};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1708;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item141
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4341,19.717276,1817.6139};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1709;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item142
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4204,19.717966,1817.6935};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1710;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item143
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4248,19.717506,1817.7749};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1711;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item144
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4272,19.717161,1817.8586};
+				angles[]={0.0022902426,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1712;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item145
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4233,19.716734,1818.231};
+				angles[]={6.2786179,0,6.2261052};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1713;
+			type="Land_MoneyBills_01_stack_F";
+		};
+		class Item146
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4351,19.859386,1817.0271};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1714;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item147
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4214,19.860094,1817.1067};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1715;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item148
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4258,19.859617,1817.1881};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1716;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item149
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4282,19.859272,1817.2719};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1717;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item150
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4531,19.857496,1817.3534};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1718;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item151
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4395,19.858187,1817.433};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1719;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item152
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4438,19.857725,1817.5144};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1720;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item153
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4463,19.857365,1817.5981};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1721;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item154
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4458,19.857193,1817.688};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1722;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item155
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4321,19.857883,1817.7676};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1723;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item156
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4365,19.857422,1817.849};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1724;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item157
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.439,19.857079,1817.9327};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1725;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item158
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4351,19.856449,1818.3051};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1726;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076820374;
+		};
+		class Item159
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4419,19.856598,1818.0603};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1727;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item160
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4282,19.85729,1818.1399};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1728;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076839447;
+		};
+		class Item161
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4326,19.856829,1818.2213};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1729;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item162
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6362,19.846561,1817.0078};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1730;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item163
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6226,19.847252,1817.0874};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1731;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item164
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.627,19.846792,1817.1688};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1732;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item165
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6294,19.846447,1817.2526};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1733;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item166
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6543,19.844654,1817.3341};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1734;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item167
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6406,19.845362,1817.4137};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1735;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item168
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.645,19.844885,1817.4951};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1736;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item169
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6475,19.84454,1817.5789};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1737;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item170
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.647,19.844368,1817.6687};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1738;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item171
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6333,19.845058,1817.7483};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1739;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item172
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6377,19.844599,1817.8297};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1740;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item173
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6401,19.844236,1817.9135};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1741;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item174
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6362,19.843622,1818.2858};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1742;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076818466;
+		};
+		class Item175
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6431,19.843756,1818.041};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1743;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item176
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6294,19.844446,1818.1206};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1744;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076820374;
+		};
+		class Item177
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6338,19.843967,1818.202};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1745;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076818466;
+		};
+		class Item178
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8325,19.834019,1817.0004};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1746;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item179
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8188,19.834709,1817.08};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1747;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item180
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8232,19.834248,1817.1614};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1748;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item181
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8257,19.833904,1817.2451};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1749;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item182
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8506,19.832109,1817.3267};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1750;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item183
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8369,19.832817,1817.4062};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1751;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item184
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8413,19.83234,1817.4877};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1752;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item185
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8438,19.831995,1817.5714};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1753;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item186
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8433,19.831823,1817.6613};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1754;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item187
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8296,19.832514,1817.7408};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1755;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item188
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.834,19.832054,1817.8223};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1756;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item189
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8364,19.83169,1817.906};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1757;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076835632;
+		};
+		class Item190
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8325,19.831079,1818.2783};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1758;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076818466;
+		};
+		class Item191
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8394,19.831211,1818.0336};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1759;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076835632;
+		};
+		class Item192
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8257,19.831903,1818.1132};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1760;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076820374;
+		};
+		class Item193
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8301,19.831423,1818.1946};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1761;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076818466;
+		};
+		class Item194
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0386,19.818506,1818.014};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1762;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076833725;
+		};
+		class Item195
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0249,19.819199,1818.0936};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1763;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076820374;
+		};
+		class Item196
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0293,19.81872,1818.175};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1764;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076818466;
+		};
+		class Item197
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0317,19.821316,1816.9808};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1765;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item198
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0181,19.822004,1817.0604};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1766;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item199
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0225,19.821545,1817.1418};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1767;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item200
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0249,19.821199,1817.2256};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1768;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item201
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0498,19.819407,1817.3071};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1769;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item202
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0361,19.820095,1817.3867};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1770;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item203
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0405,19.819637,1817.4681};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1771;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item204
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.043,19.81929,1817.5519};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1772;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item205
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0425,19.81912,1817.6417};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1773;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item206
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0288,19.81979,1817.7213};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1774;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076818466;
+		};
+		class Item207
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0332,19.819332,1817.8027};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1775;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076835632;
+		};
+		class Item208
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0356,19.818968,1817.8865};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1776;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076816559;
+		};
+		class Item209
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0317,19.818375,1818.2588};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1777;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076818466;
+		};
+		class Item210
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2236,19.809071,1816.9615};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1778;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item211
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.21,19.809776,1817.0411};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1779;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item212
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2144,19.809301,1817.1226};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1780;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item213
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2168,19.808954,1817.2063};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1781;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item214
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2417,19.80718,1817.2878};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1782;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item215
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.228,19.807869,1817.3674};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1783;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item216
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2324,19.807394,1817.4489};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1784;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item217
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2349,19.807028,1817.5326};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1785;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076818466;
+		};
+		class Item218
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2344,19.806858,1817.6224};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1786;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076818466;
+		};
+		class Item219
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2207,19.807547,1817.702};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1787;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076818466;
+		};
+		class Item220
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2251,19.807089,1817.7834};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1788;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076818466;
+		};
+		class Item221
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2275,19.806742,1817.8672};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1789;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076816559;
+		};
+		class Item222
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2236,19.806129,1818.2395};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1790;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076816559;
+		};
+		class Item223
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2305,19.806261,1817.9948};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1791;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076816559;
+		};
+		class Item224
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2168,19.806953,1818.0743};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1792;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076820374;
+		};
+		class Item225
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2212,19.806494,1818.1558};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1793;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076835632;
+		};
+		class Item226
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4297,19.793537,1817.984};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1794;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076816559;
+		};
+		class Item227
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.416,19.79423,1818.0636};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1795;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076820374;
+		};
+		class Item228
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4204,19.793768,1818.145};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1796;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076833725;
+		};
+		class Item229
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4229,19.796347,1816.9508};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1797;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item230
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4092,19.797035,1817.0304};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1798;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item231
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4136,19.796577,1817.1118};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1799;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item232
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.416,19.79623,1817.1956};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1800;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item233
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4409,19.794456,1817.2771};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1801;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item234
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4272,19.795126,1817.3567};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1802;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076818466;
+		};
+		class Item235
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4316,19.794666,1817.4381};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1803;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076833725;
+		};
+		class Item236
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4341,19.794304,1817.5219};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1804;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076818466;
+		};
+		class Item237
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4336,19.794132,1817.6117};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1805;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076816559;
+		};
+		class Item238
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4199,19.794823,1817.6913};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1806;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076818466;
+		};
+		class Item239
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4243,19.794365,1817.7727};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1807;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076820374;
+		};
+		class Item240
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4268,19.794018,1817.8564};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1808;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.076816559;
+		};
+		class Item241
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4229,19.793577,1818.2288};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1809;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.07683754;
+		};
+		class Item242
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4395,19.973751,1817.0509};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1810;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item243
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4258,19.97444,1817.1305};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1811;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item244
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4302,19.97398,1817.2119};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1812;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item245
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4326,19.973635,1817.2957};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1813;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item246
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4575,19.971842,1817.3772};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1814;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item247
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4438,19.972548,1817.4568};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1815;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item248
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4482,19.972073,1817.5382};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1816;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item249
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4507,19.971725,1817.6219};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1817;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item250
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4502,19.971556,1817.7118};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1818;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item251
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4365,19.972244,1817.7914};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1819;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item252
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4409,19.971786,1817.8728};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1820;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item253
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4434,19.971424,1817.9565};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1821;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item254
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4395,19.970795,1818.3289};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1822;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19149399;
+		};
+		class Item255
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4463,19.970942,1818.0841};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1823;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152451;
+		};
+		class Item256
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.4326,19.971634,1818.1637};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1824;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19151115;
+		};
+		class Item257
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.437,19.971155,1818.2451};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1825;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item258
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6406,19.960926,1817.0316};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1826;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item259
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.627,19.961615,1817.1112};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1827;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item260
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6313,19.96114,1817.1926};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1828;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item261
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6338,19.960793,1817.2764};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1829;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item262
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6587,19.959019,1817.3579};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1830;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item263
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.645,19.959709,1817.4375};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1831;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item264
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6494,19.959248,1817.5189};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1832;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item265
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6519,19.958902,1817.6027};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1833;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item266
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6514,19.958715,1817.6925};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1834;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item267
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6377,19.959419,1817.7721};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1835;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item268
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6421,19.958944,1817.8535};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1836;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item269
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6445,19.95858,1817.9373};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1837;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150734;
+		};
+		class Item270
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6406,19.957985,1818.3096};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1838;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150734;
+		};
+		class Item271
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6475,19.958099,1818.0648};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1839;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150734;
+		};
+		class Item272
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6338,19.958792,1818.1444};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1840;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19151115;
+		};
+		class Item273
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6382,19.958332,1818.2258};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1841;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item274
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8369,19.948381,1817.0242};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1842;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item275
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8232,19.94907,1817.1038};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1843;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item276
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8276,19.948595,1817.1852};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1844;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item277
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8301,19.948248,1817.2689};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1845;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item278
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.855,19.946474,1817.3505};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1846;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item279
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8413,19.947163,1817.4301};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1847;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item280
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8457,19.946705,1817.5115};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1848;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item281
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8481,19.946341,1817.5952};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1849;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item282
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8477,19.946152,1817.6851};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1850;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item283
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.834,19.946857,1817.7646};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1851;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item284
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8384,19.946383,1817.8461};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1852;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item285
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8408,19.946035,1817.9298};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1853;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150734;
+		};
+		class Item286
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8369,19.94544,1818.3021};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1854;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150734;
+		};
+		class Item287
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8438,19.945555,1818.0574};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1855;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150734;
+		};
+		class Item288
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8301,19.946247,1818.137};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1856;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19151115;
+		};
+		class Item289
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.8345,19.945787,1818.2184};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1857;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item290
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.043,19.932852,1818.0378};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1858;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item291
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0293,19.933542,1818.1174};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1859;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item292
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0337,19.933083,1818.1989};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1860;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item293
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0361,19.935659,1817.0046};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1861;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item294
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0225,19.936367,1817.0842};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1862;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item295
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0269,19.93589,1817.1656};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1863;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item296
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0293,19.935545,1817.2494};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1864;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item297
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0542,19.933769,1817.3309};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1865;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item298
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0405,19.93446,1817.4105};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1866;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item299
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0449,19.933981,1817.4919};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1867;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item300
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0474,19.933636,1817.5757};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1868;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152641;
+		};
+		class Item301
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0469,19.933447,1817.6655};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1869;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item302
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0332,19.934155,1817.7451};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1870;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152641;
+		};
+		class Item303
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0376,19.933678,1817.8265};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1871;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19151115;
+		};
+		class Item304
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.04,19.933332,1817.9103};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1872;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item305
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.0361,19.932737,1818.2826};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1873;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152641;
+		};
+		class Item306
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.228,19.923433,1816.9854};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1874;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item307
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2144,19.924124,1817.0649};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1875;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item308
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2188,19.923664,1817.1464};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1876;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item309
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2212,19.923302,1817.2301};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1877;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item310
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2461,19.921507,1817.3116};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1878;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item311
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2324,19.922215,1817.3912};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1879;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152641;
+		};
+		class Item312
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2368,19.921736,1817.4727};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1880;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item313
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2393,19.921392,1817.5564};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1881;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item314
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2388,19.921221,1817.6462};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1882;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item315
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2251,19.921911,1817.7258};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1883;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item316
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2295,19.92145,1817.8073};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1884;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152641;
+		};
+		class Item317
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2319,19.921089,1817.891};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1885;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item318
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.228,19.920494,1818.2633};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1886;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item319
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2349,19.920609,1818.0186};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1887;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item320
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2212,19.921318,1818.0981};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1888;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item321
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2256,19.920839,1818.1796};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1889;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item322
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4341,19.907885,1818.0078};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1890;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item323
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4204,19.908592,1818.0874};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1891;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152641;
+		};
+		class Item324
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4248,19.908115,1818.1688};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1892;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item325
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4272,19.910709,1816.9746};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1893;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item326
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4136,19.9114,1817.0542};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1894;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item327
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.418,19.910921,1817.1356};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1895;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19151115;
+		};
+		class Item328
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4204,19.910576,1817.2194};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1896;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152641;
+		};
+		class Item329
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4453,19.908783,1817.3009};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1897;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item330
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4316,19.909491,1817.3805};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1898;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152641;
+		};
+		class Item331
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.436,19.909012,1817.4619};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1899;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item332
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4385,19.908669,1817.5457};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1900;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item333
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.438,19.908497,1817.6355};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1901;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19151115;
+		};
+		class Item334
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4243,19.909187,1817.7151};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1902;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19151115;
+		};
+		class Item335
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4287,19.908709,1817.7965};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1903;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19150925;
+		};
+		class Item336
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4312,19.908365,1817.8802};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1904;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19151115;
+		};
+		class Item337
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4272,19.908133,1818.2526};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1905;
+			type="Land_MoneyBills_01_stack_F";
+			atlOffset=0.19152832;
+		};
+		class Item338
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.3369,19.747833,1818.5112};
+				angles[]={0.0022853266,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1906;
+			type="Edaly_A3_Decals_Arrow_Right";
+			atlOffset=-9.5367432e-06;
+		};
+		class Item339
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4198.0874,19.637018,1817.9656};
+				angles[]={0.0022853266,0,6.2192731};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1907;
+			type="Edaly_A3_Decals_RD_LineC_90deg";
+			atlOffset=-0.0029659271;
+		};
+		class Item340
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4205.3623,19.343512,1816.9546};
+				angles[]={6.2786145,0,6.2603326};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1909;
+			type="Edaly_Decal_Asphalt_large";
+			atlOffset=-1.9073486e-06;
+		};
+		class Item341
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4206.6333,19.329845,1820.7365};
+				angles[]={6.2671866,0,6.2557673};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1911;
+			type="Edaly_Decal_Hay_large";
+			atlOffset=3.8146973e-06;
+		};
+		class Item342
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4201.5474,19.472015,1817.5063};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1912;
+			type="Edaly_Decal_Moss_01";
+			atlOffset=5.7220459e-06;
+		};
+		class Item343
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4201.0576,19.514351,1820.8723};
+				angles[]={6.2671871,0,6.2466307};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1921;
+			type="Land_flask_01";
+			atlOffset=6.8664551e-05;
+		};
+		class Item344
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4199.8218,20.094648,1820.1188};
+				angles[]={6.2763233,0,6.2261043};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1922;
+			type="Land_Edaly_Barrel_01_F";
+			atlOffset=-1.9073486e-05;
+		};
+		class Item345
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4200.395,20.082657,1820.8414};
+				angles[]={6.2671871,0,6.2466307};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1923;
+			type="Land_Edaly_Barrel_02_BK_F";
+			atlOffset=3.8146973e-06;
+		};
+		class Item346
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4201.9814,19.460728,1818.8992};
+				angles[]={6.2786145,0,6.2466302};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1924;
+			type="Land_Edaly_Barstool_1b_EL";
+			atlOffset=-5.7220459e-06;
+		};
+		class Item347
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4201.3394,20.080292,1818.6564};
+				angles[]={6.278614,0,6.2466307};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1925;
+			type="Land_Edaly_Box_05_F";
+			atlOffset=5.7220459e-06;
+		};
+		class Item348
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4201.3359,19.518089,1820.6616};
+				angles[]={6.2671871,0,6.2466307};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1926;
+			type="Land_Edaly_Item_Cherry";
+		};
+		class Item349
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4200.3682,20.591965,1820.8967};
+				angles[]={6.2671909,0,6.2466326};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1927;
+			type="Land_Edaly_Item_Seed_Cocoa";
+			atlOffset=1.057766;
+		};
+		class Item350
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4200.3506,20.681845,1820.9546};
+				angles[]={6.2671909,0,6.2466326};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1928;
+			type="Land_Edaly_Item_Coconut";
+			atlOffset=1.0662441;
+		};
+		class Item351
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4200.4097,20.598896,1821.0067};
+				angles[]={6.2671909,0,6.2466326};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1929;
+			type="Land_Edaly_Item_Book_Cuba_revolution";
+			atlOffset=1.0577698;
+		};
+		class Item352
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4201.6831,19.477839,1820.201};
+				angles[]={6.2671871,0,6.2466307};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1930;
+			type="Land_Edaly_Chair_03_EL";
+			atlOffset=8.5830688e-05;
+		};
+		class Item353
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6108,19.784208,1821.5244};
+				angles[]={6.2763233,0,6.2261043};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1934;
+			type="Land_Edaly_Item_Egg";
+			atlOffset=1.7166138e-05;
+		};
+		class Item354
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.7847,19.67292,1820.8092};
+				angles[]={6.2763233,0,6.2261043};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1935;
+			type="Land_Edaly_Item_Eggs_Basket";
+			atlOffset=9.5367432e-06;
+		};
+		class Item355
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4502,19.692072,1820.927};
+				angles[]={6.2763233,0,6.2261043};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1936;
+			type="Land_Edaly_Item_Book_EITS";
+			atlOffset=7.6293945e-06;
+		};
+		class Item356
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.6655,19.744936,1821.5259};
+				angles[]={6.2763286,0,6.2261062};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1937;
+			type="Land_Edaly_Item_Can_Empty";
+			atlOffset=9.5367432e-06;
+		};
+		class Item357
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4775,20.123087,1821.3979};
+				angles[]={6.2763233,0,6.2261043};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1938;
+			type="Land_Edaly_Item_Cider_Wooden_Barel_Empty";
+			atlOffset=-7.6293945e-06;
+		};
+		class Item358
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.6567,20.659325,1821.4387};
+				angles[]={6.2763233,0,6.2261033};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1939;
+			type="Land_Edaly_Item_Rhum_bottle_Empty";
+		};
+		class Item359
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4198.2109,20.631491,1820.981};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1940;
+			type="Land_Edaly_Item_Fabric_Roll";
+			atlOffset=0.87450981;
+		};
+		class Item360
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4198.1885,19.654846,1821.0729};
+				angles[]={6.2763233,0,6.2261043};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1941;
+			type="Land_Edaly_Fan_EL";
+			atlOffset=-1.9073486e-06;
+		};
+		class Item361
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4198.8037,19.632557,1822.217};
+				angles[]={6.2671909,0,6.2352238};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1942;
+			type="Land_Edaly_Globe_01_EL";
+			atlOffset=6.4849854e-05;
+		};
+		class Item362
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.3438,20.267721,1821.5861};
+				angles[]={0,4.1532903,-0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1943;
+			type="Edaly_Str_Marble_Plate_01_F";
+		};
+		class Item363
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4195.2476,19.932039,1820.9667};
+				angles[]={6.2763319,0,6.2511969};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1944;
+			type="Land_Edaly_Radio_01_F";
+			atlOffset=-1.7166138e-05;
+		};
+		class Item364
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4195.5967,20.042702,1820.5143};
+				angles[]={6.2763319,0,6.2511969};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1945;
+			type="Land_Edaly_Radio_02_F";
+			atlOffset=-1.7166138e-05;
+		};
+		class Item365
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4195.3867,19.804266,1821.1967};
+				angles[]={6.2763286,0,6.2511973};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1946;
+			type="Land_Edaly_RecordPlayer_01_EL";
+			atlOffset=3.8146973e-06;
+		};
+		class Item366
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4195.4829,19.859556,1821.5581};
+				angles[]={6.2763319,0,6.2511969};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1947;
+			type="Land_Edaly_Item_Stone_Ore";
+			atlOffset=1.9073486e-06;
+		};
+		class Item367
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.2769,19.693253,1819.5912};
+				angles[]={6.2786179,0,6.2261052};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1948;
+			type="Land_Edaly_Safe_01_F";
+			atlOffset=-0.0006313324;
+		};
+		class Item368
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4196.5947,20.012138,1821.9297};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1949;
+			type="Land_Edaly_Item_Silver_Ingot";
+			atlOffset=0.24505997;
+		};
+		class Item369
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.5591,20.672312,1820.0811};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1950;
+			type="Land_Edaly_Item_Gold_Ingot";
+			atlOffset=0.97300911;
+		};
+		class Item370
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4197.4712,20.665861,1820.0787};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1951;
+			type="Land_Edaly_Item_Gold_Ingot";
+			atlOffset=0.96155357;
+		};
+		class Item371
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4191.3491,19.934357,1822.4579};
+				angles[]={6.2786179,0,6.2489138};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1952;
+			type="Land_Edaly_Sofa_01_F";
+			atlOffset=2.0980835e-05;
+		};
+		class Item372
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4188.667,19.980152,1820.7794};
+				angles[]={6.2763319,4.8538518,6.2694745};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1953;
+			type="Land_Edaly_Sofa_02_F";
+		};
+		class Item373
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4192.0859,19.859053,1819.3369};
+				angles[]={-0,0,6.2511959};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1956;
+			type="Land_Edaly_Item_Watch_1";
+			atlOffset=0.0011405945;
+		};
+		class Item374
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4189.3921,21.984856,1815.8231};
+				angles[]={0,1.5699408,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1957;
+			type="UK3CB_MEC_C_YAVA";
+			atlOffset=0.43934441;
+		};
+		class Item375
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4187.5244,21.591116,1812.9659};
+				angles[]={0.0091414601,1.6860378,6.2671871};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1958;
+			type="UK3CB_MDF_B_M1030";
+			atlOffset=-7.6293945e-05;
+		};
+		class Item376
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4184.9214,21.55397,1814.4689};
+				angles[]={0.0091414601,1.5128893,6.2534814};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1959;
+			type="gm_ge_army_k125";
 		};
 	};
 	class Connections
