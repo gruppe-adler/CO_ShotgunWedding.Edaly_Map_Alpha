@@ -4,3 +4,4 @@
 */
 
 #include "grad_zeus\cfgFunctions.hpp"
+#include "grad_bridegroom\cfgFunctions.hpp"

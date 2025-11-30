@@ -1,0 +1,15 @@
+
+params ["_position"];
+
+private _unit = (creategroup civilian) createUnit ["C_Man_1", _position, [], 0, "NONE"];
+
+[_unit, "Nikos"] remoteExec ["setFace", 0, true];
+_unit setVariable ["grad_isRico", _unit, true];
+
+missionNameSpace setVariable ["grad_rico", _unit, true];
+
+_unit setUnitLoadout [[["USSR_GuitarA","","","",[],[],""],[],[],["U_NikosBody",[]],[],[],"","fsob_Beard03_Light",[],["ItemMap","","","ItemCompass","ItemWatch",""]],false];
+
+[_unit, "gitaraP"] remoteExec ["switchMove", 0, true];
+
+_unit

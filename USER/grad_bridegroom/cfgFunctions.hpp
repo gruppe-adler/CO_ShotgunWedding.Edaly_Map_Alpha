@@ -4,5 +4,13 @@ class grad_bridegroom{
 		file = "USER\grad_bridegroom";
 		
 		class createBride;
+		class createGroom;
+		class createRico;
+		class createRicoCar;
+		class ricoCanSing;
+		class ricoSings;
+		class ricoCarAction;
+		class landingFlightData;
+		class landingFlight;
 	};
 };
