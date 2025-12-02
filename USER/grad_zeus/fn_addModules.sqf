@@ -47,3 +47,43 @@
   [] remoteExec ["grad_bridegroom_fnc_ricoSings", 0];
 
 }] call zen_custom_modules_fnc_register;
+
+
+private _category = "SHOTGUN WEDDING - TASKS";
+
+// Modul 1: Start
+[_category, "1. Start: Eskorte", {
+    params ["_pos", "_obj"];
+    ["START"] remoteExec ["fnc_handleWeddingPhase", 2];
+}] call zen_custom_modules_fnc_register;
+
+// Modul 2: Event Friseur
+[_category, "2. Event: Friseur (Stop)", {
+    params ["_pos", "_obj"];
+    ["HAIR"] remoteExec ["fnc_handleWeddingPhase", 2];
+}] call zen_custom_modules_fnc_register;
+
+// Modul 3: Event Ambush
+[_category, "2. Event: Ambush (Stop)", {
+    params ["_pos", "_obj"];
+    ["AMBUSH"] remoteExec ["fnc_handleWeddingPhase", 2];
+}] call zen_custom_modules_fnc_register;
+
+// Modul 4: Weiterfahren
+[_category, "3. Resume: Zur Kirche", {
+    params ["_pos", "_obj"];
+    // Zeus klickt auf die Kirche/Zielort
+    ["RESUME"] remoteExec ["fnc_handleWeddingPhase", 2];
+}] call zen_custom_modules_fnc_register;
+
+// Modul 5: Der Twist
+[_category, "4. THE TWIST (Verrat)", {
+    params ["_pos", "_obj"];
+    ["TWIST"] remoteExec ["fnc_handleWeddingPhase", 2];
+}] call zen_custom_modules_fnc_register;
+
+// Modul 6: Finale
+[_category, "5. Finale: Kill Marco", {
+    params ["_pos", "_obj"];
+    ["FINALE"] remoteExec ["fnc_handleWeddingPhase", 2];
+}] call zen_custom_modules_fnc_register;

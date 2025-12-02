@@ -8,3 +8,8 @@ sideChannel = 0;                                                                
 artilleryComputer = 0;                                                          // Artilleriecomputer (0/1) - wenn ausgeschaltet, benutzt KI Mörser nicht mehr für indirekten Beschuss
 
 showLogo = 1;                                                                   // Adlerlogo mit Missionsnamen anzeigen (0/1) - alternativ kann hier eine Wartebedingung festgelegt werden (siehe Wiki)
+
+taskManagement_markers2D = 1; // 1 = enabled, 0 = disabled
+taskManagement_markers3D = 1; 
+taskManagement_propagate = 1; 
+taskManagement_drawDist = 5000;

@@ -8,22 +8,22 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2039;
+		nextID=2151;
 	};
 	class MarkerIDProvider
 	{
-		nextID=7;
+		nextID=8;
 	};
 	class LayerIndexProvider
 	{
-		nextID=306;
+		nextID=317;
 	};
 	class Camera
 	{
-		pos[]={4335.8125,23.199116,1817.9139};
-		dir[]={0.80886739,-0.58363599,0.071432523};
-		up[]={0.58137333,0.81201535,0.051342119};
-		aside[]={0.087969415,3.7252903e-09,-0.99612314};
+		pos[]={6299.9414,31.96949,1298.7312};
+		dir[]={-1.2363449e-07,-0.70710683,0.70710683};
+		up[]={-1.2363449e-07,0.70710671,0.70710683};
+		aside[]={1,0,1.7484557e-07};
 	};
 };
 binarizationWanted=0;
@@ -46,13 +46,17 @@ addons[]=
 	"Edaly_Furniture_Config",
 	"Edaly_Structures_config",
 	"gm_structures_euro_80",
-	"A3_Structures_F_Walls"
+	"A3_Structures_F_Walls",
+	"CUP_Editor_A2_Roads_Config",
+	"Edaly_Client",
+	"Edaly_Wheeled_config",
+	"UK3CB_Factions_ION_B_Urban"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=17;
+		items=21;
 		class Item0
 		{
 			className="A3_Modules_F_Heli";
@@ -168,12 +172,39 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item17
+		{
+			className="CUP_Editor_A2_Roads_Config";
+			name="CUP_Editor_A2_Roads_Config";
+		};
+		class Item18
+		{
+			className="Edaly_Client";
+			name="Edaly_Client";
+			author="Projects Edaly";
+			url="https://edaly.fr/en/";
+		};
+		class Item19
+		{
+			className="Edaly_Wheeled_config";
+			name="Edaly_Wheeled_config";
+			author="Projects Edaly";
+			url="https://edaly.fr/en/";
+		};
+		class Item20
+		{
+			className="UK3CB_Factions_ION";
+			name="3CB Factions - ION Services";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
+		};
 	};
 };
 dlcs[]=
 {
 	"gm",
-	"UK3CB_Factions"
+	"UK3CB_Factions",
+	"RHS_USAF"
 };
 randomSeed=938738;
 class ScenarioData
@@ -4062,7 +4093,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=49;
+		items=62;
 		class Item0
 		{
 			dataType="Layer";
@@ -5257,7 +5288,7 @@ class Mission
 			};
 			title="Kirche PRiester Attentant, Plot Twist";
 			id=1517;
-			atlOffset=0.85500002;
+			atlOffset=0.43912268;
 		};
 		class Item15
 		{
@@ -5614,7 +5645,7 @@ class Mission
 			};
 			id=1559;
 			type="Land_Edaly_Item_Book_Communist";
-			atlOffset=1.3003616;
+			atlOffset=1.1987534;
 		};
 		class Item26
 		{
@@ -6009,16 +6040,554 @@ class Mission
 			id=1989;
 			type="Land_Wall_IndCnc_4_F";
 		};
+		class Item49
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4445.5142,10.0877,1815.7081};
+				angles[]={0.013715509,1.7092813,6.2420669};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2107;
+			type="CUP_A2_Road_asf3_6konec";
+		};
+		class Item50
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4450.5566,9.8870478,1814.7103};
+				angles[]={0.0091479784,1.8169404,6.2397842};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2108;
+			type="CUP_A2_Road_asf3_10_25";
+		};
+		class Item51
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4454.2104,9.7211294,1812.9702};
+				angles[]={0.0091414601,2.1104045,6.189744};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2110;
+			type="CUP_A2_Road_asf3_10_25";
+		};
+		class Item52
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4458.2456,9.3699999,1809.922};
+				angles[]={-0,5.3081532,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2112;
+			type="CUP_A2_Road_asf3_10_50";
+		};
+		class Item53
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4465.8262,9.3699999,1805.3176};
+				angles[]={-0,5.2020431,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2113;
+			type="CUP_A2_Road_asf3_6konec";
+		};
+		class Item54
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4461.856,9.3699999,1807.3165};
+				angles[]={-0,5.1234584,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2115;
+			type="CUP_A2_Road_asf3_10_25";
+		};
+		class Item55
+		{
+			dataType="Layer";
+			name="Libertad - Predators (Composition)";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Layer";
+					name="animals";
+					class Entities
+					{
+						items=11;
+						class Item0
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={2737.0381,-0.97306144,3223.1851};
+							};
+							id=2124;
+							type="WildlifeModule";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="wildLifeModulesUnits";
+									expression="_this setVariable ['Units',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="1";
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item1
+						{
+							dataType="Trigger";
+							position[]={2759.1841,0.65827632,3249.291};
+							class Attributes
+							{
+								condition="true";
+								onActivation="thisTrigger setVariable [""animals_count"", 10];" \n "thisTrigger setVariable [""animal_class"", ""Edaly_Crocodile""];";
+								sizeA=150;
+								sizeB=150;
+								triggerInterval=0;
+							};
+							id=2125;
+							type="EmptyDetector";
+							atlOffset=-5.9604645e-08;
+						};
+						class Item2
+						{
+							dataType="Group";
+							side="West";
+							class Entities
+							{
+								items=1;
+								class Item0
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={2799.5447,1.1518499,3227.2827};
+										angles[]={0,5.7412829,0};
+									};
+									side="West";
+									flags=7;
+									class Attributes
+									{
+									};
+									id=2127;
+									type="B_Soldier_F";
+									atlOffset=8.3446503e-07;
+								};
+							};
+							class Attributes
+							{
+							};
+							id=2126;
+							atlOffset=8.3446503e-07;
+						};
+						class Item3
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={2751.0774,-1,3204.3518};
+							};
+							id=2129;
+							type="WildlifeModule";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="wildLifeModulesUnits";
+									expression="_this setVariable ['Units',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="1";
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item4
+						{
+							dataType="Trigger";
+							position[]={2773.2229,1.4114259,3230.458};
+							class Attributes
+							{
+								condition="true";
+								onActivation="thisTrigger setVariable [""animals_count"", 10];" \n "thisTrigger setVariable [""animal_class"", ""Edaly_Crocodile_Small""];";
+								sizeA=150;
+								sizeB=150;
+								triggerInterval=0;
+							};
+							id=2130;
+							type="EmptyDetector";
+							atlOffset=1.1920929e-07;
+						};
+						class Item5
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={3997.3796,121.93,3989.7222};
+							};
+							id=2131;
+							type="WildlifeModule";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="wildLifeModulesUnits";
+									expression="_this setVariable ['Units',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="1";
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item6
+						{
+							dataType="Trigger";
+							position[]={4019.5249,121.93,4015.8291};
+							class Attributes
+							{
+								condition="true";
+								onActivation="thisTrigger setVariable [""animals_count"", 2];" \n "thisTrigger setVariable [""animal_class"", ""Edaly_Tiger""];";
+								sizeA=150;
+								sizeB=150;
+								triggerInterval=0;
+							};
+							id=2132;
+							type="EmptyDetector";
+						};
+						class Item7
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={6226.6489,3.8475304,1396.649};
+								angles[]={5.9086046,0,6.0390139};
+							};
+							id=2133;
+							type="WildlifeModule";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="wildLifeModulesUnits";
+									expression="_this setVariable ['Units',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="1";
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item8
+						{
+							dataType="Trigger";
+							position[]={6251.9014,3.8823204,1429.3188};
+							class Attributes
+							{
+								condition="true";
+								onActivation="thisTrigger setVariable [""animals_count"", 8];" \n "thisTrigger setVariable [""animal_class"", ""Edaly_Cattle""];";
+								sizeA=25;
+								sizeB=25;
+								triggerInterval=0;
+							};
+							id=2134;
+							type="EmptyDetector";
+						};
+						class Item9
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={6296.3872,0.21978332,1328.9865};
+								angles[]={5.9086046,0,6.0390139};
+							};
+							id=2135;
+							type="WildlifeModule";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="wildLifeModulesUnits";
+									expression="_this setVariable ['Units',_value,true];";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="1";
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item10
+						{
+							dataType="Trigger";
+							position[]={6282.77,0.41058409,1326.005};
+							class Attributes
+							{
+								condition="true";
+								onActivation="thisTrigger setVariable [""animals_count"", 12];" \n "thisTrigger setVariable [""animal_class"", ""Edaly_Crab""];";
+								triggerInterval=0;
+							};
+							id=2136;
+							type="EmptyDetector";
+						};
+					};
+					id=2123;
+					atlOffset=-3.2592144;
+				};
+			};
+			id=2128;
+			atlOffset=-3.2592144;
+		};
+		class Item56
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6284.8062,1.6346326,1338.88};
+			};
+			areaSize[]={50,-1,50};
+			id=2137;
+			type="gm_moduleSavePictures";
+		};
+		class Item57
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4454.0991,10.355698,1813.3073};
+				angles[]={0.0091455253,2.1902311,6.1897402};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2139;
+			type="Edaly_CerVi_1957_Pink";
+			atlOffset=-0.00278759;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[],[]],[[],[]],[[""Item_Camera_Rapid""],[1]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item58
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4463.0527,11.584775,1807.5695};
+				angles[]={-0,2.0910523,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2141;
+			type="UK3CB_ION_B_Urban_M1025_M2";
+		};
+		class Item59
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4460.6353,11.314999,1817.0366};
+				angles[]={-0,1.2811537,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2142;
+			type="UK3CB_ION_B_Urban_M998_2DR";
+		};
+		class Item60
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4446.2173,12.349287,1805.9504};
+				angles[]={0.0045674569,4.2472715,6.2420669};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2143;
+			type="UK3CB_ION_B_Urban_M1025_M2";
+			atlOffset=-0.001531601;
+		};
+		class Item61
+		{
+			dataType="Layer";
+			name="taskMarkers";
+			state=1;
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Marker";
+					position[]={5306.2109,17.754999,3040.5901};
+					name="mrk_bank";
+					text=" Bank";
+					type="mil_end";
+					colorName="ColorRed";
+					alpha=0;
+					id=2146;
+					atlOffset=5.8610535;
+				};
+				class Item1
+				{
+					dataType="Marker";
+					position[]={2756.9089,4.1700001,4186.2671};
+					name="mrk_church";
+					text=" Cathedral";
+					type="mil_join";
+					colorName="ColorRed";
+					alpha=0;
+					id=2144;
+				};
+				class Item2
+				{
+					dataType="Marker";
+					position[]={4016.4719,128.645,4010.853};
+					name="mrk_villa";
+					text=" Marcos Villa";
+					type="mil_destroy";
+					colorName="ColorRed";
+					alpha=0;
+					id=2148;
+					atlOffset=6.715004;
+				};
+				class Item3
+				{
+					dataType="Marker";
+					position[]={6274.8149,8.9530001,1353.295};
+					name="mrk_photo";
+					text=" Romantic Photo";
+					type="mil_end";
+					colorName="ColorRed";
+					alpha=0;
+					id=2147;
+					atlOffset=6.7149239;
+				};
+				class Item4
+				{
+					dataType="Marker";
+					position[]={2782.5979,7.401,3245.876};
+					name="mrk_photo2";
+					text=" Romantic Photo";
+					type="mil_end";
+					colorName="ColorRed";
+					alpha=0;
+					id=2149;
+					atlOffset=5.8618178;
+				};
+				class Item5
+				{
+					dataType="Marker";
+					position[]={4279.1758,12.397,2348.6001};
+					name="mrk_hairdresser";
+					text="Hair Dresser";
+					type="mil_end";
+					colorName="ColorRed";
+					alpha=0;
+					id=2145;
+					atlOffset=5.8614573;
+				};
+			};
+			id=2150;
+			atlOffset=-13.542858;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=8;
+			nextID=13;
 		};
 		class Links
 		{
-			items=8;
+			items=13;
 			class Item0
 			{
 				linkID=0;
@@ -6094,6 +6663,56 @@ class Mission
 				linkID=7;
 				item0=21;
 				item1=178;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item8
+			{
+				linkID=8;
+				item0=2125;
+				item1=2124;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item9
+			{
+				linkID=9;
+				item0=2130;
+				item1=2129;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item10
+			{
+				linkID=10;
+				item0=2132;
+				item1=2131;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item11
+			{
+				linkID=11;
+				item0=2134;
+				item1=2133;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item12
+			{
+				linkID=12;
+				item0=2136;
+				item1=2135;
 				class CustomData
 				{
 					type="Sync";

@@ -5,3 +5,5 @@
 
 #include "grad_zeus\cfgFunctions.hpp"
 #include "grad_bridegroom\cfgFunctions.hpp"
+#include "grad_taskSystem\cfgFunctions.hpp"
+#include "grad_libertadAnimals\cfgFunctions.hpp"
