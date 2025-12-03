@@ -21,7 +21,7 @@ fnc_handleWeddingPhase = {
             [
                 true, 
                 ["task_escort_1"], 
-                ["Bringen Sie das Brautpaar zur Kirche. Fahren Sie VORSICHTIG (<30km/h).", "Eskorte zur Kirche"], 
+                ["Bring the bridal couple to the church. Drive CAREFULLY (<30km/h).", "Escort to the Church"], 
                 _taskPos, 
                 "ASSIGNED", 
                 1, 
@@ -30,6 +30,52 @@ fnc_handleWeddingPhase = {
                 true
             ] call BIS_fnc_taskCreate;
         };
+
+        // --- INTERRUPTION: PHOTO SPOT 1 ---
+        case "PHOTO1": {
+            private _taskPos = getMarkerPos "mrk_photo1"; // ZIEL: PHOTO SPOT 1
+            // 1. Laufende Eskorte abbrechen
+            ["task_escort_" + str mission_escort_stage, "CANCELED"] call BIS_fnc_taskSetState;
+            
+            // 2. Neue Task erstellen
+            [
+                true, 
+                ["task_photo1"], 
+                ["A photo spot from the past. Park here and snap some pictures with the camera from the car.", "POI: The Romantic Photo"], 
+                _taskPos, 
+                "ASSIGNED", 
+                1, 
+                true, 
+                "loc_interact", 
+                true
+            ] call BIS_fnc_taskCreate;
+            
+            // Optional: Globaler Audio/Text
+            ["Bride", "Haltet an! Meine Haare sitzen furchtbar!"] remoteExec ["BIS_fnc_showSubtitle"];
+        };
+
+
+        // --- INTERRUPTION: BANK ---
+        case "BANK": {
+            private _taskPos = getMarkerPos "mrk_bank"; // ZIEL: BANK
+            // 1. Laufende Eskorte abbrechen
+            ["task_escort_" + str mission_escort_stage, "CANCELED"] call BIS_fnc_taskSetState;
+            
+            // 2. Neue Task erstellen
+            [
+                true, 
+                ["task_bank"], 
+                ["Marco forgot his Wallet in the Bank.", "POI: The Bank"], 
+                _taskPos, 
+                "ASSIGNED", 
+                1, 
+                true, 
+                "loc_Pick", 
+                true
+            ] call BIS_fnc_taskCreate;
+        };
+
+
 
         // --- INTERRUPTION: FRISEUR ---
         case "HAIR": {
@@ -41,12 +87,12 @@ fnc_handleWeddingPhase = {
             [
                 true, 
                 ["task_hairdresser"], 
-                ["Die Braut braucht ein Touch-Up. Sichern Sie den Salon. Lassen Sie niemanden rein oder raus.", "POI: Der Friseur"], 
+                ["The bride needs a touch-up. Secure the salon. Do not let anyone in or out.", "POI: The Hairdresser"], 
                 _taskPos, 
                 "ASSIGNED", 
                 1, 
                 true, 
-                "defend", 
+                "loc_repair", 
                 true
             ] call BIS_fnc_taskCreate;
             
@@ -63,14 +109,37 @@ fnc_handleWeddingPhase = {
             [
                 true, 
                 ["task_ambush"], 
-                ["Der Konvoi wird blockiert. Beseitigen Sie das Hindernis und wehren Sie den Angriff ab.", "ALARM: Hinterhalt"], 
+                ["The convoy is being blocked. Remove the obstacle and repel the attack.", "ALARM: Ambush"], 
                 _taskPos, 
                 "ASSIGNED", 
                 1, 
                 true, 
-                "attack", 
+                "defend", 
                 true
             ] call BIS_fnc_taskCreate;
+        };
+
+         // --- INTERRUPTION: PHOTO SPOT 1 ---
+        case "PHOTO2": {
+            private _taskPos = getMarkerPos "mrk_photo2"; // ZIEL: PHOTO SPOT 2
+            // 1. Laufende Eskorte abbrechen
+            ["task_escort_" + str mission_escort_stage, "CANCELED"] call BIS_fnc_taskSetState;
+            
+            // 2. Neue Task erstellen
+            [
+                true, 
+                ["task_photo2"], 
+                ["Another photo spot from the past. Park here and snap some pictures with the camera from the car.", "POI: The Romantic Photo"], 
+                _taskPos, 
+                "ASSIGNED", 
+                1, 
+                true, 
+                "loc_interact", 
+                true
+            ] call BIS_fnc_taskCreate;
+            
+            // Optional: Globaler Audio/Text
+            ["Bride", "Haltet an! Meine Haare sitzen furchtbar!"] remoteExec ["BIS_fnc_showSubtitle"];
         };
 
         // --- RESUME ESCORT (Nach einem Event) ---
@@ -92,7 +161,7 @@ fnc_handleWeddingPhase = {
             [
                 true, 
                 ["task_escort_" + str mission_escort_stage], 
-                ["Setzen Sie die Fahrt zur Kirche fort. Tempo 30!", "Eskorte fortsetzen", "mrk_church"], 
+                ["Proceed to the church. Max 30 km/h.", "mrk_church"], 
                 _taskPos, // Hier idealerweise die Position der Kirche übergeben
                 "ASSIGNED", 
                 1, 
@@ -101,7 +170,7 @@ fnc_handleWeddingPhase = {
                 true
             ] call BIS_fnc_taskCreate;
 
-            ["Groom", "Alles gut, nur weiterfahren. Wir sind spät dran!"] remoteExec ["BIS_fnc_showSubtitle"];
+            ["Groom", "All good, just keep driving. We're running late!"] remoteExec ["BIS_fnc_showSubtitle"];
         };
 
         // --- PHASE 2: THE TWIST (Marco flieht) ---
@@ -112,7 +181,7 @@ fnc_handleWeddingPhase = {
             [
                 true, 
                 ["task_survive"], 
-                ["Marco hat uns verraten! Sichern Sie die Braut (falls sie lebt) und regruppieren Sie sich.", "WARNUNG: Verrat"], 
+                ["Marco has betrayed us! Secure the bride (if she's alive) and regroup.", "WARNING: Betrayal"], 
                 objNull, 
                 "ASSIGNED", 
                 1, 
@@ -131,12 +200,12 @@ fnc_handleWeddingPhase = {
             [
                 true, 
                 ["task_kill_marco"], 
-                ["Marco feiert in seiner Villa. Stürmen Sie das Anwesen. Keine Gnade.", "Zieleliminierung: Marco", "mrk_villa"], 
+                ["Marco has to be eliminated. He probably hides in his mansion.", "Target Elimination: Marco", "mrk_villa"], 
                 _taskPos, 
                 "ASSIGNED", 
                 1, 
                 true, 
-                "kill", 
+                "loc_destroy", 
                 true
             ] call BIS_fnc_taskCreate;
         };
