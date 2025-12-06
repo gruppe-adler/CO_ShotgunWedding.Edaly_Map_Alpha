@@ -10,6 +10,8 @@ _bride setObjectTextureGlobal [1, "#(rgb,8,8,3)color(0.2,0.05,0.2,1)"];
 // hair/head
 [_bride, "max_female12"] remoteExec ["setFace", 0, true];
 
+_groom assignAsCargoIndex [grad_couplevehicle, 4];
+
 _bride
 // bride hair decoration
 /*

@@ -30,12 +30,25 @@
 };
 
 
+["SHOTGUN WEDDING - COUPLE", "Spawn Bride",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [asltoagl _position] call grad_bridegroom_fnc_createBride;
+}] call zen_custom_modules_fnc_register;
+
+["SHOTGUN WEDDING - COUPLE", "Spawn Groom",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [asltoagl _position] call grad_bridegroom_fnc_createGroom;
+}] call zen_custom_modules_fnc_register;
+
 ["SHOTGUN WEDDING - RICO", "Spawn Rico",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
   [asltoagl _position] call grad_bridegroom_fnc_createRicoCar;
-
 }] call zen_custom_modules_fnc_register;
 
 

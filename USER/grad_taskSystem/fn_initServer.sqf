@@ -17,7 +17,7 @@ fnc_handleWeddingPhase = {
         
         // --- PHASE 1: MISSION START ---
         case "START": {
-            private _taskPos = getMarkerPos "mrk_church"; // ZIEL: KIRCHE
+            private _taskPos = getMarkerPos "mrk_church";
             [
                 true, 
                 ["task_escort_1"], 
@@ -102,7 +102,7 @@ fnc_handleWeddingPhase = {
 
         // --- INTERRUPTION: BLUMEN/AMBUSH ---
         case "AMBUSH": {
-            private _taskPos = getMarkerPos "mrk_ambush"; // ZIEL: KIRCHE
+            private _taskPos = getMarkerPos "mrk_ambush";
 
             ["task_escort_" + str mission_escort_stage, "CANCELED"] call BIS_fnc_taskSetState;
             
@@ -144,14 +144,13 @@ fnc_handleWeddingPhase = {
 
         // --- RESUME ESCORT (Nach einem Event) ---
         case "RESUME": {
-            private _taskPos = getMarkerPos "mrk_church"; // ZIEL: KIRCHE
+            private _taskPos = getMarkerPos "mrk_church";
             // 1. Vorherige Side-Tasks abschließen (falls noch offen)
-            if (["task_hairdresser"] call BIS_fnc_taskState == "ASSIGNED") then { 
-                ["task_hairdresser", "SUCCEEDED"] call BIS_fnc_taskSetState;
-            };
-            if (["task_ambush"] call BIS_fnc_taskState == "ASSIGNED") then { 
-                ["task_ambush", "SUCCEEDED"] call BIS_fnc_taskSetState; 
-            };
+            {
+                if ([_x] call BIS_fnc_taskState == "ASSIGNED") then { 
+                    [_x, "SUCCEEDED"] call BIS_fnc_taskSetState;
+                };
+            } forEach ["task_photo1", "task_photo2", "task_hairdresser", "task_bank", "task_ambush"];
             
             // 2. Eskort-Zähler hochsetzen
             mission_escort_stage = mission_escort_stage + 1;

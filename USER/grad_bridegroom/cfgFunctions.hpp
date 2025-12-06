@@ -7,6 +7,7 @@ class grad_bridegroom{
 		class createGroom;
 		class createRico;
 		class createRicoCar;
+		class coupleCarDeko;
 		class ricoCanSing;
 		class ricoSings;
 		class ricoCarAction;
