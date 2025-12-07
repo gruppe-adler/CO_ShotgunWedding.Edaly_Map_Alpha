@@ -2,6 +2,15 @@ params ["_position"];
 
 private _bride = (creategroup civilian) createUnit ["Max_woman5", _position, [], 0, "NONE"];
 _bride setVariable ["not_random", true, true];
+_bride setBehaviour "CARELESS";
+(group _bride) setBehaviourStrong "CARELESS";
+_bride setCombatMode "BLUE";
+
+_bride setVariable ["lambs_danger_disableAI", true, true];
+
+missionNameSpace setVariable ["grad_bride", _bride, true];
+
+
 
 // dress color
 _bride setObjectTextureGlobal [0, "#(rgb,8,8,3)color(1,1,1,1)"];
@@ -10,7 +19,9 @@ _bride setObjectTextureGlobal [1, "#(rgb,8,8,3)color(0.2,0.05,0.2,1)"];
 // hair/head
 [_bride, "max_female12"] remoteExec ["setFace", 0, true];
 
-_groom assignAsCargoIndex [grad_couplevehicle, 4];
+[_bride, "Isabella"] remoteExec ["setIdentity", 0, _bride];
+
+_bride assignAsCargoIndex [grad_couplevehicle, 4];
 
 _bride
 // bride hair decoration

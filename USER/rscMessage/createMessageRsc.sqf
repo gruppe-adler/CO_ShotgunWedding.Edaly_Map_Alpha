@@ -10,7 +10,7 @@
 #define BOX_W (UI_GRID_W * 12) // control is 12 grids wide
 #define BOX_H (UI_GRID_H * 12)  // control is 5 grids high
 
-params ["_message", ["_sound", "none"], ["_duration", 6], ["_person", "isabella"]];
+params [["_unit", objNull], ["_message", ""], ["_sound", "none"], ["_duration", 6], ["_avatarPic", ""]];
 
 _duration = _duration + 2; // just a little more than sound for animation etc
 
@@ -24,17 +24,6 @@ if (_isKraken != _playerKraken && isNull (getAssignedCuratorLogic player)) exitW
 };
 */
 
-private _unit = switch (_person) do {
-	case "isabella": {missionNameSpace getVariable ["GRAD_isabellaObject", objNull]};
-	case "marco": {missionNameSpace getVariable ["GRAD_marcoObject", objNull]};
-	default {objNull};
-};
-
-private _picpath = switch (_person) do {
-	case "isabella": {"USER\rscMessage\isabella.paa"};
-	case "marco": {"USER\rscMessage\marco.paa"};
-	default {"USER\rscMessage\isabella.paa"};
-};
 
 "GRAD_COMMAND_MESSAGE" cutRsc ["RscTitleDisplayEmpty", "PLAIN"];
 private _display = uiNamespace getVariable "RscTitleDisplayEmpty";
@@ -44,18 +33,19 @@ _ctrlGroup ctrlSetPosition [safeZoneX, safeZoneY+BOX_H, safeZoneW, safeZoneH];
 
 _ctrlGroup ctrlCommit 0;
 _ctrlGroup ctrlSetPosition [safeZoneX, safeZoneY, safeZoneW, safeZoneH];
-_ctrlGroup ctrlCommit 0.2;
+_ctrlGroup ctrlCommit 0.1;
 
 private _ctrlBackground = _display ctrlCreate ["RscTextMulti", -1, _ctrlGroup];
 _ctrlBackground ctrlSetPosition [0, safeZoneH - BOX_H, safeZoneW, BOX_H];
-_ctrlBackground ctrlSetBackgroundColor [0, 0, 0, 0];
+_ctrlBackground ctrlSetBackgroundColor [0, 0, 0, 0.5];
 _ctrlBackground ctrlSetText "";
 _ctrlBackground ctrlEnable false;
 _ctrlBackground ctrlCommit 0;
 
 private _estimatedTextWidth = _message getTextWidth ["PuristaMedium", 2];
+// systemChat ("text width: " + str _estimatedTextWidth);
 private _ctrlMessage = _display ctrlCreate ["RscStructuredText", -1, _ctrlGroup];
-_ctrlMessage ctrlSetPosition [safeZoneW, safeZoneH - BOX_H/1.7, _estimatedTextWidth, BOX_H];
+_ctrlMessage ctrlSetPosition [safeZoneW, safeZoneH - BOX_H/1.7, safeZoneW, BOX_H];
 _ctrlMessage ctrlSetStructuredText parseText ("<t size='2'>" + _message + "</t>");
 _ctrlMessage ctrlCommit 0;
 
@@ -67,19 +57,19 @@ _ctrlAdditionalText ctrlCommit 0;
 */
 
 private _textWidth = ctrlTextWidth _ctrlMessage;
-_ctrlMessage ctrlSetPosition [BOX_W, safeZoneH - BOX_H/1.5, BOX_W*2, BOX_H];
+_ctrlMessage ctrlSetPosition [BOX_W, safeZoneH - BOX_H/1.5, safeZoneW, BOX_H];
 _ctrlMessage ctrlCommit 0;
 
 private _ctrlImage = _display ctrlCreate ["RscPicture", -1, _ctrlGroup];
 _ctrlImage ctrlSetPosition [0, safeZoneH - BOX_H, BOX_W, BOX_H];
 
-_ctrlImage ctrlSetText _picpath;	
+_ctrlImage ctrlSetText _avatarPic;	
 
 _ctrlImage ctrlCommit 0;
 
-player createDiaryRecord ["Diary", [_person + " - " + ([dayTime, "HH:MM"] call BIS_fnc_timeToString), _message], taskNull, "NONE", true];
+player createDiaryRecord ["Diary", [name _unit + " - " + ([dayTime, "HH:MM"] call BIS_fnc_timeToString), _message], taskNull, "NONE", true];
 
-playSoundUI ["remote_start"];
+// playSoundUI ["remote_start"];
 
 private _soundID = objNull;
 
@@ -89,7 +79,7 @@ if (_sound == "none") then {
 		_soundID = playSoundUI ["garble_long"];
 	};
 } else {
-	if (!isNull _unit && {player distance _unit < 30}) then {
+	if (!isNull _unit && {player distance _unit < 5}) then {
 		_soundID = _unit say3d [_sound, 100];
 		_unit setRandomLip true;
 	} else {
@@ -106,11 +96,11 @@ if (_sound == "none") then {
 
 	sleep _duration;
 	_ctrlGroup ctrlSetPosition [safeZoneX, safeZoneY+BOX_H, safeZoneW, safeZoneH];
-	_ctrlGroup ctrlCommit 0.2;
-	uiSleep 0.2;
+	_ctrlGroup ctrlCommit 0.1;
+	uiSleep 0.1;
 	_display closeDisplay 1;
 
-	playSound "remote_end";
+	// playSound "remote_end";
 
 	if (!isNull _unit) then {
 		_unit setRandomLip false;

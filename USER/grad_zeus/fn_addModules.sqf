@@ -30,6 +30,15 @@
 };
 
 
+["SHOTGUN WEDDING - MISSION PROGRESS", "Intro Landing Flight",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_bridegroom_fnc_landingFlight", 2];
+  [] remoteExec ["grad_speech_fnc_intro", 2];
+}] call zen_custom_modules_fnc_register;
+
+
 ["SHOTGUN WEDDING - COUPLE", "Spawn Bride",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -60,6 +69,21 @@
   [] remoteExec ["grad_bridegroom_fnc_ricoSings", 0];
 
 }] call zen_custom_modules_fnc_register;
+
+
+["SHOTGUN WEDDING - CHURCH", "Headshot (manual)",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  private _priest = missionNameSpace getVariable ["grad_priest", objNull];
+  if (isNull _priest) exitWith {
+      "ERROR: Priest not found!" call CBA_fnc_notify;
+  };
+
+  [_position, _priest] remoteExec ["grad_church_fnc_headshot", 2];
+}] call zen_custom_modules_fnc_register;
+
+
 
 
 private _category = "SHOTGUN WEDDING - TASKS";

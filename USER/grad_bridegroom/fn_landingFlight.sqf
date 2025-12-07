@@ -3,7 +3,16 @@ _plane allowDamage false;
 _plane call UK3CB_Factions_Vehicles_fnc_disable_randomize;
 
 private _pilot = (createGroup civilian) createUnit ["UK3CB_CHC_C_PILOT", [0,100,100], [], 0, "NONE"];
-_pilot setUnitLoadout [[],[],[],["UK3CB_CHC_C_PILOT",[]],[],[],"H_HeadSet_red_F","G_Aviator",[],["","","","","ItemWatch",""]];
+_pilot setUnitLoadout [[[],[],[],["UK3CB_ADC_C_U_Pilot_01",[]],[],[],"H_HeadSet_red_F","G_Aviator",[],["","","","","ItemWatch",""]],false];
+
+(group _pilot) setBehaviourStrong "CARELESS";
+_pilot setCombatMode "BLUE";
+
+[_pilot, "WhiteHead_05"] remoteExec ["setFace", 0, true];
+
+missionNameSpace setVariable ["grad_pilot", _pilot, true];
+
+[_pilot, "Pilot"] remoteExec ["setIdentity", 0, _pilot];
 
 _pilot moveInDriver _plane;
 
@@ -38,6 +47,7 @@ _groom moveInCargo _plane;
     { (_x select 0) leaveVehicle _plane; } forEach fullCrew _plane;
 
     _plane engineOn false;
+    missionNameSpace setVariable ["grad_landingDone", true, true];
 }, [_plane]] call CBA_fnc_waitUntilAndExecute;
 
 /*

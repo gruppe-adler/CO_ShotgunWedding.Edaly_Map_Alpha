@@ -7,3 +7,6 @@
 #include "grad_bridegroom\cfgFunctions.hpp"
 #include "grad_taskSystem\cfgFunctions.hpp"
 #include "grad_libertadAnimals\cfgFunctions.hpp"
+#include "grad_church\cfgFunctions.hpp"
+#include "grad_bankrobbery\cfgFunctions.hpp"
+#include "grad_speech\cfgFunctions.hpp"

@@ -40,6 +40,10 @@ if (!isServer) exitWith {};
             _message = format ["%1 : %2", [_unit, false, true] call ace_common_fnc_getName, _text];
             _color = [0.7,0.1,0.1,1];
         };
+        case ("picturetaken"): {
+            _message = format ["%1 has taken a picture", [_unit, false, true] call ace_common_fnc_getName, _text];
+            _color = [0.7,0.1,0.1,1];
+        };
         default {
             _message = format ["%1 got input intel: %2", [_unit, false, true] call ace_common_fnc_getName, _text];
             _color = [0.7,0.1,0.1,1];

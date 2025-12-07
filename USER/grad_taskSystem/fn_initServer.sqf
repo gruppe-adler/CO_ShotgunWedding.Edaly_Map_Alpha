@@ -50,8 +50,6 @@ fnc_handleWeddingPhase = {
                 true
             ] call BIS_fnc_taskCreate;
             
-            // Optional: Globaler Audio/Text
-            ["Bride", "Haltet an! Meine Haare sitzen furchtbar!"] remoteExec ["BIS_fnc_showSubtitle"];
         };
 
 
@@ -95,9 +93,6 @@ fnc_handleWeddingPhase = {
                 "loc_repair", 
                 true
             ] call BIS_fnc_taskCreate;
-            
-            // Optional: Globaler Audio/Text
-            ["Bride", "Haltet an! Meine Haare sitzen furchtbar!"] remoteExec ["BIS_fnc_showSubtitle"];
         };
 
         // --- INTERRUPTION: BLUMEN/AMBUSH ---
@@ -138,8 +133,6 @@ fnc_handleWeddingPhase = {
                 true
             ] call BIS_fnc_taskCreate;
             
-            // Optional: Globaler Audio/Text
-            ["Bride", "Haltet an! Meine Haare sitzen furchtbar!"] remoteExec ["BIS_fnc_showSubtitle"];
         };
 
         // --- RESUME ESCORT (Nach einem Event) ---
@@ -168,8 +161,6 @@ fnc_handleWeddingPhase = {
                 "car", 
                 true
             ] call BIS_fnc_taskCreate;
-
-            ["Groom", "All good, just keep driving. We're running late!"] remoteExec ["BIS_fnc_showSubtitle"];
         };
 
         // --- PHASE 2: THE TWIST (Marco flieht) ---

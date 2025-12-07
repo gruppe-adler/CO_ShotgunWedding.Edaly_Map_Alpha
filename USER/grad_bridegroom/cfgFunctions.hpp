@@ -7,11 +7,12 @@ class grad_bridegroom{
 		class createGroom;
 		class createRico;
 		class createRicoCar;
-		class coupleCarDeko;
+		class coupleCarDeko;	
 		class ricoCanSing;
 		class ricoSings;
 		class ricoCarAction;
 		class landingFlightData;
 		class landingFlight;
+		class tinCanTrail;
 	};
 };
