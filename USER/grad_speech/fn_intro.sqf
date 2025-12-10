@@ -33,3 +33,10 @@
         "intro_14_marco"
     ];
 };
+
+// START TASK 1
+[{
+    missionNameSpace getVariable ["grad_landingDone", false]
+},{
+    ["START"] remoteExec ["fnc_handleWeddingPhase", 2];
+}] call CBA_fnc_waitUntilAndExecute;

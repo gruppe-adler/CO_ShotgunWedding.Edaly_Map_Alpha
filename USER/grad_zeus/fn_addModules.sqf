@@ -38,6 +38,42 @@
   [] remoteExec ["grad_speech_fnc_intro", 2];
 }] call zen_custom_modules_fnc_register;
 
+["SHOTGUN WEDDING - MISSION PROGRESS", "Mission 01 - Photo 1",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_speech_fnc_mission1", 2];
+}] call zen_custom_modules_fnc_register;
+
+["SHOTGUN WEDDING - MISSION PROGRESS", "Mission 02 - Bank",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_speech_fnc_mission2", 2];
+}] call zen_custom_modules_fnc_register;
+
+["SHOTGUN WEDDING - MISSION PROGRESS", "Mission 03 - Hairdresser",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_speech_fnc_mission3", 2];
+}] call zen_custom_modules_fnc_register;
+
+["SHOTGUN WEDDING - MISSION PROGRESS", "Mission 04 - Photo 2",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_speech_fnc_mission4", 2];
+}] call zen_custom_modules_fnc_register;
+
+["SHOTGUN WEDDING - MISSION PROGRESS", "Mission 05 - Revenge",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_speech_fnc_mission5", 2];
+}] call zen_custom_modules_fnc_register;
+
+
 
 ["SHOTGUN WEDDING - COUPLE", "Spawn Bride",
 {
@@ -81,46 +117,4 @@
   };
 
   [_position, _priest] remoteExec ["grad_church_fnc_headshot", 2];
-}] call zen_custom_modules_fnc_register;
-
-
-
-
-private _category = "SHOTGUN WEDDING - TASKS";
-
-// Modul 1: Start
-[_category, "1. Start: Eskorte", {
-    params ["_pos", "_obj"];
-    ["START"] remoteExec ["fnc_handleWeddingPhase", 2];
-}] call zen_custom_modules_fnc_register;
-
-// Modul 2: Event Friseur
-[_category, "2. Event: Friseur (Stop)", {
-    params ["_pos", "_obj"];
-    ["HAIR"] remoteExec ["fnc_handleWeddingPhase", 2];
-}] call zen_custom_modules_fnc_register;
-
-// Modul 3: Event Ambush
-[_category, "2. Event: Ambush (Stop)", {
-    params ["_pos", "_obj"];
-    ["AMBUSH"] remoteExec ["fnc_handleWeddingPhase", 2];
-}] call zen_custom_modules_fnc_register;
-
-// Modul 4: Weiterfahren
-[_category, "3. Resume: Zur Kirche", {
-    params ["_pos", "_obj"];
-    // Zeus klickt auf die Kirche/Zielort
-    ["RESUME"] remoteExec ["fnc_handleWeddingPhase", 2];
-}] call zen_custom_modules_fnc_register;
-
-// Modul 5: Der Twist
-[_category, "4. THE TWIST (Verrat)", {
-    params ["_pos", "_obj"];
-    ["TWIST"] remoteExec ["fnc_handleWeddingPhase", 2];
-}] call zen_custom_modules_fnc_register;
-
-// Modul 6: Finale
-[_category, "5. Finale: Kill Marco", {
-    params ["_pos", "_obj"];
-    ["FINALE"] remoteExec ["fnc_handleWeddingPhase", 2];
 }] call zen_custom_modules_fnc_register;

@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2731;
+		nextID=2734;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3223.9253,67.410881,3046.7976};
-		dir[]={-0.89698708,-0.35316041,0.26590458};
-		up[]={-0.33860028,0.93556064,0.10037584};
-		aside[]={0.28421932,2.6921043e-08,0.95876843};
+		pos[]={5072.7959,61.157654,2277.5466};
+		dir[]={-0.35735753,-0.45742682,0.81428951};
+		up[]={-0.18382315,0.88924545,0.41886798};
+		aside[]={0.91570246,1.5716068e-09,0.40186316};
 	};
 };
 binarizationWanted=0;
@@ -15030,22 +15030,60 @@ class Mission
 			name="mission_speech";
 			class Entities
 			{
-				items=1;
+				items=4;
 				class Item0
 				{
 					dataType="Marker";
-					position[]={4941.8979,0,1855.7939};
-					name="marker_10";
+					position[]={5921.167,0.81102848,2053.3877};
+					name="mission_01_01_marco";
 					markerType="ELLIPSE";
 					type="";
-					a=50;
-					b=50;
+					a=1000;
+					b=1000;
 					id=2725;
-					atlOffset=0.54166597;
+				};
+				class Item1
+				{
+					dataType="Marker";
+					position[]={5045.772,5.0599999,3338.533};
+					name="mission_03_01_marco";
+					markerType="RECTANGLE";
+					type="";
+					a=1000;
+					b=100;
+					angle=126.61699;
+					id=2731;
+					atlOffset=-0.00011730194;
+				};
+				class Item2
+				{
+					dataType="Marker";
+					position[]={3166.083,5.1890001,3251.718};
+					name="mission_04_01_marco";
+					markerType="RECTANGLE";
+					type="";
+					a=1000;
+					b=100;
+					angle=326.78497;
+					id=2732;
+					atlOffset=-4.863739e-05;
+				};
+				class Item3
+				{
+					dataType="Marker";
+					position[]={5305.3062,5.7129998,2527.5811};
+					name="mission_02_01_marco";
+					markerType="RECTANGLE";
+					type="";
+					a=400;
+					b=100;
+					angle=181.351;
+					id=2733;
+					atlOffset=-0.00034952164;
 				};
 			};
 			id=2726;
-			atlOffset=0.54166597;
+			atlOffset=-0.062371254;
 		};
 		class Item210
 		{
