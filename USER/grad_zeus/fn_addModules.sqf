@@ -38,6 +38,19 @@
   [] remoteExec ["grad_speech_fnc_intro", 2];
 }] call zen_custom_modules_fnc_register;
 
+["SHOTGUN WEDDING - MISSION PROGRESS", "Resume Main Mission",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  ["RESUME"] remoteExec ["fnc_handleWeddingPhase", 2];
+}] call zen_custom_modules_fnc_register;
+
+
+
+/*
+
+// should be semi automatic already
+
 ["SHOTGUN WEDDING - MISSION PROGRESS", "Mission 01 - Photo 1",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -65,6 +78,8 @@
 
   [] remoteExec ["grad_speech_fnc_mission4", 2];
 }] call zen_custom_modules_fnc_register;
+
+*/
 
 ["SHOTGUN WEDDING - MISSION PROGRESS", "Mission 05 - Revenge",
 {

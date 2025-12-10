@@ -250,9 +250,9 @@ class mission_01_03_marco
     object = "grad_groom";
 };
 
-class mission_01_04_isabella
+class mission_01_04_isa
 {
-    name = "mission_01_04_isabella";
+    name = "mission_01_04_isa";
     sound[] = { "USER\sounds\mission_01_04_isa.ogg", 2, 1, 100 };
     titles[] = {
         0, "Isabella:  You mean where you were vomiting on a dumpster and I stepped in it? That is your romance?!"
@@ -274,9 +274,9 @@ class mission_01_05_marco
     object = "grad_groom";
 };
 
-class mission_01_06_isabella
+class mission_01_06_isa
 {
-    name = "mission_01_06_isabella";
+    name = "mission_01_06_isa";
     sound[] = { "USER\sounds\mission_01_06_isa.ogg", 2, 1, 100 };
     titles[] = {
         0, "Isabella: Vogue? They are running the backstory piece?"
@@ -298,9 +298,9 @@ class mission_01_07_marco
     object = "grad_groom";
 };
 
-class mission_01_08_isabella
+class mission_01_08_isa
 {
-    name = "mission_01_08_isabella";
+    name = "mission_01_08_isa";
     sound[] = { "USER\sounds\mission_01_08_isa.ogg", 2, 1, 100 };
     titles[] = {
         0, "Isabella: Ugh. Fine. Driver, take us to the dirty corner. But if a crab runs across my foot, I am shooting Marco."
@@ -349,9 +349,9 @@ class mission_02_01_marco
     object = "grad_groom";
 };
 
-class mission_02_02_isabella
+class mission_02_02_isa
 {
-    name = "mission_02_02_isabella";
+    name = "mission_02_02_isa";
     sound[] = { "USER\sounds\mission_02_02_isa.ogg", 2, 1, 100 };
     titles[] = {
         0, "Isabella: You have the rings, RIGHT? You showed me the rings. If you lost the rings, I will use your teeth as CONFETTI!"
@@ -373,14 +373,26 @@ class mission_02_03_marco
     object = "grad_groom";
 };
 
-class mission_02_04_isabella
+class mission_02_04_isa
 {
-    name = "mission_02_04_isabella";
+    name = "mission_02_04_isa";
     sound[] = { "USER\sounds\mission_02_04_isa.ogg", 2, 1, 100 };
     titles[] = {
-        0, "Isabella: YOUR WALLET?! You are telling me we have to detour to that deposit box for a piece of leather?! Marco, if this is another one of your tricks to escape me, I will lose myself!"
+        0, "Isabella: YOUR WALLET?! You are telling me we have to detour to that deposit box for a piece of leather?!"
     };
-    duration = 12;
+    duration = 8;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class mission_02_04b_isa
+{
+    name = "mission_02_04b_isa";
+    sound[] = { "USER\sounds\mission_02_04b_isa.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Marco, if this is another one of your tricks to escape me, I will lose myself!"
+    };
+    duration = 4;
     avatar = "user\rscMessage\isabella.paa";
     object = "grad_bride";
 };
@@ -397,12 +409,12 @@ class mission_02_05_marco
     object = "grad_groom";
 };
 
-class mission_02_06_isabella
+class mission_02_06_isa
 {
-    name = "mission_02_06_isabella";
+    name = "mission_02_06_isa";
     sound[] = { "USER\sounds\mission_02_06_isa.ogg", 2, 1, 100 };
     titles[] = {
-        0, "Isabella: You are not a guy, you are a child! A child with a trust fund! Driver! To the bank!"
+        0, "Isabella: You are not a guy, you are a child! A child with a trust fund! Driver! To the bank! I should have married Rico, he has no wallet to lose."
     };
     duration = 11;
     avatar = "user\rscMessage\isabella.paa";
@@ -421,9 +433,9 @@ class mission_02_07_marco
     object = "grad_groom";
 };
 
-class mission_02_08_isabella
+class mission_02_08_isa
 {
-    name = "mission_02_08_isabella";
+    name = "mission_02_08_isa";
     sound[] = { "USER\sounds\mission_02_08_isa.ogg", 2, 1, 100 };
     titles[] = {
         0, "Isabella: If that card is lost I will snitch to Pa, rest assured!"
@@ -461,9 +473,9 @@ class mission_03_01_marco
     object = "grad_groom";
 };
 
-class mission_03_02_isabella
+class mission_03_02_isa
 {
-    name = "mission_03_02_isabella";
+    name = "mission_03_02_isa";
     sound[] = { "USER\sounds\mission_03_02_isa.ogg", 2, 1, 100 };
     titles[] = {
         0, "Isabella: What?! Is it frizzy? Do I look like a poodle? Give me a mirror!"
@@ -485,9 +497,9 @@ class mission_03_03_marco
     object = "grad_groom";
 };
 
-class mission_03_04_isabella
+class mission_03_04_isa
 {
-    name = "mission_03_04_isabella";
+    name = "mission_03_04_isa";
     sound[] = { "USER\sounds\mission_03_04_isa.ogg", 2, 1, 100 };
     titles[] = {
         0, "Isabella: 'Nano Banana'? That sounds like a smoothie shop for monkeys. Are you sure he is good?"
@@ -509,9 +521,9 @@ class mission_03_05_marco
     object = "grad_groom";
 };
 
-class mission_03_06_isabella
+class mission_03_06_isa
 {
-    name = "mission_03_06_isabella";
+    name = "mission_03_06_isa";
     sound[] = { "USER\sounds\mission_03_06_isa.ogg", 2, 1, 100 };
     titles[] = {
         0, "Isabella: Very well, let's go to the hairdresser."
@@ -533,9 +545,9 @@ class mission_03_07_marco
     object = "grad_groom";
 };
 
-class mission_03_08_isabella
+class mission_03_08_isa
 {
-    name = "mission_03_08_isabella";
+    name = "mission_03_08_isa";
     sound[] = { "USER\sounds\mission_03_08_isa.ogg", 2, 1, 100 };
     titles[] = {
         0, "Isabella: You are staying in the car? Come inside! Pierre would refresh your hair cut too!"
@@ -557,9 +569,9 @@ class mission_03_09_marco
     object = "grad_groom";
 };
 
-class mission_03_10_isabella
+class mission_03_10_isa
 {
-    name = "mission_03_10_isabella";
+    name = "mission_03_10_isa";
     sound[] = { "USER\sounds\mission_03_10_isa.ogg", 2, 1, 100 };
     titles[] = {
         0, "Isabella: You are so delicate. Fine! Don't cry when I come out looking fabulous and you look like a sweaty chauffeur."
@@ -595,9 +607,9 @@ class mission_04_01_marco
     object = "grad_groom";
 };
 
-class mission_04_02_isabella
+class mission_04_02_isa
 {
-    name = "mission_04_02_isabella";
+    name = "mission_04_02_isa";
     sound[] = { "USER\sounds\mission_04_02_isa.ogg", 2, 1, 100 };
     titles[] = {
         0, "Isabella: Yes. It smells like rotting fish and bad decisions. Why are we stopping in a toilet?"
@@ -619,9 +631,9 @@ class mission_04_03_marco
     object = "grad_groom";
 };
 
-class mission_04_04_isabella
+class mission_04_04_isa
 {
-    name = "mission_04_04_isabella";
+    name = "mission_04_04_isa";
     sound[] = { "USER\sounds\mission_04_04_isa.ogg", 2, 1, 100 };
     titles[] = {
         0, "Isabella: Connected?! You mean where I got a leech on my inner thigh?! That was not romance, Marco! That was a medical emergency!"
@@ -643,9 +655,9 @@ class mission_04_05_marco
     object = "grad_groom";
 };
 
-class mission_04_06_isabella
+class mission_04_06_isa
 {
-    name = "mission_04_06_isabella";
+    name = "mission_04_06_isa";
     sound[] = { "USER\sounds\mission_04_06_isa.ogg", 2, 1, 100 };
     titles[] = {
         0, "Isabella: You want me to stand in sludge in a Vera Wang dress? You are mentally ill."
@@ -660,16 +672,16 @@ class mission_04_07_marco
     name = "mission_04_07_marco";
     sound[] = { "USER\sounds\mission_04_07_marco.ogg", 2, 1, 100 };
     titles[] = {
-        0, "Marco: But look at the 'Golden Hour' sunlight. It will make your skin look like caramel. Think of the hashtag. #SwampQueen."
+        0, "Marco: But look at that sunlight. It will make your skin look like caramel. Think of the hashtag. #SwampQueen."
     };
     duration = 6;
     avatar = "user\rscMessage\marco.paa";
     object = "grad_groom";
 };  
 
-class mission_04_08_isabella
+class mission_04_08_isa
 {
-    name = "mission_04_08_isabella";
+    name = "mission_04_08_isa";
     sound[] = { "USER\sounds\mission_04_08_isa.ogg", 2, 1, 100 };
     titles[] = {
         0, "Isabella: ...#SwampQueen? Is that trending? The light *is* very flattering..."
@@ -679,9 +691,9 @@ class mission_04_08_isabella
     object = "grad_bride";
 };
 
-class mission_04_09_isabella
+class mission_04_09_isa
 {
-    name = "mission_04_09_isabella";
+    name = "mission_04_09_isa";
     sound[] = { "USER\sounds\mission_04_09_isa.ogg", 2, 1, 100 };
     titles[] = {
         0, "Isabella: Fine! But hurry up before the mosquitoes find us!"
@@ -691,7 +703,7 @@ class mission_04_09_isabella
     object = "grad_bride";
 };
 
-class mission_04_10_isabella
+class mission_04_10_isa
 {
     name = "mission_04_10_isa";
     sound[] = { "USER\sounds\mission_04_10_isa.ogg", 2, 1, 100 };

@@ -124,7 +124,7 @@ fnc_handleWeddingPhase = {
             [
                 true, 
                 ["task_photo2"], 
-                ["Another photo spot from the past. Park here and snap some pictures with the camera from the car.", "POI: The Romantic Photo"], 
+                ["Another photo spot from the past. Park here and snap some pictures with the camera from the car.", "POI: Another Romantic Photo"], 
                 _taskPos, 
                 "ASSIGNED", 
                 1, 
@@ -153,7 +153,7 @@ fnc_handleWeddingPhase = {
             [
                 true, 
                 ["task_escort_" + str mission_escort_stage], 
-                ["Proceed to the church. Max 30 km/h.", "mrk_church"], 
+                ["Proceed to the church. Max 35 km/h.", "Church Escort"],
                 _taskPos, // Hier idealerweise die Position der Kirche übergeben
                 "ASSIGNED", 
                 1, 

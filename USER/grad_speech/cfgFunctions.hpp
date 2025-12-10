@@ -4,6 +4,9 @@ class grad_speech{
 		file = "USER\grad_speech";
 		
 		class intro;
-        class mission;
+        class mission1;
+		class mission2;
+		class mission3;
+		class mission4;
 	};
 };

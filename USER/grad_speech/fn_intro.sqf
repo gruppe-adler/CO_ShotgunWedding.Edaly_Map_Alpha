@@ -39,4 +39,10 @@
     missionNameSpace getVariable ["grad_landingDone", false]
 },{
     ["START"] remoteExec ["fnc_handleWeddingPhase", 2];
+
+    // todo maybe start one after the other completed? but trigger area should also make sure no overlap happens
+    [] remoteExec ["grad_speech_fnc_mission1", 2];
+    [] remoteExec ["grad_speech_fnc_mission2", 2];
+    [] remoteExec ["grad_speech_fnc_mission3", 2];
+    [] remoteExec ["grad_speech_fnc_mission4", 2];
 }] call CBA_fnc_waitUntilAndExecute;
