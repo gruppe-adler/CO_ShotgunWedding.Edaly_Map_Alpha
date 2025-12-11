@@ -3,6 +3,7 @@ class grad_hairDresser {
 		tag = "grad_hairDresser";
 		file = "USER\grad_hairDresser";
 		
+		class initUnits {};
 		class startAttack {};
 	};
 };

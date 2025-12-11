@@ -17,9 +17,13 @@ _bride setObjectTextureGlobal [0, "#(rgb,8,8,3)color(1,1,1,1)"];
 _bride setObjectTextureGlobal [1, "#(rgb,8,8,3)color(0.2,0.05,0.2,1)"];
 
 // hair/head
-[_bride, "max_female12"] remoteExec ["setFace", 0, true];
+// [_bride, "max_female12"] remoteExec ["setFace", 0, true];
 
-[_bride, "Isabella"] remoteExec ["setIdentity", 0, _bride];
+[{
+	params ["_bride"];
+	[_bride, "Isabella"] remoteExec ["setIdentity", 0, _bride];
+}, [_bride], 5] call CBA_fnc_waitAndExecute;
+
 
 _bride assignAsCargoIndex [grad_couplevehicle, 4];
 

@@ -50,5 +50,15 @@ class CfgIdentities
 		pitch = 1.0;
 		speaker = "Male01ENG";
 	};
+
+	class Priest
+	{
+		face = "Santorum";
+		glasses = "";
+		name = "Priest Santorum";
+		nameSound = "Adams";
+		pitch = 1.0;
+		speaker = "Male01ENG";
+	};
     
 };
