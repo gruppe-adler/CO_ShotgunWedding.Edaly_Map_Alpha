@@ -10,3 +10,4 @@
 #include "grad_church\cfgFunctions.hpp"
 #include "grad_bankrobbery\cfgFunctions.hpp"
 #include "grad_speech\cfgFunctions.hpp"
+#include "grad_hairDresser\cfgFunctions.hpp"

@@ -18,9 +18,9 @@
 */
 
 
-loadoutFactionBlu = "SWAT";
+loadoutFactionBlu = "";
 loadoutFactionOpf = "";
-loadoutFactionInd = "";
+loadoutFactionInd = "SWAT";
 
 // Achtung: grad-factions enthält derzeit keine Loadouts, die für Zivilisten funktionieren
 loadoutFactionCiv = "";

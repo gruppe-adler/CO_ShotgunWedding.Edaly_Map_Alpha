@@ -133,3 +133,10 @@
 
   [_position, _priest] remoteExec ["grad_church_fnc_headshot", 2];
 }] call zen_custom_modules_fnc_register;
+
+["SHOTGUN WEDDING - HAIR DRESSER", "Start Attack",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] call GRAD_HAIRDRESSER_fnc_startAttack;
+}] call zen_custom_modules_fnc_register;
