@@ -19,3 +19,5 @@ _blood setPos getPos _unit;
 [_unit] remoteExec ["grad_church_fnc_headshotFX", 0];
 
 ["church_headshot", []] call CBA_fnc_globalEvent;
+
+[] call GRAD_CHURCH_fnc_civilianEscape;

@@ -5,7 +5,8 @@ class grad_church{
 		
 		class headshot;
         class headshotFX;
-        class civilianPanic { postInit = 1; };
-        class overrideCameraFnc { postInit = 1; };
+        class civilianEscape;
+		class civilianPanic { postInit = 1; };
+        class overrideCameraFnc { postInit = 1; };		
 	};
 };
