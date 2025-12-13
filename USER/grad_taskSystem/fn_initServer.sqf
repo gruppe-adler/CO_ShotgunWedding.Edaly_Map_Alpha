@@ -171,7 +171,7 @@ fnc_handleWeddingPhase = {
             [
                 true, 
                 ["task_survive"], 
-                ["Marco has betrayed us! Secure the bride (if she's alive) and regroup.", "WARNING: Betrayal"], 
+                ["Marco has betrayed us! Secure the bride and regroup.", "WARNING: Betrayal"], 
                 objNull, 
                 "ASSIGNED", 
                 1, 
@@ -185,12 +185,13 @@ fnc_handleWeddingPhase = {
 
         // --- PHASE 3: REVENGE (Finale) ---
         case "FINALE": {
+            private _taskPos = getMarkerPos "mrk_villa"; // ZIEL: PHOTO SPOT 1
             ["task_survive", "SUCCEEDED"] call BIS_fnc_taskSetState;
 
             [
                 true, 
                 ["task_kill_marco"], 
-                ["Marco has to be eliminated. He probably hides in his mansion.", "Target Elimination: Marco", "mrk_villa"], 
+                ["Marco has to be eliminated. He probably hides in his mansion.", "Target Elimination: Marco"], 
                 _taskPos, 
                 "ASSIGNED", 
                 1, 
@@ -198,6 +199,38 @@ fnc_handleWeddingPhase = {
                 "loc_destroy", 
                 true
             ] call BIS_fnc_taskCreate;
+        };
+
+
+         // --- PHASE 3: REVENGE (Finale) ---
+        case "EXTRACTION": {
+            ["task_kill_marco", "SUCCEEDED"] call BIS_fnc_taskSetState;
+
+            private _taskPos = getMarkerPos "mrk_extract"; // AIRPORT
+            [
+                true, 
+                ["task_extract"], 
+                ["Escape the island", "Extraction"], 
+                _taskPos, 
+                "ASSIGNED", 
+                1, 
+                true, 
+                "c_plane", 
+                true
+            ] call BIS_fnc_taskCreate;
+        };
+
+
+        case "EXTRACTION_DONE": {
+            ["task_extract", "SUCCEEDED"] call BIS_fnc_taskSetState;
+
+            // 
+
+            [] spawn {
+                sleep 10;
+
+                ["end1", true, 5] remoteExec ["BIS_fnc_endMission"];
+            };
         };
     };
 };

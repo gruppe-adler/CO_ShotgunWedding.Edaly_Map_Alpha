@@ -13,7 +13,7 @@ class CfgIdentities
 {
 	class Isabella
 	{
-		face = "max_female12";
+		face = "max_female13";
 		glasses = "";
 		name = "Isabella";
 		nameSound = "Adams";

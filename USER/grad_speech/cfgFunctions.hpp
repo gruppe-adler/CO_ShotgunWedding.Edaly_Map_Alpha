@@ -8,5 +8,9 @@ class grad_speech{
 		class mission2;
 		class mission3;
 		class mission4;
+		class mission5;
+		class mission6;
+		class mission7;
+		class convoySpeed;
 	};
 };

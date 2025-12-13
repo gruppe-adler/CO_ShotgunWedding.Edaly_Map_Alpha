@@ -46,6 +46,13 @@
 }] call zen_custom_modules_fnc_register;
 
 
+["SHOTGUN WEDDING - CONVOY SPEED", "Isabella Complains",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_speech_fnc_convoySpeed", 2];
+}] call zen_custom_modules_fnc_register;
+
 
 /*
 
@@ -89,20 +96,50 @@
 }] call zen_custom_modules_fnc_register;
 
 
-
-["SHOTGUN WEDDING - COUPLE", "Spawn Bride",
+["SHOTGUN WEDDING - 02 BANK", "AlarmBell",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-  [asltoagl _position] call grad_bridegroom_fnc_createBride;
+  [] remoteExec ["grad_bankrobbery_fnc_alarmBell", 2];
 }] call zen_custom_modules_fnc_register;
 
-["SHOTGUN WEDDING - COUPLE", "Spawn Groom",
+["SHOTGUN WEDDING - 03 HAIR DRESSER", "Start Attack",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-  [asltoagl _position] call grad_bridegroom_fnc_createGroom;
+  [] call GRAD_HAIRDRESSER_fnc_startAttack;
 }] call zen_custom_modules_fnc_register;
+
+
+["SHOTGUN WEDDING - 03 HAIR DRESSER", "Make Isa Banter",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["GRAD_HAIRDRESSER_fnc_hairDresserBanter", 2];
+}] call zen_custom_modules_fnc_register;
+
+["SHOTGUN WEDDING - 03 HAIR DRESSER", "Put Flowers in Hair",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["GRAD_HAIRDRESSER_fnc_addHair", 2];
+}] call zen_custom_modules_fnc_register;
+
+
+["SHOTGUN WEDDING - 05 CHURCH", "ChurchBell",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_church_fnc_churchBell", 2];
+}] call zen_custom_modules_fnc_register;
+
+["SHOTGUN WEDDING - 05 CHURCH", "Isabella nags to go to the Church",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_church_fnc_letsGo", 2];
+}] call zen_custom_modules_fnc_register;
+
 
 ["SHOTGUN WEDDING - RICO", "Spawn Rico",
 {
@@ -122,7 +159,41 @@
 }] call zen_custom_modules_fnc_register;
 
 
-["SHOTGUN WEDDING - CHURCH", "Headshot (manual)",
+
+["SHOTGUN WEDDING - MARCO", "Make Marco vulnerable",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  private _marco = missionNameSpace getVariable ["grad_groom", objNull];
+  if (isNull _marco) exitWith {
+      "ERROR: Marco not found!" call CBA_fnc_notify;
+  };
+
+  [_marco, true] remoteExec ["allowDamage", _marco];
+  "Marco damage allowed!" call CBA_fnc_notify;
+  
+}] call zen_custom_modules_fnc_register;
+
+
+
+["SHOTGUN WEDDING - DEBUG - COUPLE", "Spawn Bride",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [asltoagl _position] call grad_bridegroom_fnc_createBride;
+}] call zen_custom_modules_fnc_register;
+
+["SHOTGUN WEDDING - DEBUG - COUPLE", "Spawn Groom",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [asltoagl _position] call grad_bridegroom_fnc_createGroom;
+}] call zen_custom_modules_fnc_register;
+
+
+
+
+["SHOTGUN WEDDING - DEBUG - CHURCH", "Headshot (manual)",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
@@ -132,11 +203,4 @@
   };
 
   [_position, _priest] remoteExec ["grad_church_fnc_headshot", 2];
-}] call zen_custom_modules_fnc_register;
-
-["SHOTGUN WEDDING - HAIR DRESSER", "Start Attack",
-{
-  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
-
-  [] call GRAD_HAIRDRESSER_fnc_startAttack;
 }] call zen_custom_modules_fnc_register;

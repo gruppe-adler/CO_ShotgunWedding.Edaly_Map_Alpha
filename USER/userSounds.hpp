@@ -779,6 +779,129 @@ class mission_05_05_isa
 };
 
 
+class church_letsgo_1
+{
+    name = "church_letsgo_1";
+    sound[] = { "USER\sounds\church_letsgo_1.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Can we please go to the Church? VAMOS!"
+    };
+    duration = 4;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class church_letsgo_2
+{
+    name = "church_letsgo_2";
+    sound[] = { "USER\sounds\church_letsgo_2.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Driver, to the Church!"
+    };
+    duration = 3;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class church_letsgo_3
+{
+    name = "church_letsgo_3";
+    sound[] = { "USER\sounds\church_letsgo_3.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Wonderful shooting. Very masculine. Now, do your job and drive us to the altar. We are late!"
+    };
+    duration = 8;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class church_letsgo_4
+{
+    name = "church_letsgo_4";
+    sound[] = { "USER\sounds\church_letsgo_4.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Enough sightseeing! The priest is waiting, the guests are waiting, and I am sweating! To the Church!"
+    };
+    duration = 8;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class church_letsgo_5
+{
+    name = "church_letsgo_5";
+    sound[] = { "USER\sounds\church_letsgo_5.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Lets proceed to the church!"
+    };
+    duration = 3;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class church_letsgo_6
+{
+    name = "church_letsgo_6";
+    sound[] = { "USER\sounds\church_letsgo_6.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: What are you waiting for, to the church!"
+    };
+    duration = 3;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+
+
+class notsofast_1
+{
+    name = "notsofast_1";
+    sound[] = { "USER\sounds\notsofast_1.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Not so fast! My champagne spills over!"
+    };
+    duration = 4;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+
+class notsofast_2
+{
+    name = "notsofast_2";
+    sound[] = { "USER\sounds\notsofast_2.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Drive slower you maniacs!"
+    };
+    duration = 3;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class notsofast_3
+{
+    name = "notsofast_3";
+    sound[] = { "USER\sounds\notsofast_3.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Can we please have some solemn driving?! I will report this to Pa!"
+    };
+    duration = 5;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+
+
+class churchbell
+{
+    name = "churchbell";
+    sound[] = { "USER\sounds\churchbell.ogg", 2, 1, 100 };
+    titles[] = {
+        0, ""
+    };
+};
+
+
 
 
 

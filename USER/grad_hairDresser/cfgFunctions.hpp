@@ -5,5 +5,6 @@ class grad_hairDresser {
 		
 		class initUnits { postInit = 1; };
 		class startAttack {};
+		class addHair;
 	};
 };

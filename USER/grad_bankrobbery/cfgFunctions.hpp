@@ -4,5 +4,6 @@ class grad_bankrobbery{
 		file = "USER\grad_bankrobbery";
 		
 		class openDoors;
+		class alarmBell;
 	};
 };

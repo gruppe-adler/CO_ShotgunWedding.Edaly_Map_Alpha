@@ -3,11 +3,13 @@ class grad_church{
 		tag = "grad_church";
 		file = "USER\grad_church";
 		
+		class churchBell;
 		class headshot;
         class headshotFX;
         class civilianEscape;
 		class civilianPanic { postInit = 1; };
         class overrideCameraFnc { postInit = 1; };		
 		class churchBanter;
+		class letsGo;
 	};
 };
