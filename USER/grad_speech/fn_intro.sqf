@@ -46,3 +46,6 @@
     [] remoteExec ["grad_speech_fnc_mission3", 2];
     [] remoteExec ["grad_speech_fnc_mission4", 2];
 }] call CBA_fnc_waitUntilAndExecute;
+
+
+[] remoteExec ["grad_speech_fnc_introLocal", 0];

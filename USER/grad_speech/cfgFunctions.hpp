@@ -12,5 +12,6 @@ class grad_speech{
 		class mission6;
 		class mission7;
 		class convoySpeed;
+		class introLocal;
 	};
 };
