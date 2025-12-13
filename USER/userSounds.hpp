@@ -21,6 +21,37 @@ class remote_end
     titles[] = {0, ""};
 };
 
+
+class churchbell
+{
+    name = "churchbell";
+    sound[] = { "USER\sounds\churchbell.ogg", 2, 1, 100 };
+    titles[] = {
+        0, ""
+    };
+};
+
+
+class music_intro
+{
+    name = "music_intro";
+    sound[] = { "USER\sounds\music_intro.ogg", 2, 1, 100 };
+    titles[] = {
+        0, ""
+    };
+};
+
+
+class music_outro
+{
+    name = "music_outro";
+    sound[] = { "USER\sounds\music_outro.ogg", 2, 1, 100 };
+    titles[] = {
+        0, ""
+    };
+};
+
+
 class rico
 {
     name = "rico";
@@ -593,6 +624,40 @@ class mission_03_11_marco
     object = "grad_groom";
 };
 
+
+class 03b_01_isa {
+    name = "03b_01_isa";
+    sound[] = { "USER\sounds\03b_01_isa.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Hey, can you do the killing a bit more quietly? Pierre is pissing himself already!"
+    };
+    duration = 6;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class 03b_02_isa {
+    name = "03b_02_isa";
+    sound[] = { "USER\sounds\03b_02_isa.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Keep those fuckers away from me. I need Pierre to finish his job!"
+    };
+    duration = 5;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class 03b_03_isa {
+    name = "03b_03_isa";
+    sound[] = { "USER\sounds\03b_03_isa.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Pierre, stop hiding, finish my coiffure!"
+    };
+    duration = 4;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
 // PHOTO 2 SWAMP - MISSION 04
 
 class mission_04_01_marco
@@ -779,6 +844,178 @@ class mission_05_05_isa
 };
 
 
+// FINALE MISSION 06 - MANSION
+
+class mission_06_01_isa
+{
+    name = "mission_06_01_isa";
+    sound[] = { "USER\sounds\mission_06_01_isa.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Seems like the wedding is cancelled. Take me to the mansion. I have a husband to butcher."
+    };
+    duration = 7;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class mission_06_02_isa
+{
+    name = "mission_06_02_isa";
+    sound[] = { "USER\sounds\mission_06_02_isa.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: To the mansion! Driver! I know he is there counting my fathers money! VAMOS!"
+    };
+    duration = 7;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+
+class mission_06b_01_isa
+{
+    name = "mission_06b_01_isa";
+    sound[] = { "USER\sounds\mission_06b_01_isa.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: MARCO! You pathetic little gusano! When I find you, I will rip your heart out with my manicured nails!"
+    };
+    duration = 9;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class mission_06b_01_marco
+{
+    name = "mission_06b_01_marco";
+    sound[] = { "USER\sounds\mission_06b_01_marco.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Marco: I can hear her screaming from here. She sounds like a chainsaw in a silk dress."
+    };
+    duration = 4;
+    avatar = "user\rscMessage\marco.paa";
+    object = "grad_groom";
+};
+
+class mission_06b_02_isa
+{
+    name = "mission_06b_02_isa";
+    sound[] = { "USER\sounds\mission_06b_02_isa.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: That cheap, lying cabrón! He thinks he can hide? I will burn this entire island down to find him!"
+    };
+    duration = 8;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class mission_06b_02_marco
+{
+    name = "mission_06b_02_marco";
+    sound[] = { "USER\sounds\mission_06b_02_marco.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Marco: Keep that crazy woman away from me! "
+    };
+    duration = 3;
+    avatar = "user\rscMessage\marco.paa";
+    object = "grad_groom";
+};
+
+class mission_06b_03_isa
+{
+    name = "mission_06b_03_isa";
+    sound[] = { "USER\sounds\mission_06b_03_isa.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: I swear on my mother’s grave, Marco is a dead man! A dead, stupid, ugly man! Pendejo!"
+    };
+    duration = 8;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class mission_06b_03_marco
+{
+    name = "mission_06b_03_marco";
+    sound[] = { "USER\sounds\mission_06b_03_marco.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Marco: How is she still coming?! She is like the Terminator in high heels!"
+    };
+    duration = 4;
+    avatar = "user\rscMessage\marco.paa";
+    object = "grad_groom";
+};
+
+class mission_06b_04_marco
+{
+    name = "mission_06b_04_marco";
+    sound[] = { "USER\sounds\mission_06b_04_marco.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Marco: Why wont she just die?!"
+    };
+    duration = 4;
+    avatar = "user\rscMessage\marco.paa";
+    object = "grad_groom";
+};
+
+class mission_06b_05_isa_alligators
+{
+    name = "mission_06b_05_isa_alligators";
+    sound[] = { "USER\sounds\mission_06b_05_isa_alligators.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: I will cut off your cojones and feed them to the alligators! Hijo de puta!"
+    };
+    duration = 6;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class mission_06b_05_marco_alligators
+{
+    name = "mission_06b_05_marco_alligators";
+    sound[] = { "USER\sounds\mission_06b_05_marco_alligators.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Marco: Did you hear what she said? She wants to feed my 'parts' to the alligators! Who says that?! That is not a wife, that is a war crime! Shoot her!"
+    };
+    duration = 8;
+    avatar = "user\rscMessage\marco.paa";
+    object = "grad_groom";
+};
+
+class mission_06b_06_isa
+{
+    name = "mission_06b_06_isa";
+    sound[] = { "USER\sounds\mission_06b_06_isa.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Where are you, Marco, I want to fuck with you. In a very bloody way!"
+    };
+    duration = 6;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class mission_06b_06_marco
+{
+    name = "mission_06b_06_marco";
+    sound[] = { "USER\sounds\mission_06b_06_marco.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Marco: Oh god, she is getting closer. I can feel it. Stop her!"
+    };
+    duration = 6;
+    avatar = "user\rscMessage\marco.paa";
+    object = "grad_groom";
+};
+
+class mission_06b_07_marco
+{
+    name = "mission_06b_07_marco";
+    sound[] = { "USER\sounds\mission_06b_07_marco.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Marco: Don't let her in! She will peel my face off!"
+    };
+    duration = 6;
+    avatar = "user\rscMessage\marco.paa";
+    object = "grad_groom";
+};
+
+
 class church_letsgo_1
 {
     name = "church_letsgo_1";
@@ -891,19 +1128,100 @@ class notsofast_3
 };
 
 
-
-class churchbell
+class ricosdeath_01
 {
-    name = "churchbell";
-    sound[] = { "USER\sounds\churchbell.ogg", 2, 1, 100 };
+    name = "ricosdeath_01";
+    sound[] = { "USER\sounds\ricosdeath_01.ogg", 2, 1, 100 };
     titles[] = {
-        0, ""
+        0, "Isabella: Rico! No! ... Ay, pobrecito. He always said he would take a bullet for me."
     };
+    duration = 6;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
 };
+
+class ricosdeath_02
+{
+    name = "ricosdeath_02";
+    sound[] = { "USER\sounds\ricosdeath_02.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: I just didn't think he would be so literal."
+    };
+    duration = 6;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class ricosdeath_03
+{
+    name = "ricosdeath_03";
+    sound[] = { "USER\sounds\ricosdeath_03.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: It is tragic... but kind of hot, no?"
+    };
+    duration = 5;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+
+class gimmegun_01 
+{
+    name = "gimmegun_01";
+    sound[] = { "USER\sounds\gimmegun_01.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Give me a gun! Not the little pistol, give me the big one with the belt! I want to shoot something!"
+    };
+    duration = 7;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+}
+
+class gimmegun_02
+{
+    name = "gimmegun_02";
+    sound[] = { "USER\sounds\gimmegun_02.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: You shoot like a grandma! [annoyed] Give me that rifle! I will kill that son of a bitch myself!"
+    };
+    duration = 7;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+}
+
+class gimmegun_03
+{
+    name = "gimmegun_03";
+    sound[] = { "USER\sounds\gimmegun_03.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Pass me a weapon! I am not a damsel, I am a Rodriguez! Give it to me!"
+    };
+    duration = 7;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+}
+
+class gimmegun_04
+{
+    name = "gimmegun_04";
+    sound[] = { "USER\sounds\gimmegun_04.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Why is nobody giving me a gun?!"
+    };
+    duration = 4;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+}
+
+
 
 
 
 /*
+
+// reaction to ricos death
+
+Rico! No! ... [sighs] Ay, pobrecito. He always said he would take a bullet for me. I just didn't think he would be so literal. It is tragic... [seducing] but kind of hot, no?
 
 // hairdresser
 
