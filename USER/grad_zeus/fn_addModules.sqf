@@ -174,6 +174,20 @@
   
 }] call zen_custom_modules_fnc_register;
 
+["SHOTGUN WEDDING - ISA", "Make Isa vulnerable",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  private _isa = missionNameSpace getVariable ["grad_bride", objNull];
+  if (isNull _isa) exitWith {
+      "ERROR: Isa not found!" call CBA_fnc_notify;
+  };
+
+  [_isa, true] remoteExec ["allowDamage", _isa];
+  "Isa damage allowed!" call CBA_fnc_notify;
+  
+}] call zen_custom_modules_fnc_register;
+
 
 
 ["SHOTGUN WEDDING - DEBUG - COUPLE", "Spawn Bride",
