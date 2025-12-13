@@ -14,5 +14,6 @@ class grad_bridegroom{
 		class landingFlightData;
 		class landingFlight;
 		class tinCanTrail;
+		class priest;
 	};
 };

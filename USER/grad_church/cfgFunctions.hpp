@@ -8,5 +8,6 @@ class grad_church{
         class civilianEscape;
 		class civilianPanic { postInit = 1; };
         class overrideCameraFnc { postInit = 1; };		
+		class churchBanter;
 	};
 };

@@ -586,7 +586,7 @@ class mission_03_11_marco
     name = "mission_03_11_marco";
     sound[] = { "USER\sounds\mission_03_11_marco.ogg", 2, 1, 100 };
     titles[] = {
-        0, "Marco: Okay... she is inside. Three, two, one... where are they? It should be happening now."
+        0, "Marco: Okay... she is inside. Now its waiting time."
     };
     duration = 7;
     avatar = "user\rscMessage\marco.paa";
@@ -714,6 +714,71 @@ class mission_04_10_isa
     avatar = "user\rscMessage\isabella.paa";
     object = "grad_bride";
 };
+
+
+// CHURCH SCENE - MISSION 05
+
+class mission_05_01_priest
+{
+    name = "mission_05_01_priest";
+    sound[] = { "USER\sounds\mission_05_01_priest.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Priest: Ah, Isabella! My child! You are... late. Very late. The guests are getting restless."
+    };
+    duration = 10.5;
+    avatar = "user\rscMessage\priest.paa";
+    object = "grad_priest";
+};
+
+class mission_05_02_isa
+{
+    name = "mission_05_02_isa";
+    sound[] = { "USER\sounds\mission_05_02_isa.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Oh Father, relax. A queen is never late, everyone else is just early. Look at me! Is the dress not divine!?"
+    };
+    duration = 8;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class mission_05_03_marco
+{
+    name = "mission_05_03_marco";
+    sound[] = { "USER\sounds\mission_05_03_marco.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Marco: Wait! We must document this moment. The bride and the holy man! Perfect for the album."
+    };
+    duration = 7;
+    avatar = "user\rscMessage\marco.paa";
+    object = "grad_groom";
+};
+
+class mission_05_04_isa
+{
+    name = "mission_05_04_isa";
+    sound[] = { "USER\sounds\mission_05_04_isa.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Driver! Take a photo of us! And then we will finally have our wedding!"
+    };
+    duration = 3;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class mission_05_05_isa
+{
+    name = "mission_05_05_isa";
+    sound[] = { "USER\sounds\mission_05_05_isa.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: SMILE!"
+    };
+    duration = 2;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+
 
 
 

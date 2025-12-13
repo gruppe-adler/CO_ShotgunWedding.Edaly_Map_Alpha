@@ -80,7 +80,7 @@ if (_sound == "none") then {
 	};
 } else {
 	if (!isNull _unit && {player distance _unit < 5}) then {
-		_soundID = _unit say3d [_sound, 100];
+		_soundID = _unit say3d [_sound, 150];
 		_unit setRandomLip true;
 	} else {
 		_soundID = playSoundUI [_sound];

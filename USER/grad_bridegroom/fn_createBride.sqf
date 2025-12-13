@@ -27,6 +27,8 @@ _bride setObjectTextureGlobal [1, "#(rgb,8,8,3)color(0.2,0.05,0.2,1)"];
 
 _bride assignAsCargoIndex [grad_couplevehicle, 4];
 
+_bride allowDamage false;
+
 _bride
 // bride hair decoration
 /*

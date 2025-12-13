@@ -20,4 +20,6 @@ _groom setUnitLoadout  [[],[],[],["U_C_FormalSuit_01_blue_F",[]],[],[],"H_StrawH
 
 _groom assignAsCargoIndex [grad_couplevehicle, 2];
 
+_groom allowDamage false;
+
 _groom
