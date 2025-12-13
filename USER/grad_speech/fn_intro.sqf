@@ -1,4 +1,5 @@
 
+params ["_plane"];
 
 [] spawn {
     sleep 10;
@@ -13,6 +14,10 @@
             private _avatar = getText (missionConfigFile >> "CfgSounds" >> _audioID >> "avatar");
             private _text = getArray (missionConfigFile >> "CfgSounds" >> _audioID >> "titles") select 1;
             private _object = call compile (getText (missionConfigFile >> "CfgSounds" >> _audioID >> "object"));
+
+            if (_audioID == "intro_08_marco") then {
+                ["music_intro"] remoteExec ["playsound", 0];
+            };
             
             [[_object, _text, _audioID, _duration, _avatar], "user\rscMessage\createMessageRsc.sqf"] remoteExec ["bis_fnc_execVM"];
         }, [_x]] call CBA_fnc_waitUntilAndExecute;   
@@ -48,4 +53,4 @@
 }] call CBA_fnc_waitUntilAndExecute;
 
 
-[] remoteExec ["grad_speech_fnc_introLocal", 0];
+[_plane] remoteExec ["grad_speech_fnc_introLocal", 0];

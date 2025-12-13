@@ -35,7 +35,7 @@
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
   [] remoteExec ["grad_bridegroom_fnc_landingFlight", 2];
-  [] remoteExec ["grad_speech_fnc_intro", 2];
+  
 }] call zen_custom_modules_fnc_register;
 
 ["SHOTGUN WEDDING - MISSION PROGRESS", "Resume Main Mission",
@@ -44,6 +44,17 @@
 
   ["RESUME"] remoteExec ["fnc_handleWeddingPhase", 2];
 }] call zen_custom_modules_fnc_register;
+
+
+["SHOTGUN WEDDING - MISSION PROGRESS", "Start Outro / End Mission",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  ["EXTRACTION_DONE"] remoteExec ["fnc_handleWeddingPhase", 2];
+  
+}] call zen_custom_modules_fnc_register;
+
+
 
 
 ["SHOTGUN WEDDING - CONVOY SPEED", "Isabella Complains",

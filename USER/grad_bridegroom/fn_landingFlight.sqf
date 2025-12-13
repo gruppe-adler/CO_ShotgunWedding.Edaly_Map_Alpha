@@ -36,6 +36,7 @@ _bride moveInCargo _plane;
 _groom moveInCargo _plane;
 
 
+[_plane] remoteExec ["grad_speech_fnc_intro", 2];
 
 [{
     params ["_plane"];

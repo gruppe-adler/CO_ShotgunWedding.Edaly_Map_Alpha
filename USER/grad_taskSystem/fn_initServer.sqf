@@ -224,10 +224,10 @@ fnc_handleWeddingPhase = {
         case "EXTRACTION_DONE": {
             ["task_extract", "SUCCEEDED"] call BIS_fnc_taskSetState;
 
-            // 
+            ["music_outro"] remoteExec ["playsound", 0];
 
             [] spawn {
-                sleep 10;
+                sleep 30;
 
                 ["end1", true, 5] remoteExec ["BIS_fnc_endMission"];
             };
