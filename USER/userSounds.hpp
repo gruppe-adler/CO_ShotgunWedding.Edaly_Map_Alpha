@@ -844,6 +844,57 @@ class mission_05_05_isa
 };
 
 
+
+
+class mission_05b_01_isa
+{
+    name = "mission_05b_01_isa";
+    sound[] = { "USER\sounds\mission_05b_01_isa.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Dios mio! Father Santorum! ... All that blood!"
+    };
+    duration = 6;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class mission_05b_02_isa
+{
+    name = "mission_05b_02_isa";
+    sound[] = { "USER\sounds\mission_05b_02_isa.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Who the fuck dares to meddle with MY wedding?!!"
+    };
+    duration = 5;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class mission_05b_03_isa
+{
+    name = "mission_05b_03_isa";
+    sound[] = { "USER\sounds\mission_05b_03_isa.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Find the assassin you useless fucks!"
+    };
+    duration = 4;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class mission_05b_04_isa
+{
+    name = "mission_05b_04_isa";
+    sound[] = { "USER\sounds\mission_05b_04_isa.ogg", 2, 1, 100 };
+    titles[] = {
+        0, "Isabella: Dios mio! Where is Marco?! Did he...? [screaming][rage] Hijo de puta, I will kill him!"
+    };
+    duration = 9;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+
 // FINALE MISSION 06 - MANSION
 
 class mission_06_01_isa
@@ -998,7 +1049,7 @@ class mission_06b_06_marco
     titles[] = {
         0, "Marco: Oh god, she is getting closer. I can feel it. Stop her!"
     };
-    duration = 6;
+    duration = 3;
     avatar = "user\rscMessage\marco.paa";
     object = "grad_groom";
 };
@@ -1010,7 +1061,7 @@ class mission_06b_07_marco
     titles[] = {
         0, "Marco: Don't let her in! She will peel my face off!"
     };
-    duration = 6;
+    duration = 3;
     avatar = "user\rscMessage\marco.paa";
     object = "grad_groom";
 };
