@@ -723,7 +723,7 @@ class mission_05_01_priest
     name = "mission_05_01_priest";
     sound[] = { "USER\sounds\mission_05_01_priest.ogg", 2, 1, 100 };
     titles[] = {
-        0, "Priest: Ah, Isabella! My child! You are... late. Very late. The guests are getting restless."
+        0, "Priest Santorum: Ah, Isabella! My child! You are... late. Very late. The guests are getting restless."
     };
     duration = 10.5;
     avatar = "user\rscMessage\priest.paa";
@@ -903,7 +903,51 @@ class churchbell
 
 
 
+/*
 
+// hairdresser
+
+[Spanish accent]  [shouting] Hey! CAN YOU DO THE KILLING A BIT MORE QUIEtLY? PIERRE IS PISSING HIMSELF ALREADY!
+[Spanish accent]  [shouting] Keep those fuckers away from me. I need Pierre to finish his job!
+[Spanish accent] [shouting] Pierre, stop hiding, FINISH MY COIFFURE!
+
+// marco reacting to isa in villa
+
+[Spanish accent] [panicked] I can hear her screaming from here! She sounds like a chainsaw in a silk dress!
+[Spanish accent] [desperate] [pleading] Keep that crazy woman away from me! 
+[Spanish accent] [terrified] How is she still coming?! She is like the Terminator in high heels! Why won't she just die?!
+[Spanish accent] [hysterical] [crying] Did you hear what she said? She wants to feed my 'parts' to the alligators! Who says that?! That is not a wife, that is a war crime! Shoot her!
+[Spanish accent] [disbelief] [scared] Oh god, she is getting closer. I can feel it. Stop her!
+[Spanish accent] [terrified] Don't let her in! She will peel my face off!
+
+// taunting marco at villa
+
+[Spanish accent] [pure rage] [screaming] MARCO! You pathetic little gusano! When I find you, I will rip your heart out with my manicured nails!
+[Spanish accent] [hysterically angry] I will cut off your cojones and feed them to the alligators! Hijo de puta!
+[Spanish accent] [venomous] [dark], That cheap, lying cabrón! He thinks he can hide? I will burn this entire island down to find him!
+[Spanish accent] [screaming] [crying] I swear on my mother’s grave, Marco is a dead man! A dead, stupid, ugly man! Pendejo! [Spanish accent] [bloodthirsty] [yelling] Marco! You are finished! I will strangle you with my veil, you son of a bitch!
+[Spanish accent] [bloodthirsty] [yelling] Where are you, Marco, I want to fuck with you. In a very bloody way!
+
+// reaction to asssassin
+
+[Spanish accent] [shocked] [gasps] [disbelief to rage] Dios mio! Father Santorum! ... All that blood! [pauses] [shouting] Who the fuck dares to meddle with MY wedding?!!
+[Spanish accent] [shocked]  [disbelief to rage] FIND THE ASSASSIN YOU USELESS FUCKS!
+[Spanish accent] [shocked]Dios mio! [suspicious]Where is Marco?! Did he...? [screaming][rage] HIJO DE PUTA, I WILL KILL HIM!!
+
+
+// to the mansion
+
+[Spanish accent] [cold fury] [determined], Seems like the wedding is cancelled. Take me to the mansion. I have a husband to butcher.
+[Spanish accent] [shouting] To the mansion! Driver! I know he is there counting my fathers money! VAMOS!
+
+// --- WEAPON DEMANDS - GENERIC
+[intense] Give me a gun! [demanding] Not the little pistol, give me the big one with the belt! I want to shoot something!
+[frustrated] You shoot like a grandma! [annoyed] Give me that rifle! I will kill that son of a bitch myself!
+[laughing] I don't care about safety! [crazy] Give me a grenade! I want to throw it at his face!
+[shouting] Pass me a weapon! I am not a damsel, I am a Rodriguez! Give it to me!
+[angry] Why is nobody giving me a gun?! [exhales sharply] I need to reload my anger! Hand it over!
+
+*/
 
 
 
