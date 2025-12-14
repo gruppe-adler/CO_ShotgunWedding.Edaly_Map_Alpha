@@ -1,4 +1,3 @@
-
 params ["_position"];
 
 private _unit = (creategroup civilian) createUnit ["C_Man_1", _position, [], 0, "NONE"];
@@ -15,13 +14,10 @@ _unit setUnitLoadout [[["uk3cb_weap_svd_old_pso1m2","","","rhs_acc_pso1m2",["rhs
 [_unit, "Rico"] remoteExec ["setIdentity", 0, _unit];
 
 // make sure only the server handles death reaction
-_unit addMPEventHandler ["Killed", {
+_unit addMPEventHandler ["MPKilled", {
     params ["_unit", "_killer", "_instigator"];
-
-        if (local _unit) then {
-            [] remoteExec ["grad_bridegroom_fnc_ricosDeathReaction", 2];
-        };
+    
+    if (local _unit) then {
+        [] remoteExec ["grad_bridegroom_fnc_ricosDeathReaction", 2];
     };
-];
-
-_unit
+}];

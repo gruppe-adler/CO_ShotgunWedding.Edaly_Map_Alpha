@@ -25,12 +25,12 @@ _unit addEventHandler ["Dammaged", {
 }];
 
 // make sure only the server handles death reaction
-_unit addMPEventHandler ["Killed", {
+_unit addMPEventHandler ["MPKilled", {
     params ["_unit", "_killer", "_instigator"];
 
-    if (local _unit) then {}
-        [] remoteExec ["grad_bridegroom_fnc_ricosDeathReaction", 2];
-    };
-];
+        if (local _unit) then {
+            [] remoteExec ["grad_bridegroom_fnc_ricosDeathReaction", 2];
+        };
+}];
 
 _unit

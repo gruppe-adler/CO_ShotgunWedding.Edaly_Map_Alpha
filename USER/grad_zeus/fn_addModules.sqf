@@ -179,7 +179,7 @@
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-  [] remoteExec ["grad_bridegroom_fnc_createRicoAssassin", 2];
+  [asltoagl _position] remoteExec ["grad_bridegroom_fnc_createRicoAssassin", 2];
 }] call zen_custom_modules_fnc_register;
 
 

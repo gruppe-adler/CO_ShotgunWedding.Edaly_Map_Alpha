@@ -47,6 +47,17 @@ _groom moveInCargo _plane;
 
     { (_x select 0) leaveVehicle _plane; } forEach fullCrew _plane;
 
+
+    grad_groom setSpeedMode "LIMITED";
+    grad_bride setSpeedMode "LIMITED";
+
+    grad_groom assignAsCargoIndex [grad_couplevehicle, 2];
+    grad_bride assignAsCargoIndex [grad_couplevehicle, 4];
+    [grad_bride, grad_groom] orderGetIn true;
+
+    grad_pilot setSpeedMode "LIMITED";
+    grad_pilot moveTo [4472.41,1775.26,0];
+
     _plane engineOn false;
     missionNameSpace setVariable ["grad_landingDone", true, true];
 }, [_plane]] call CBA_fnc_waitUntilAndExecute;
