@@ -36,6 +36,14 @@ _bride moveInCargo _plane;
 _groom moveInCargo _plane;
 
 
+[{
+    params ["_plane"];
+
+    _plane engineOn true;
+    
+}, [_plane], 5] call CBA_fnc_waitAndExecute;
+
+
 [_plane] remoteExec ["grad_speech_fnc_intro", 2];
 
 [{

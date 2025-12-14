@@ -55,6 +55,14 @@
 }] call zen_custom_modules_fnc_register;
 
 
+["SHOTGUN WEDDING - MISSION PROGRESS", "Couple get in Car",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_bridegroom_fnc_getInCar", 2];
+}] call zen_custom_modules_fnc_register;
+
+
 
 
 ["SHOTGUN WEDDING - CONVOY SPEED", "Isabella Complains",

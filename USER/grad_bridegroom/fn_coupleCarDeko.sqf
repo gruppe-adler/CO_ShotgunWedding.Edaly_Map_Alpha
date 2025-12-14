@@ -31,7 +31,9 @@ _car allowDamage false;
 
     if (speed _car > 40 && _cooldown > 10) then {
         if (!isNil "grad_bride" && {grad_bride in crew _car} && {alive grad_bride}) then {
-            [grad_bride] call grad_speech_fnc_convoySpeed;
+            // [grad_bride] call grad_speech_fnc_convoySpeed;
+
+            ["speeding_limit", []] call CBA_fnc_globalEvent;
             missionNameSpace setVariable ["grad_carspeed_cooldown", -1, true];
         };
     };

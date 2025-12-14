@@ -70,3 +70,16 @@ if (!isServer) exitWith {};
         };
     } forEach allCurators;
 }] call CBA_fnc_addEventHandler;
+
+
+["speeding_limit", {
+
+    // send message to all curators
+    {
+        private _playerAsZeus = getAssignedCuratorUnit _x;
+        if (!isNull _playerAsZeus) then {
+            private _color = [0.5,0.5,0.1,1];
+            ["COUPLE DRIVES ABOVE 40 km/h!", _color] remoteExec ["grad_zeus_fnc_curatorShowFeedbackMessage", _playerAsZeus];
+        };
+    } forEach allCurators;
+}] call CBA_fnc_addEventHandler;

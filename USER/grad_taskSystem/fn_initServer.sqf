@@ -21,7 +21,7 @@ fnc_handleWeddingPhase = {
             [
                 true, 
                 ["task_escort_1"], 
-                ["Bring the bridal couple to the church. Drive CAREFULLY (<30km/h).", "Escort to the Church"], 
+                ["Bring the bridal couple to the church. Drive slow.", "Escort to the Church"], 
                 _taskPos, 
                 "ASSIGNED", 
                 1, 
@@ -153,7 +153,7 @@ fnc_handleWeddingPhase = {
             [
                 true, 
                 ["task_escort_" + str mission_escort_stage], 
-                ["Proceed to the church. Max 35 km/h.", "Church Escort"],
+                ["Proceed to the church. Dont speed.", "Church Escort"],
                 _taskPos, // Hier idealerweise die Position der Kirche übergeben
                 "ASSIGNED", 
                 1, 
@@ -167,6 +167,12 @@ fnc_handleWeddingPhase = {
         case "TWIST": {
             // Alles abbrechen
             ["task_escort_" + str mission_escort_stage, "FAILED"] call BIS_fnc_taskSetState;
+            {
+                if ([_x] call BIS_fnc_taskState == "ASSIGNED") then { 
+                    [_x, "SUCCEEDED"] call BIS_fnc_taskSetState;
+                };
+            } forEach ["task_photo1", "task_photo2", "task_hairdresser", "task_bank", "task_ambush"];
+            
             
             [
                 true, 
@@ -185,6 +191,14 @@ fnc_handleWeddingPhase = {
         case "FINALE": {
             private _taskPos = getMarkerPos "mrk_villa"; // ZIEL: PHOTO SPOT 1
             ["task_survive", "SUCCEEDED"] call BIS_fnc_taskSetState;
+
+            ["task_escort_" + str mission_escort_stage, "FAILED"] call BIS_fnc_taskSetState;
+            {
+                if ([_x] call BIS_fnc_taskState == "ASSIGNED") then { 
+                    [_x, "SUCCEEDED"] call BIS_fnc_taskSetState;
+                };
+            } forEach ["task_photo1", "task_photo2", "task_hairdresser", "task_bank", "task_ambush"];
+            
 
             [
                 true, 
@@ -222,7 +236,7 @@ fnc_handleWeddingPhase = {
         case "EXTRACTION_DONE": {
             ["task_extract", "SUCCEEDED"] call BIS_fnc_taskSetState;
 
-            ["music_outro"] remoteExec ["playsound", 0];
+            [["music_outro", 1]] remoteExec ["playsound", 0];
 
             [] spawn {
                 sleep 30;

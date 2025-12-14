@@ -16,7 +16,7 @@ params ["_plane"];
             private _object = call compile (getText (missionConfigFile >> "CfgSounds" >> _audioID >> "object"));
 
             if (_audioID == "intro_08_marco") then {
-                ["music_intro"] remoteExec ["playsound", 0];
+                [["music_intro", 1]] remoteExec ["playsound", 0];
                 [grad_pilot] remoteExec ["grad_speech_fnc_introLocal", 0];
             };
             

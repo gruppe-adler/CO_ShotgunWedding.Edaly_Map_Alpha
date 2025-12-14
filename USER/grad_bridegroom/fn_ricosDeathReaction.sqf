@@ -1,3 +1,4 @@
+sleep 3;
 
 {
     _x params ["_audioID"];

@@ -1213,7 +1213,7 @@ class mission_05b_04_isa
     sound[] = { "USER\sounds\mission_05b_04_isa.ogg", 2, 1, 100 };
     titles[] = {0, ""};
     customsubtitle[] = {
-        0, "Isabella: Dios mio! Where is Marco?! Did he...? [screaming][rage] Hijo de puta, I will kill him!"
+        0, "Isabella: Dios mio! Where is Marco?! Did he...? Hijo de puta, I will kill him!"
     };
     duration = 9;
     avatar = "user\rscMessage\isabella.paa";
@@ -1415,7 +1415,7 @@ class mission_07_01_donhector
     customsubtitle[] = {
         0, "Don Hector: ION Control... This is Don Hector. I am looking at the drone feed. I see Marco is dead. Good. But... I also see my Isabella."
     };
-    duration = 10;
+    duration = 11;
     avatar = "user\rscMessage\donhector.paa";
     object = "";
 };
@@ -1428,7 +1428,7 @@ class mission_07_02_donhector
     customsubtitle[] = {
         0, "Don Hector: She is not moving. You let my little flower... wither. I paid you for protection. I paid for professionalism."
     };
-    duration = 10;
+    duration = 11;
     avatar = "user\rscMessage\donhector.paa";
     object = "";
 };
@@ -1441,7 +1441,7 @@ class mission_07_03_donhector
     customsubtitle[] = {
         0, "Don Hector: You have failed the contract. There will be no extraction."
     };
-    duration = 10;
+    duration = 11;
     avatar = "user\rscMessage\donhector.paa";
     object = "";
 };
