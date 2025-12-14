@@ -18,7 +18,7 @@ private _distanceFromPlayer = 50;
             [_handle] call CBA_fnc_removePerFrameHandler;
         };
 
-        if (_plane getVariable ["grad_landingDone", false]) exitWith {
+        if (missionNameSpace getVariable ["grad_landingDone", false]) exitWith {
             // Cleanup object and remove handler
             deleteVehicle _textureObj;
             [_handle] call CBA_fnc_removePerFrameHandler;
