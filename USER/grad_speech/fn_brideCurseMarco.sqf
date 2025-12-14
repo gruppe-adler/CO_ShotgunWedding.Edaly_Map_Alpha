@@ -7,7 +7,7 @@ private _audioId = [
     "mission_06b_02_isa",
     "mission_06b_03_isa",
     "mission_06b_04_isa",
-    "mission_06b_05_isa",
+    "mission_06b_05_isa_alligators",
     "mission_06b_06_isa"
 ] select _curseIndex;
 
@@ -28,7 +28,7 @@ private _audioId = [
     "mission_06b_02_marco",
     "mission_06b_03_marco",
     "mission_06b_04_marco",
-    "mission_06b_05_marco",
+    "mission_06b_05_marco_alligators",
     "mission_06b_06_marco"
 ] select _curseIndex;
 

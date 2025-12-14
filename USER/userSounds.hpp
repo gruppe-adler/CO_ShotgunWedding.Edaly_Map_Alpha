@@ -1413,7 +1413,7 @@ class mission_07_01_donhector
     sound[] = { "USER\sounds\mission_07_01_donhector.ogg", 2, 1, 100 };
     titles[] = {0, ""};
     customsubtitle[] = {
-        0, "Don Hector: ION Control... This is Don Hector. I am looking at the drone feed. I see Marco is dead. Good. But... I also see my Isabella."
+        0, "Don Hector: ION Control... This is Don Hector. I am looking at the drone feed. I see Marco is dead. Good."
     };
     duration = 11;
     avatar = "user\rscMessage\donhector.paa";
@@ -1426,7 +1426,7 @@ class mission_07_02_donhector
     sound[] = { "USER\sounds\mission_07_02_donhector.ogg", 2, 1, 100 };
     titles[] = {0, ""};
     customsubtitle[] = {
-        0, "Don Hector: She is not moving. You let my little flower... wither. I paid you for protection. I paid for professionalism."
+        0, "Don Hector: But... I also see my Isabella. She is not moving. You let my little flower... wither. I paid you for protection. I paid for professionalism."
     };
     duration = 11;
     avatar = "user\rscMessage\donhector.paa";
