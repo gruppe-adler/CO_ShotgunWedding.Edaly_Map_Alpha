@@ -6,9 +6,9 @@ _object addAction
         {
             params ["_target", "_caller", "_actionId", "_arguments"]; // script
             
-            _caller attachTo [_target, [0.0217285,0.046875,0.459339]];
-            _caller SetVectorDirAndUp [[-0.0383484,-0.999264,0],[0,0,1]];
-            _caller playMoveNow "ace_sitting_HubSittingChairA_idle1";  
+            _caller setPos getPos _target;
+            _caller setFormDir (getDir _target - 180);
+            [_caller, "ace_sitting_HubSittingChairA_idle1"] remoteExec ["switchMove", 0];
 
         },
         nil,		// arguments
@@ -16,7 +16,7 @@ _object addAction
         true,		// showWindow
         true,		// hideOnUse
         "",			// shortcut
-        "player == (_this getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && isNull (attachedTo player) &&['task_survive'] call BIS_fnc_taskState != 'SUCCEEDED'",
+        "player == (_this getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && isNull (attachedTo _this) &&['task_survive'] call BIS_fnc_taskState != 'SUCCEEDED'",
         0,			// radius
         false,		// unconscious
         "",			// selection
@@ -38,7 +38,7 @@ _object addAction
         true,		// showWindow
         true,		// hideOnUse
         "",			// shortcut
-        "player == (_this getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && !isNull (attachedTo player) && ['task_survive'] call BIS_fnc_taskState != 'SUCCEEDED'",
+        "player == (_this getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && !isNull (attachedTo _this) && ['task_survive'] call BIS_fnc_taskState != 'SUCCEEDED'",
         0,			// radius
         false,		// unconscious
         "",			// selection

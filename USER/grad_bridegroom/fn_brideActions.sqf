@@ -93,6 +93,27 @@ _unit addAction
 
 _unit addAction
 [
+    "<t color='#3333FF'>To the Mansion!</t>",	// title
+    {
+        params ["_target", "_caller", "_actionId", "_arguments"]; // script
+        
+        [_caller] spawn grad_mansion_fnc_toTheMansion;     
+    },
+    nil,		// arguments
+    6,		// priority
+    true,		// showWindow
+    true,		// hideOnUse
+    "",			// shortcut
+    "player == (_this getVariable ['BIS_fnc_moduleRemoteControl_owner', objNull]) && ['task_survive'] call BIS_fnc_taskState == 'ASSIGNED'",
+    0,			// radius
+    false,		// unconscious
+    "",			// selection
+    ""			// memoryPoint
+];
+
+
+_unit addAction
+[
     "<t color='#3333FF'>Give me a weapon!</t>",	// title
     {
         params ["_target", "_caller", "_actionId", "_arguments"]; // script

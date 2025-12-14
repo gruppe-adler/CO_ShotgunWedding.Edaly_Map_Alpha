@@ -1530,7 +1530,15 @@ class gimmegun_04
 };
 
 
-
+class rico_silent
+{
+    name = "rico_silent";
+    sound[] = { "", 2, 1, 100 };
+    titles[] = {0, ""};
+    duration = 4;
+    avatar = "user\rscMessage\rico.paa";
+    object = "grad_rico";
+};
 
 
 /*
