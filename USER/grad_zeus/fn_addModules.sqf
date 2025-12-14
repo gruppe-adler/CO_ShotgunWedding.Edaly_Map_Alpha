@@ -114,6 +114,22 @@
   [] remoteExec ["grad_bankrobbery_fnc_alarmBell", 2];
 }] call zen_custom_modules_fnc_register;
 
+["SHOTGUN WEDDING - 02 BANK", "Robbery Reaction",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_bankrobbery_fnc_robberyReaction", 2];
+}] call zen_custom_modules_fnc_register;
+
+["SHOTGUN WEDDING - 02 BANK", "Wallet Found Reaction",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_bankrobbery_fnc_walletReaction", 2];
+}] call zen_custom_modules_fnc_register;
+
+
+
 ["SHOTGUN WEDDING - 03 HAIR DRESSER", "Start Attack",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -137,6 +153,14 @@
 }] call zen_custom_modules_fnc_register;
 
 
+["SHOTGUN WEDDING - 03-04 RICO Reaction", "Rico Reaction",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_bridegroom_fnc_ricoReaction", 2];
+}] call zen_custom_modules_fnc_register;
+
+
 ["SHOTGUN WEDDING - 05 CHURCH", "ChurchBell",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -149,6 +173,13 @@
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
   [] remoteExec ["grad_church_fnc_letsGo", 2];
+}] call zen_custom_modules_fnc_register;
+
+["SHOTGUN WEDDING - 05 CHURCH", "Spawn Assassin",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_bridegroom_fnc_createRicoAssassin", 2];
 }] call zen_custom_modules_fnc_register;
 
 

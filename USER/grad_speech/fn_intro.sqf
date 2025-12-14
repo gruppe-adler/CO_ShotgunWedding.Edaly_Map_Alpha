@@ -17,7 +17,7 @@ params ["_plane"];
 
             if (_audioID == "intro_08_marco") then {
                 ["music_intro"] remoteExec ["playsound", 0];
-                [_plane] remoteExec ["grad_speech_fnc_introLocal", 0];
+                [grad_pilot] remoteExec ["grad_speech_fnc_introLocal", 0];
             };
             
             [[_object, _text, _audioID, _duration, _avatar], "user\rscMessage\createMessageRsc.sqf"] remoteExec ["bis_fnc_execVM"];
@@ -32,6 +32,7 @@ params ["_plane"];
         "intro_07_isa",
         "intro_08_marco",
         "intro_09_isa",
+        "intro_09a_isa",
         "intro_10_pilot",
         "intro_11_isa",
         "intro_12_pilot",

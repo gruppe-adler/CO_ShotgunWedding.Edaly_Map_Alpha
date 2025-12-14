@@ -10,26 +10,17 @@ _unit setVariable ["lambs_danger_disableAI", true, true];
 
 missionNameSpace setVariable ["grad_rico", _unit, true];
 
-_unit setUnitLoadout [[["USSR_GuitarA","","","",[],[],""],[],[],["U_NikosBody",[]],[],[],"","fsob_Beard03_Light",[],["ItemMap","","","ItemCompass","ItemWatch",""]],false];
-
-[_unit, "gitaraP"] remoteExec ["switchMove", 0, true];
+_unit setUnitLoadout [[["uk3cb_weap_svd_old_pso1m2","","","rhs_acc_pso1m2",["rhs_10Rnd_762x54mmR_7N1",10],[],""],[],[],["U_NikosBody",[]],[],[],"","fsob_Beard03_Light",[],["ItemMap","","","ItemCompass","ItemWatch",""]],false];
 
 [_unit, "Rico"] remoteExec ["setIdentity", 0, _unit];
-
-_unit addEventHandler ["Dammaged", {
-	params ["_unit", "_hitSelection", "_damage", "_hitPartIndex", "_hitPoint", "_shooter", "_projectile"];
-
-    _unit switchMove "";
-    detach _unit;
-    
-}];
 
 // make sure only the server handles death reaction
 _unit addMPEventHandler ["Killed", {
     params ["_unit", "_killer", "_instigator"];
 
-    if (local _unit) then {}
-        [] remoteExec ["grad_bridegroom_fnc_ricosDeathReaction", 2];
+        if (local _unit) then {
+            [] remoteExec ["grad_bridegroom_fnc_ricosDeathReaction", 2];
+        };
     };
 ];
 

@@ -671,6 +671,116 @@ class mission_02_09_marco
     object = "grad_groom";
 };
 
+// reaction to robbery
+
+class mission_02b_01_isa
+{
+    name = "mission_02b_01_isa";
+    sound[] = { "USER\sounds\mission_02b_01_isa.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Isabella: Did you hear that? That sounded like a gunshot. Marco, are we being robbed?";
+    };
+    duration = 7;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class mission_02b_02_marco
+{
+    name = "mission_02b_02_marco";
+    sound[] = { "USER\sounds\mission_02b_02_marco.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Marco: I guess? Wonder where they are coming from all of a sudden!";
+    };
+    duration = 6;
+    avatar = "user\rscMessage\marco.paa";
+    object = "grad_groom";
+};
+
+
+class mission_02b_03_isa
+{
+    name = "mission_02b_03_isa";
+    sound[] = { "USER\sounds\mission_02b_03_isa.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Isabella: Hey! Shoot those fuckers and get the wallet! My husband needs his money! ¡ANDALE!";
+    };
+    duration = 7;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+// reaction to wallet
+class mission_02c_01_marco
+{
+    name = "mission_02c_01_marco";
+    sound[] = { "USER\sounds\mission_02c_01_marco.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Marco: You... you found it? You are alive? Ah. I mean... wonderful news!";
+    };
+    duration = 6;
+    avatar = "user\rscMessage\marco.paa";
+    object = "grad_groom";
+};
+
+class mission_02c_02_marco
+{
+    name = "mission_02c_02_marco";
+    sound[] = { "USER\sounds\mission_02c_02_marco.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Marco: Quickly, give it to me! I must check if everything is inside!";
+    };
+    duration = 5;
+    avatar = "user\rscMessage\marco.paa";
+    object = "grad_groom";
+};
+
+class mission_02c_03_isa
+{
+    name = "mission_02c_03_isa";
+    sound[] = { "USER\sounds\mission_02c_03_isa.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Isabella: ¡BASTA! Enough! I do not care about your stupid leather square!";
+    };
+    duration = 5;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class mission_02c_04_isa
+{
+    name = "mission_02c_04_isa";
+    sound[] = { "USER\sounds\mission_02c_04_isa.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Isabella: Mercenaries! Keep the damn wallet! I don't care! Just drive! To the Church! ¡VAMOS!";
+    };
+    duration = 8;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class mission_02c_05_marco
+{
+    name = "mission_02c_05_marco";
+    sound[] = { "USER\sounds\mission_02c_05_marco.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Marco: But... my ID... okay. Yes. To the church.";
+    };
+    duration = 5;
+    avatar = "user\rscMessage\marco.paa";
+    object = "grad_groom";
+};
+
+
+
 
 
 // HAIR SALON - MISSION 03
@@ -1457,6 +1567,32 @@ class bride_takepic_03
     object = "grad_bride";
 };
 
+class ricoreaction_01
+{
+    name = "ricoreaction_01";
+    sound[] = { "USER\sounds\ricoreaction_01.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Isabella: Oh, that song was nice, Marco, admit it."
+    };
+    duration = 4;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class ricoreaction_02
+{
+    name = "ricoreaction_02";
+    sound[] = { "USER\sounds\ricoreaction_02.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Marco: No comment, Isabella."
+    };
+    duration = 3;
+    avatar = "user\rscMessage\marco.paa";
+    object = "grad_groom";
+};
+
 
 class ricosdeath_01
 {
@@ -1668,6 +1804,24 @@ class no_4
 };
 
 /*
+
+// wallet reaction
+
+[Spanish accent] [surprised] [disappointed] You... you found it? You are alive? Ah. I mean... wonderful news!
+[Spanish accent] [urgent] [greedy] Quickly, give it to me! I must check if everything is inside!
+[Spanish accent] [interrupting] [furious scream]¡BASTA! Enough! I do not care about your stupid leather square!
+[Spanish accent] [interrupting] [furious scream]Mercenaries! Keep the damn wallet! I don't care! Just drive! To the Church! ¡VAMOS!
+[Spanish accent][resignating]But... my ID... okay. Yes. To the church.
+
+
+
+// robbery reaction
+
+[Spanish accent] [shouting] [annoyed]Did you hear that? That sounded like a gunshot. Marco, are we being robbed?
+[Spanish accent] [shouting][lying bad] I guess? Wonder where they are coming from all of a sudden!
+[Spanish accent][yelling] Hey! Shoot those fuckers and get the wallet! My husband needs his money! ¡ANDALE!
+
+
 
 YES/NO
 

@@ -8,6 +8,7 @@ class grad_bridegroom{
 		class createBride;
 		class createGroom;
 		class createRico;
+		class createRicoAssassin;
 		class createRicoCar;	
 		class ricoCanSing;
 		class ricoSings;
@@ -16,5 +17,7 @@ class grad_bridegroom{
 		class landingFlight;
 		class tinCanTrail;
 		class priest;
+		class ricosDeathReaction;
+		class ricoReaction;
 	};
 };
