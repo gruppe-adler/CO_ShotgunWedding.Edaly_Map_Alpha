@@ -1399,12 +1399,68 @@ class mission_06b_07_marco
     sound[] = { "USER\sounds\mission_06b_07_marco.ogg", 2, 1, 100 };
     titles[] = {0, ""};
     customsubtitle[] = {
-        0, "Marco: Don't let her in! She will peel my face off!"
+        0, "Marco: Don't let her in! She will peel my face off!";
     };
     duration = 3;
     avatar = "user\rscMessage\marco.paa";
     object = "grad_groom";
 };
+
+
+class mission_07_01_donhector
+{
+    name = "mission_07_01_donhector";
+    sound[] = { "USER\sounds\mission_07_01_donhector.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Don Hector: ION Control... This is Don Hector. I am looking at the drone feed. I see Marco is dead. Good. But... I also see my Isabella."
+    };
+    duration = 10;
+    avatar = "user\rscMessage\donhector.paa";
+    object = "";
+};
+
+class mission_07_02_donhector
+{
+    name = "mission_07_02_donhector";
+    sound[] = { "USER\sounds\mission_07_02_donhector.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Don Hector: She is not moving. You let my little flower... wither. I paid you for protection. I paid for professionalism."
+    };
+    duration = 10;
+    avatar = "user\rscMessage\donhector.paa";
+    object = "";
+};
+
+class mission_07_03_donhector
+{
+    name = "mission_07_03_donhector";
+    sound[] = { "USER\sounds\mission_07_03_donhector.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Don Hector: You have failed the contract. There will be no extraction."
+    };
+    duration = 10;
+    avatar = "user\rscMessage\donhector.paa";
+    object = "";
+};
+
+class mission_07_04_donhector
+{
+    name = "mission_07_04_donhector";
+    sound[] = { "USER\sounds\mission_07_04_donhector.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Don Hector: I have sent my personal guard to process your termination. Try to smile for the drone when you die."
+    };
+    duration = 7;
+    avatar = "user\rscMessage\donhector.paa";
+    object = "";
+};
+
+
+
 
 
 class church_letsgo_1

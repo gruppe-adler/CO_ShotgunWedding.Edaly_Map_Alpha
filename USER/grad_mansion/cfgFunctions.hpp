@@ -5,5 +5,6 @@ class grad_mansion {
 		
 		class mansionWarmUp;
 		class toTheMansion;
+		class donHectorAttack;
 	};
 };

@@ -76,14 +76,20 @@ private _soundID = objNull;
 if (_sound == "none") then {
 	[] spawn {
 		sleep 1.5;
-		_soundID = playSoundUI ["garble_long"];
+		if (isGameFocused) then {
+			_soundID = playSoundUI ["garble_long"];
+		};
 	};
 } else {
 	if (!isNull _unit && {player distance _unit < 10} && {vehicle player == player}) then {
-		_soundID = _unit say3d [_sound, 150];
-		_unit setRandomLip true;
+		if (isGameFocused) then {
+			_soundID = _unit say3d [_sound, 150];
+			_unit setRandomLip true;
+		};
 	} else {
-		_soundID = playSoundUI [_sound];
+		if (isGameFocused) then {
+			_soundID = playSoundUI [_sound];
+		};
 	};
 };
 
