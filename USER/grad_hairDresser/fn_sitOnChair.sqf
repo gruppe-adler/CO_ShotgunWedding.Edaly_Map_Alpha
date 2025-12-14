@@ -4,6 +4,6 @@
 
     if (!local _object) exitWith {};
     
-    [_object] remoteExec ["grad_hairDresser_fnc_sitOnChair", 0, _object];
+    [_object] remoteExec ["grad_hairDresser_fnc_sitOnChairAction", 0, _object];
 
 }, true, [], true] call CBA_fnc_addClassEventHandler;

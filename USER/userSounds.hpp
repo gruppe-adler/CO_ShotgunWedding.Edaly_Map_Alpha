@@ -301,7 +301,7 @@ class intro_09_isa
     customsubtitle[] = {
         0, "Isabella: OH GOD! THE SEA! HE'S GOING TO HIT THE WAVES! WE ARE ALL GOING TO DIE!"
     };
-    duration = 06;
+    duration = 6;
     avatar = "user\rscMessage\isabella.paa";
     object = "grad_bride";
 };
@@ -348,7 +348,7 @@ class intro_11_isa
 class intro_12_pilot
 {
     name = "intro_12_pilot";
-    sound[] = { "USER\sounds\intro_12_pilot .ogg", 2, 1, 100 };
+    sound[] = { "USER\sounds\intro_12_pilot.ogg", 2, 1, 100 };
     titles[] = {0, ""};
     customsubtitle[] = {
         0, "Pilot: Touchdown."
@@ -1397,6 +1397,46 @@ class notsofast_3
 };
 
 
+class bride_takepic_01
+{
+    name = "bride_takepic_01";
+    sound[] = { "USER\sounds\bride_takepic_01.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Isabella: Driver, take the picture already!"
+    };
+    duration = 4;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class bride_takepic_02
+{
+    name = "bride_takepic_02";
+    sound[] = { "USER\sounds\bride_takepic_02.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Isabella: Take the picture, what are you waiting for?"
+    };
+    duration = 3;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class bride_takepic_03
+{
+    name = "bride_takepic_03";
+    sound[] = { "USER\sounds\bride_takepic_03.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Isabella: We wanted a photo, quick!"
+    };
+    duration = 3;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+
 class ricosdeath_01
 {
     name = "ricosdeath_01";
@@ -1448,7 +1488,7 @@ class gimmegun_01
     duration = 7;
     avatar = "user\rscMessage\isabella.paa";
     object = "grad_bride";
-}
+};
 
 class gimmegun_02
 {
@@ -1461,7 +1501,7 @@ class gimmegun_02
     duration = 7;
     avatar = "user\rscMessage\isabella.paa";
     object = "grad_bride";
-}
+};
 
 class gimmegun_03
 {
@@ -1474,7 +1514,7 @@ class gimmegun_03
     duration = 7;
     avatar = "user\rscMessage\isabella.paa";
     object = "grad_bride";
-}
+};
 
 class gimmegun_04
 {
@@ -1487,7 +1527,7 @@ class gimmegun_04
     duration = 4;
     avatar = "user\rscMessage\isabella.paa";
     object = "grad_bride";
-}
+};
 
 
 

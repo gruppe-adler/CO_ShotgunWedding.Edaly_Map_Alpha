@@ -20,5 +20,7 @@ class grad_speech{
 		class brideWeapon;
 		class brideCurseMarco;
 		class brideTakePicture;
+
+		class civPanic;
 	};
 };

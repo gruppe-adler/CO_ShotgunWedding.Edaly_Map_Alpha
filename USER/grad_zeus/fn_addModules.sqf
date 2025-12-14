@@ -151,14 +151,6 @@
   [] remoteExec ["grad_church_fnc_letsGo", 2];
 }] call zen_custom_modules_fnc_register;
 
-["SHOTGUN WEDDING - 06 TWIST", "Isabella wants revenge",
-{
-  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
-
-  [] remoteExec ["grad_church_fnc_", 2];
-}] call zen_custom_modules_fnc_register;
-
-
 
 
 ["SHOTGUN WEDDING - RICO", "Spawn Rico",

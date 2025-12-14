@@ -11,7 +11,7 @@ private _soundId2 = playSoundUI ["rico"];
 
 [{
     params ["_rico", "_soundId", "_soundId2"];
-    !alive _rico || lifeState _rico == "INCAPACITATED" || animationState _rico != "gitaraPlay" || isNull _soundId || isNull _soundId2
+    !alive _rico || lifeState _rico == "INCAPACITATED" || animationState _rico != "gitaraPlay" || _soundId == -1 || _soundId2 == -1
 },{
     params ["_rico", "_soundId", "_soundId2"];
 

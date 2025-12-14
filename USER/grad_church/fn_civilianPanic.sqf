@@ -1,4 +1,4 @@
-if (!isServer) exitWith {
+if (!isServer || !isMultiplayer) exitWith {
     
     // Take picture event handler for clients, raises global event for zeus & mission progress
     [missionNamespace, "gm_photocamera_takePicture", {
@@ -53,7 +53,15 @@ if (!isServer) exitWith {
     
     // Make civilians panic when they hear gunshots
     {
-        if (side _x == civilian && position _x inArea "mrk_church_area" && vehicleVarName _x == "" && !isPlayer _x) then {
+        if (
+            side _x == civilian && 
+            position _x inArea "mrk_church_area" &&
+            vehicleVarName _x == "" &&
+            !isPlayer _x &&
+            _x != missionNamespace getVariable ["grad_bride", objNull] &&
+            _x != missionNamespace getVariable ["grad_groom", objNull] &&
+            _x != missionNamespace getVariable ["grad_priest", objNull]
+            ) then {
             [_x] spawn {
                 params ["_unit"];
                 sleep random 0.5;
@@ -67,7 +75,7 @@ if (!isServer) exitWith {
 
                 if (random 2 > 1) exitWith {};
                 private _sound = str (floor random 11 + 1);
-                [_x, "civpanic_" + _sound] remoteExec ["grad_speech_fnc_civPanic"];
+                [_unit, "civpanic_" + _sound] remoteExec ["grad_speech_fnc_civPanic"];
             };
         };
     } forEach allUnits;
