@@ -4,11 +4,11 @@ class grad_bridegroom{
 		file = "USER\grad_bridegroom";
 		
 		class brideActions;
+		class coupleCarDeko;
 		class createBride;
 		class createGroom;
 		class createRico;
-		class createRicoCar;
-		class coupleCarDeko;	
+		class createRicoCar;	
 		class ricoCanSing;
 		class ricoSings;
 		class ricoCarAction;
