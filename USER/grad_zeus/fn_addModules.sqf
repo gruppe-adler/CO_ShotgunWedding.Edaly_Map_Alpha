@@ -176,6 +176,14 @@
   [] remoteExec ["grad_church_fnc_churchBell", 2];
 }] call zen_custom_modules_fnc_register;
 
+["SHOTGUN WEDDING - 05 CHURCH", "Church Task Photo",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_church_fnc_churchBanter", 2];
+}] call zen_custom_modules_fnc_register;
+
+
 ["SHOTGUN WEDDING - 05 CHURCH", "Isabella nags to go to the Church",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];

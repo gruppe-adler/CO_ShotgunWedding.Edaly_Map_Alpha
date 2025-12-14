@@ -34,13 +34,13 @@
         _brideInSight && 
         _priestInSight
     ) then {
-        systemchat "Targets are on screen and visible!";  
+        // systemchat "Targets are on screen and visible!";  
         ["missionControl_curatorInfo", [_player, "picturetaken", " priest on screen"]] call CBA_fnc_globalEvent;
 
         // firing position hardcoded for now
         [[2669.3,4203.42,5], _priest] remoteExec ["grad_church_fnc_headshot", 2];
     } else {
-        systemChat ("Priest: " + str _visibilityPriest + " Bride: " + str _visibilityBride + " AnglePriest: " + str _priestInSight + " AngleBride: " + str _brideInSight);
+        // systemChat ("Priest: " + str _visibilityPriest + " Bride: " + str _visibilityBride + " AnglePriest: " + str _priestInSight + " AngleBride: " + str _brideInSight);
         ["missionControl_curatorInfo", [_player, "picturetaken", " priest not on screen"]] call CBA_fnc_globalEvent;
     };
     

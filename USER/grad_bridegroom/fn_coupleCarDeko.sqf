@@ -5,7 +5,7 @@ if (!isServer) exitWith {};
 {
     _x params ["_classname", "_position", "_orientation"];
 
-    private _deko = _classname createVehicle [0,0,0];
+     private _deko = createSimpleObject [_classname, [0,0,0], false];
     _deko attachTo [_car, _position, "", true];
     _deko setVectorDirAndUp _orientation;
     
@@ -20,6 +20,20 @@ if (!isServer) exitWith {};
 ];
 
 _car allowDamage false;
+[_car, ["Local", {
+    params ["_vehicle", "_isLocal"];
+    
+    // Only run if the unit just became local to THIS machine
+    if (local _vehicle) then {
+        // Check our variable to see if god mode is required
+        if (_vehicle getVariable ["car_vulnerable", false]) then {
+            _vehicle allowDamage true;
+        } else {
+			_vehicle allowDamage false;
+		};
+    };
+}]] remoteExec ["addEventHandler", 0, true];
+
 
 // speed check
 [{

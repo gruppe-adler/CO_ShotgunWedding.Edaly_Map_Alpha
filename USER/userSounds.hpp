@@ -1134,7 +1134,7 @@ class mission_05_03_marco
     customsubtitle[] = {
         0, "Marco: Wait! We must document this moment. The bride and the holy man! Perfect for the album."
     };
-    duration = 7;
+    duration = 6;
     avatar = "user\rscMessage\marco.paa";
     object = "grad_groom";
 };
@@ -1656,7 +1656,7 @@ class ricosdeath_01
     sound[] = { "USER\sounds\ricosdeath_01.ogg", 2, 1, 100 };
     titles[] = {0, ""};
     customsubtitle[] = {
-        0, "Isabella: Rico! No! ... Ay, pobrecito. He always said he would take a bullet for me."
+        0, "Isabella: Rico! No! ... Ay, pobrecito."
     };
     duration = 6;
     avatar = "user\rscMessage\isabella.paa";
@@ -1669,7 +1669,7 @@ class ricosdeath_02
     sound[] = { "USER\sounds\ricosdeath_02.ogg", 2, 1, 100 };
     titles[] = {0, ""};
     customsubtitle[] = {
-        0, "Isabella: I just didn't think he would be so literal."
+        0, "Isabella: He always said he would take a bullet for me. I just didn't think he would be so literal."
     };
     duration = 6;
     avatar = "user\rscMessage\isabella.paa";
@@ -1709,7 +1709,7 @@ class gimmegun_02
     sound[] = { "USER\sounds\gimmegun_02.ogg", 2, 1, 100 };
     titles[] = {0, ""};
     customsubtitle[] = {
-        0, "Isabella: You shoot like a grandma! [annoyed] Give me that rifle! I will kill that son of a bitch myself!"
+        0, "Isabella: You shoot like a grandma! Give me that rifle! I will kill that son of a bitch myself!"
     };
     duration = 7;
     avatar = "user\rscMessage\isabella.paa";
