@@ -13,5 +13,12 @@ class grad_speech{
 		class mission7;
 		class convoySpeed;
 		class introLocal;
+
+		class brideYes;
+		class brideNo;
+		class brideToChurch;
+		class brideWeapon;
+		class brideCurseMarco;
+		class brideTakePicture;
 	};
 };

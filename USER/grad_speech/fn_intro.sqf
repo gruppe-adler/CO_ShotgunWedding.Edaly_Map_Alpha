@@ -12,7 +12,7 @@ params ["_plane"];
             params ["_audioID"];
             private _duration = getNumber (missionConfigFile >> "CfgSounds" >> _audioID >> "duration");
             private _avatar = getText (missionConfigFile >> "CfgSounds" >> _audioID >> "avatar");
-            private _text = getArray (missionConfigFile >> "CfgSounds" >> _audioID >> "titles") select 1;
+            private _text = getArray (missionConfigFile >> "CfgSounds" >> _audioID >> "customsubtitle") select 1;
             private _object = call compile (getText (missionConfigFile >> "CfgSounds" >> _audioID >> "object"));
 
             if (_audioID == "intro_08_marco") then {

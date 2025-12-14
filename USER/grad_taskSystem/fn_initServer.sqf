@@ -171,16 +171,14 @@ fnc_handleWeddingPhase = {
             [
                 true, 
                 ["task_survive"], 
-                ["Marco has betrayed us! Secure the bride and regroup.", "WARNING: Betrayal"], 
+                ["Secure the couple and regroup.", "Assassination Attempt"], 
                 objNull, 
                 "ASSIGNED", 
                 1, 
                 true, 
-                "run", 
+                "defend", 
                 true
             ] call BIS_fnc_taskCreate;
-             
-             // Hier könntest du auch Marco unsterblich schalten via Script
         };
 
         // --- PHASE 3: REVENGE (Finale) ---

@@ -26,15 +26,14 @@ _car allowDamage false;
     params ["_args", "_handle"];
     _args params ["_car"];
 
-    private _cooldown = _car getVariable ["grad_carspeed_cooldown", -1];
+    private _cooldown = missionNameSpace getVariable ["grad_carspeed_cooldown", -1];
+    missionNameSpace setVariable ["grad_carspeed_cooldown", _cooldown + 1, true];
 
     if (speed _car > 40 && _cooldown > 10) then {
         if (!isNil "grad_bride" && {grad_bride in crew _car} && {alive grad_bride}) then {
             [grad_bride] call grad_speech_fnc_convoySpeed;
-            _car setVariable ["grad_carspeed_cooldown", -1];
+            missionNameSpace setVariable ["grad_carspeed_cooldown", -1, true];
         };
     };
-
-    _car setVariable ["grad_carspeed_cooldown", _cooldown + 1];
 
 }, 1, [_car]] call CBA_fnc_addPerFrameHandler;

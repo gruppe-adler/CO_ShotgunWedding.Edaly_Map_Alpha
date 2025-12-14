@@ -16,4 +16,12 @@ _unit setUnitLoadout [[["USSR_GuitarA","","","",[],[],""],[],[],["U_NikosBody",[
 
 [_unit, "Rico"] remoteExec ["setIdentity", 0, _unit];
 
+_unit addEventHandler ["Dammaged", {
+	params ["_unit", "_hitSelection", "_damage", "_hitPartIndex", "_hitPoint", "_shooter", "_projectile"];
+
+    _unit switchMove "";
+    detach _unit;
+    
+}];
+
 _unit

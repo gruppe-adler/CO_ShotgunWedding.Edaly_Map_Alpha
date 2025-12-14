@@ -5,6 +5,7 @@ _bride setVariable ["not_random", true, true];
 _bride setBehaviour "CARELESS";
 (group _bride) setBehaviourStrong "CARELESS";
 _bride setCombatMode "BLUE";
+_bride setSpeedMode "LIMITED";
 
 _bride setVariable ["lambs_danger_disableAI", true, true];
 
@@ -27,9 +28,26 @@ _bride setObjectTextureGlobal [1, "#(rgb,8,8,3)color(0.2,0.05,0.2,1)"];
 
 _bride assignAsCargoIndex [grad_couplevehicle, 4];
 
+[_bride, ["Local", {
+    params ["_unit", "_isLocal"];
+    
+    // Only run if the unit just became local to THIS machine
+    if (local _unit) then {
+        // Check our variable to see if god mode is required
+        if (_unit getVariable ["bride_vulnerable", false]) then {
+            _unit allowDamage true;
+        } else {
+			_unit allowDamage false;
+		};
+    };
+}]] remoteExec ["addEventHandler", 0, true];
+
 _bride allowDamage false;
 
+[_bride] remoteExec ["grad_bridegroom_fnc_brideActions", 0, _bride];
+
 _bride
+
 // bride hair decoration
 /*
 private _flowers = "FlowerBouquet_01_F" createVehicle [0,0,0];

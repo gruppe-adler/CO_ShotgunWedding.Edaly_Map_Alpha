@@ -1,9 +1,7 @@
 
-
-private _audioID = selectRandom [
-    "notsofast_1",
-    "notsofast_2",
-    "notsofast_3"
+private _audioId = selectRandom [
+    "mission_06_01_isa",
+    "mission_06_02_isa"
 ];
 
 private _duration = getNumber (missionConfigFile >> "CfgSounds" >> _audioID >> "duration");
@@ -14,3 +12,7 @@ private _object = call compile (getText (missionConfigFile >> "CfgSounds" >> _au
 // systemchat format ["Playing audio ID: %1 - duration %2 - avatar %3 - text %4", _audioID, _duration, _avatar, _text];
 
 [[_object, _text, _audioID, _duration, _avatar], "user\rscMessage\createMessageRsc.sqf"] remoteExec ["bis_fnc_execVM"];
+
+if (["task_survive"] call BIS_fnc_taskState == "ASSIGNED") then {
+    [] remoteExec ["grad_speech_fnc_mission6", 2];
+};

@@ -5,13 +5,14 @@ if (!alive _unit) exitWith {};
 private _audioID = "mission_05_05_isa";
 private _duration = getNumber (missionConfigFile >> "CfgSounds" >> _audioID >> "duration");
 private _avatar = getText (missionConfigFile >> "CfgSounds" >> _audioID >> "avatar");
-private _text = getArray (missionConfigFile >> "CfgSounds" >> _audioID >> "titles") select 1;
+private _text = getArray (missionConfigFile >> "CfgSounds" >> _audioID >> "customsubtitle") select 1;
 private _object = call compile (getText (missionConfigFile >> "CfgSounds" >> _audioID >> "object"));
 
 // systemchat format ["Playing audio ID: %1 - duration %2 - avatar %3 - text %4", _audioID, _duration, _avatar, _text];
 
 [[_object, _text, _audioID, _duration, _avatar], "user\rscMessage\createMessageRsc.sqf"] remoteExec ["bis_fnc_execVM"];
 
+sleep 2;
 
 // 1. Play Impact Sound
 // Plays a flesh impact sound at the unit's head position
@@ -32,3 +33,5 @@ _blood setPos getPos _unit;
 ["church_headshot", []] call CBA_fnc_globalEvent;
 
 [] call GRAD_CHURCH_fnc_civilianEscape;
+
+[] call grad_mansion_fnc_mansionWarmUp;

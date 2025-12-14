@@ -6,6 +6,10 @@ private _grp1 = createGroup civilian;
 {
 	[_x, ""] remoteExec ["switchMove", _x];
 	[_x] joinSilent _grp1;
+
+	private _sound = str (floor random 11 + 1);
+	[_x, "civpanic_" + _sound] remoteExec ["grad_speech_fnc_civPanic"];
+	sleep random 1;
 } forEach [GRAD_SW_churchEscapeCivilian_1_Car_1, GRAD_SW_churchEscapeCivilian_2_Car_1, GRAD_SW_churchEscapeCivilian_3_Car_1, GRAD_SW_churchEscapeCivilian_4_Car_1];
 
 private _wp1 = [_grp1, GRAD_SW_churchEscapeCar_1, -1, "GETIN", "COMBAT", "RED", "FULL"] call CBA_fnc_addWaypoint;
@@ -15,6 +19,9 @@ private _grp2 = createGroup civilian;
 {
 	[_x, ""] remoteExec ["switchMove", _x];
 	[_x] joinSilent _grp2;
+	private _sound = str (floor random 11 + 1);
+	[_x, "civpanic_" + _sound] remoteExec ["grad_speech_fnc_civPanic"];
+	sleep random 1;
 } forEach [GRAD_SW_churchEscapeCivilian_1_Car_2, GRAD_SW_churchEscapeCivilian_2_Car_2, GRAD_SW_churchEscapeCivilian_3_Car_2, GRAD_SW_churchEscapeCivilian_4_Car_2];
 
 private _wp2 = [_grp2, GRAD_SW_churchEscapeCar_2, -1, "GETIN", "COMBAT", "RED", "FULL"] call CBA_fnc_addWaypoint;

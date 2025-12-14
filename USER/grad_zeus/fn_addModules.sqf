@@ -99,11 +99,11 @@
 
 */
 
-["SHOTGUN WEDDING - MISSION PROGRESS", "Mission 05 - Revenge",
+["SHOTGUN WEDDING - MISSION PROGRESS", "Mission 07 - Don Hector",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-  [] remoteExec ["grad_speech_fnc_mission5", 2];
+  [] remoteExec ["grad_speech_fnc_mission7", 2];
 }] call zen_custom_modules_fnc_register;
 
 
@@ -133,7 +133,7 @@
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-  [] remoteExec ["GRAD_HAIRDRESSER_fnc_addHair", 2];
+  [grad_bride] remoteExec ["GRAD_HAIRDRESSER_fnc_addHair", 2];
 }] call zen_custom_modules_fnc_register;
 
 
@@ -150,6 +150,15 @@
 
   [] remoteExec ["grad_church_fnc_letsGo", 2];
 }] call zen_custom_modules_fnc_register;
+
+["SHOTGUN WEDDING - 06 TWIST", "Isabella wants revenge",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_church_fnc_", 2];
+}] call zen_custom_modules_fnc_register;
+
+
 
 
 ["SHOTGUN WEDDING - RICO", "Spawn Rico",

@@ -79,7 +79,7 @@ if (_sound == "none") then {
 		_soundID = playSoundUI ["garble_long"];
 	};
 } else {
-	if (!isNull _unit && {player distance _unit < 5}) then {
+	if (!isNull _unit && {player distance _unit < 10} && {vehicle player == player}) then {
 		_soundID = _unit say3d [_sound, 150];
 		_unit setRandomLip true;
 	} else {

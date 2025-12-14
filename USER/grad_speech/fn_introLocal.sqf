@@ -26,7 +26,7 @@ private _distanceFromPlayer = 50;
 
         // --- Vector Math ---
         // Get positions (ASL for stability)
-        private _pPos = getPosASLVisual player;
+        private _pPos = AGLtoASL (positionCameraToWorld [0,0,0]);
         private _tPos = getPosASLVisual _plane;
         
         // Calculate Direction Unit Vector from Player -> Target
@@ -43,7 +43,7 @@ private _distanceFromPlayer = 50;
         // Rotate to face player:
         // VectorDir: From Texture -> Player
         // VectorUp: Standard Up [0,0,1] ensures it doesn't roll weirdly
-        private _faceVector = _drawPos vectorFromTo _pPos; 
-        _textureObj setVectorDirAndUp [_faceVector, [0,0,1]];
+        private _faceVector = _pPos vectorFromTo _drawPos; 
+        _textureObj setVectorDir _faceVector;
 
 }, 0, [_textureObj, _plane, _distanceFromPlayer]] call CBA_fnc_addPerFrameHandler;

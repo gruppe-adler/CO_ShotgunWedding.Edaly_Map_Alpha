@@ -3,6 +3,7 @@ class grad_bridegroom{
 		tag = "grad_bridegroom";
 		file = "USER\grad_bridegroom";
 		
+		class brideActions;
 		class createBride;
 		class createGroom;
 		class createRico;

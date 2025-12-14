@@ -1,9 +1,8 @@
 
-
-private _audioID = selectRandom [
-    "notsofast_1",
-    "notsofast_2",
-    "notsofast_3"
+private _audioId = selectRandom [
+    "bride_takepic_01",
+    "bride_takepic_02",
+    "bride_takepic_03"
 ];
 
 private _duration = getNumber (missionConfigFile >> "CfgSounds" >> _audioID >> "duration");
