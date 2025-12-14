@@ -1,7 +1,7 @@
 
 params ["_plane"];
 
-private _textureObj = "UserTexture10m_F" createVehicle [0,0,0];
+private _textureObj = "UserTexture10m_F" createVehicleLocal [0,0,0];
 _textureObj setObjectTexture [0, "data\intro_typo.paa"];
 
 private _distanceFromPlayer = 50;
