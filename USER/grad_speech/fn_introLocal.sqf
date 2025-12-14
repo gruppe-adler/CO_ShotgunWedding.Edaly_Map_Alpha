@@ -28,6 +28,7 @@ private _distanceFromPlayer = 50;
         // Get positions (ASL for stability)
         private _pPos = AGLtoASL (positionCameraToWorld [0,0,0]);
         private _tPos = getPosASLVisual _plane;
+        _tPos set [2, _tPos select 2 + 20]; // Slightly above plane for visibility
         
         // Calculate Direction Unit Vector from Player -> Target
         // vectorFromTo automatically normalizes the vector
