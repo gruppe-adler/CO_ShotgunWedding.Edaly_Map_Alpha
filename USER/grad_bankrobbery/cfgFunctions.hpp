@@ -5,5 +5,6 @@ class grad_bankrobbery{
 		
 		class openDoors;
 		class alarmBell;
+		class walletAction;
 	};
 };

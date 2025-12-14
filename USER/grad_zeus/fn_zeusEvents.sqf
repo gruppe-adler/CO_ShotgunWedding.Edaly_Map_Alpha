@@ -59,125 +59,14 @@ if (!isServer) exitWith {};
     } forEach allCurators;
 }] call CBA_fnc_addEventHandler;
 
-
-["GRAD_intel_upload_completed", {
-
-    // send message to all curators
-    {
-        private _playerAsZeus = getAssignedCuratorUnit _x;
-        if (!isNull _playerAsZeus) then {
-            private _color = [0.1,0.5,0.1,1];
-            ["INTEL UPLOAD COMPLETE!", _color] remoteExec ["grad_zeus_fnc_curatorShowFeedbackMessage", _playerAsZeus];
-        };
-    } forEach allCurators;
-}] call CBA_fnc_addEventHandler;
-
-
-["GRAD_submarine_countdown_stopped", {
+["marco_wallet_taken", {
 
     // send message to all curators
     {
         private _playerAsZeus = getAssignedCuratorUnit _x;
         if (!isNull _playerAsZeus) then {
             private _color = [0.1,0.5,0.1,1];
-            ["COUNTDOWN SUBMARINE STOPPED!", _color] remoteExec ["grad_zeus_fnc_curatorShowFeedbackMessage", _playerAsZeus];
+            ["Marco Wallet Taken!", _color] remoteExec ["grad_zeus_fnc_curatorShowFeedbackMessage", _playerAsZeus];
         };
     } forEach allCurators;
 }] call CBA_fnc_addEventHandler;
-
-
-["GRAD_playersCaptive", {
-
-    // send message to all curators
-    {
-        private _playerAsZeus = getAssignedCuratorUnit _x;
-        if (!isNull _playerAsZeus) then {
-            private _color = [0.1,0.5,0.1,1];
-            ["KRAKEN HQ is enemy", _color] remoteExec ["grad_zeus_fnc_curatorShowFeedbackMessage", _playerAsZeus];
-        };
-    } forEach allCurators;
-}] call CBA_fnc_addEventHandler;
-
-
-["GRAD_krakenhq_disableAI", {
-
-    // send message to all curators
-    {
-        private _playerAsZeus = getAssignedCuratorUnit _x;
-        if (!isNull _playerAsZeus) then {
-            private _color = [1,0.5,0.1,1];
-            ["KRAKEN HQ is disabled", _color] remoteExec ["grad_zeus_fnc_curatorShowFeedbackMessage", _playerAsZeus];
-        };
-    } forEach allCurators;
-}] call CBA_fnc_addEventHandler;
-
-
-
-["GRAD_krakenhq_enableAI", {
-
-    // send message to all curators
-    {
-        private _playerAsZeus = getAssignedCuratorUnit _x;
-        if (!isNull _playerAsZeus) then {
-            private _color = [0.1,1,0.1,1];
-            ["KRAKEN HQ is enabled", _color] remoteExec ["grad_zeus_fnc_curatorShowFeedbackMessage", _playerAsZeus];
-        };
-    } forEach allCurators;
-}] call CBA_fnc_addEventHandler;
-
-
-
-
-
-["GRAD_intelDestroyed1", {
-
-    // send message to all curators
-    {
-        private _playerAsZeus = getAssignedCuratorUnit _x;
-        if (!isNull _playerAsZeus) then {
-            private _color = [0.1,1,0.1,1];
-            ["Intel 1 destroyed", _color] remoteExec ["grad_zeus_fnc_curatorShowFeedbackMessage", _playerAsZeus];
-        };
-    } forEach allCurators;
-}] call CBA_fnc_addEventHandler;
-
-
-["GRAD_intelDestroyed2", {
-
-    // send message to all curators
-    {
-        private _playerAsZeus = getAssignedCuratorUnit _x;
-        if (!isNull _playerAsZeus) then {
-            private _color = [0.1,1,0.1,1];
-            ["Intel 2 destroyed", _color] remoteExec ["grad_zeus_fnc_curatorShowFeedbackMessage", _playerAsZeus];
-        };
-    } forEach allCurators;
-}] call CBA_fnc_addEventHandler;
-
-
-["GRAD_astronautKilled", {
-
-    // send message to all curators
-    {
-        private _playerAsZeus = getAssignedCuratorUnit _x;
-        if (!isNull _playerAsZeus) then {
-            private _color = [0.1,1,0.1,1];
-            ["Astronaut was killed", _color] remoteExec ["grad_zeus_fnc_curatorShowFeedbackMessage", _playerAsZeus];
-        };
-    } forEach allCurators;
-}] call CBA_fnc_addEventHandler;
-
-
-["GRAD_traptriggered", {
-
-    // send message to all curators
-    {
-        private _playerAsZeus = getAssignedCuratorUnit _x;
-        if (!isNull _playerAsZeus) then {
-            private _color = [1,0,0.1,1];
-            ["Trap was triggered", _color] remoteExec ["grad_zeus_fnc_curatorShowFeedbackMessage", _playerAsZeus];
-        };
-    } forEach allCurators;
-}] call CBA_fnc_addEventHandler;
-
-

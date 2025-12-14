@@ -12,14 +12,13 @@ private _object = call compile (getText (missionConfigFile >> "CfgSounds" >> _au
 
 [[_object, _text, _audioID, _duration, _avatar], "user\rscMessage\createMessageRsc.sqf"] remoteExec ["bis_fnc_execVM"];
 
-sleep 2;
+sleep 1;
 
 // 1. Play Impact Sound
 // Plays a flesh impact sound at the unit's head position
-playSound3D ["A3\Sounds_F\arsenal\sfx\bullet_hits\body_01.wss", _unit, false, getPosASL _unit, 1, 1, 50];
-
-playSound3D ["A3\Sounds_F_Mark\arsenal\weapons\longrangerifles\dmr_02_mar10\dmr02_midshot_02.wss", objNull, false, _positionASL];
-playSound3D ["A3\Sounds_F_Mark\arsenal\weapons\longrangerifles\dmr_02_mar10\dmr02_tail_meadows.wss", objNull, false, _positionASL];
+playSound3D [getMissionPath "user\sounds\gunshot.ogg", nil, false, _positionASL, 1, 1, 500];
+sleep 1;
+playSound3D [getMissionPath "user\sounds\gunshot_impact.ogg", _unit, false, getPosASL _unit, 1, 1, 200];
 
 // 3. The Kill
 // Force damage to the head hitpoint

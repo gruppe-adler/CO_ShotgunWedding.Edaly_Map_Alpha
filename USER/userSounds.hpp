@@ -45,6 +45,27 @@ class churchbell
 };
 
 
+class gunshot_impact
+{
+    name = "gunshot_impact";
+    sound[] = { "USER\sounds\gunshot_impact.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, ""
+    };
+};
+
+class gunshot
+{
+    name = "gunshot";
+    sound[] = { "USER\sounds\gunshot.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, ""
+    };
+};
+
+
 class civpanic_1
 {
     name = "civpanic_1";
