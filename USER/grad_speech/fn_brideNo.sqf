@@ -1,12 +1,10 @@
 
-// todo add sounds
+
 private _audioId = selectRandom [
-    "bride_no_01",
-    "bride_no_02",
-    "bride_no_03",
-    "bride_no_04",
-    "bride_no_05",
-    "bride_no_06"
+    "no_1",
+    "no_2",
+    "no_3",
+    "no_4"
 ];
 
 private _duration = getNumber (missionConfigFile >> "CfgSounds" >> _audioID >> "duration");

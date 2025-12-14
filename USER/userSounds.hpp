@@ -1562,7 +1562,128 @@ class rico_silent
 };
 
 
+class yes_1
+{
+    name = "yes_1";
+    sound[] = { "USER\sounds\yes_1.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Isabella: Vale, vale! Whatever! Just make it happen!"
+    };
+    duration = 4;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class yes_2
+{
+    name = "yes_2";
+    sound[] = { "USER\sounds\yes_2.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Isabella: ¡Sí! Yes!"
+    };
+    duration = 2;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class yes_3
+{
+    name = "yes_3";
+    sound[] = { "USER\sounds\yes_3.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Isabella: Bueno. It is... acceptable. Proceed."
+    };
+    duration = 4;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class yes_4
+{
+    name = "yes_4";
+    sound[] = { "USER\sounds\yes_4.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Isabella: ¡Claro que sí! Of course! Why are you asking? Just do it!"
+    };
+    duration = 5;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+
+class no_1
+{
+    name = "no_1";
+    sound[] = { "USER\sounds\no_1.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Isabella: ¡Ay, fuchi! No! Absolutely not!"
+    };
+    duration = 4;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class no_2
+{
+    name = "no_2";
+    sound[] = { "USER\sounds\no_2.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Isabella: ¡Ni muerta! No!"
+    };
+    duration = 3;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class no_3
+{
+    name = "no_3";
+    sound[] = { "USER\sounds\no_3.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Isabella: Please. No. Don't be stupid!"
+    };
+    duration = 4;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+class no_4
+{
+    name = "no_4";
+    sound[] = { "USER\sounds\no_4.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Isabella: No! NO!"
+    };
+    duration = 3;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
 /*
+
+YES/NO
+
+[Spanish accent] [shouting] [annoyed] Vale, vale! Whatever! Just make it happen!
+[Spanish accent] [shouting] [excited] ¡Sí! Yes!
+[Spanish accent] [shouting] [thoughtful] Bueno. It is... acceptable. Proceed.
+[Spanish accent] [shouting] [impatient] ¡Claro que sí! Of course! Why are you asking? Just do it!
+
+---
+
+[Spanish accent][shouting]¡Ay, fuchi! No! Absolutely not!
+[Spanish accent][shouting]¡Ni muerta! No!
+[Spanish accent][shouting]Please. No. Don't be stupid!
+[Spanish accent][shouting]No! NO!
+
+
 
 // reaction to ricos death
 
