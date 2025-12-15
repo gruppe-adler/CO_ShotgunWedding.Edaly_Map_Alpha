@@ -22,5 +22,6 @@ class grad_speech{
 		class brideTakePicture;
 
 		class civPanic;
+		class takePictureBeach;
 	};
 };

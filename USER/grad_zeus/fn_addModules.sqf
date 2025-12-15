@@ -30,7 +30,7 @@
 };
 
 
-["SHOTGUN WEDDING - MISSION PROGRESS", "Intro Landing Flight",
+["SHOTGUN WEDDING - INTRO", "Intro Landing Flight",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
@@ -38,15 +38,24 @@
   
 }] call zen_custom_modules_fnc_register;
 
-["SHOTGUN WEDDING - MISSION PROGRESS", "Resume Main Mission",
+["SHOTGUN WEDDING - MISSION RESUME", "Resume Main Mission",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
   ["RESUME"] remoteExec ["fnc_handleWeddingPhase", 2];
+  [] remoteExec ["grad_church_fnc_letsGo", 2];
+}] call zen_custom_modules_fnc_register;
+
+["SHOTGUN WEDDING - MISSION RESUME", "Couple get in Car",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_bridegroom_fnc_getInCar", 2];
 }] call zen_custom_modules_fnc_register;
 
 
-["SHOTGUN WEDDING - MISSION PROGRESS", "Start Outro / End Mission",
+
+["SHOTGUN WEDDING - OUTRO", "Start Outro / End Mission",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
@@ -55,12 +64,7 @@
 }] call zen_custom_modules_fnc_register;
 
 
-["SHOTGUN WEDDING - MISSION PROGRESS", "Couple get in Car",
-{
-  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-  [] remoteExec ["grad_bridegroom_fnc_getInCar", 2];
-}] call zen_custom_modules_fnc_register;
 
 
 
@@ -107,11 +111,11 @@
 
 */
 
-["SHOTGUN WEDDING - MISSION PROGRESS", "Mission 07 - Don Hector",
+["SHOTGUN WEDDING - 01 BEACH", "Take Photo at Beach",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-  [] remoteExec ["grad_speech_fnc_mission7", 2];
+  [] remoteExec ["grad_speech_fnc_mission1", 2];
 }] call zen_custom_modules_fnc_register;
 
 
@@ -183,19 +187,18 @@
   [] remoteExec ["grad_church_fnc_churchBanter", 2];
 }] call zen_custom_modules_fnc_register;
 
-
-["SHOTGUN WEDDING - 05 CHURCH", "Isabella nags to go to the Church",
-{
-  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
-
-  [] remoteExec ["grad_church_fnc_letsGo", 2];
-}] call zen_custom_modules_fnc_register;
-
 ["SHOTGUN WEDDING - 05 CHURCH", "Spawn Assassin",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
   [asltoagl _position] remoteExec ["grad_bridegroom_fnc_createRicoAssassin", 2];
+}] call zen_custom_modules_fnc_register;
+
+["SHOTGUN WEDDING - 07", "Don Hector Reacts to Death",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_speech_fnc_mission7", 2];
 }] call zen_custom_modules_fnc_register;
 
 
@@ -219,7 +222,7 @@
 
 
 
-["SHOTGUN WEDDING - MARCO", "Make Marco vulnerable",
+["SHOTGUN WEDDING - VULNERABILITY", "Make Marco vulnerable",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
@@ -233,7 +236,7 @@
   
 }] call zen_custom_modules_fnc_register;
 
-["SHOTGUN WEDDING - ISA", "Make Isa vulnerable",
+["SHOTGUN WEDDING - VULNERABILITY", "Make Isa vulnerable",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
@@ -249,24 +252,21 @@
 
 
 
-["SHOTGUN WEDDING - DEBUG - COUPLE", "Spawn Bride",
+["SHOTGUN WEDDING - HELPERS", "Spawn Bride",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
   [asltoagl _position] call grad_bridegroom_fnc_createBride;
 }] call zen_custom_modules_fnc_register;
 
-["SHOTGUN WEDDING - DEBUG - COUPLE", "Spawn Groom",
+["SHOTGUN WEDDING - HELPERS", "Spawn Groom",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
   [asltoagl _position] call grad_bridegroom_fnc_createGroom;
 }] call zen_custom_modules_fnc_register;
 
-
-
-
-["SHOTGUN WEDDING - DEBUG - CHURCH", "Headshot (manual)",
+["SHOTGUN WEDDING - HELPERS", "Headshot (manual)",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
