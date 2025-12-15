@@ -17,7 +17,13 @@ params ["_plane"];
 
             if (_audioID == "intro_09a_isa") then {                
                 [["music_intro", 1]] remoteExec ["playSound", 0];
-                [grad_pilot] remoteExec ["grad_speech_fnc_introLocal", 0];
+                [
+                    {
+                        [grad_pilot] remoteExec ["grad_speech_fnc_introLocal", 0];
+                    },
+                    [],
+                    15
+                ] call CBA_fnc_waitAndExecute;                           
             };
             
             [[_object, _text, _audioID, _duration, _avatar], "user\rscMessage\createMessageRsc.sqf"] remoteExec ["bis_fnc_execVM"];

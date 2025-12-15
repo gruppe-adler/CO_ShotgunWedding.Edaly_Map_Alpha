@@ -239,11 +239,11 @@ fnc_handleWeddingPhase = {
             [] spawn {
                 sleep 1;
 
-                [12, 0.1] remoteExec ["fadeSound", 0];
+                [8, 0.1] remoteExec ["fadeSound", 0];
 
                 [["music_outro", 1]] remoteExec ["playSoundUI", 0];
 
-                sleep 26;
+                sleep 57;
 
                 ["end1", true, 5] remoteExec ["BIS_fnc_endMission"];
             };
