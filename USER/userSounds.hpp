@@ -1053,6 +1053,9 @@ class mission_04_06_isa
     object = "grad_bride";
 };
 
+
+
+
 class mission_04_07_marco
 {
     name = "mission_04_07_marco";
@@ -1101,6 +1104,22 @@ class mission_04_10_isa
         0, "Isabella: Let the driver take the photo again!"
     };
     duration = 3;
+    avatar = "user\rscMessage\isabella.paa";
+    object = "grad_bride";
+};
+
+
+// ALLIGATOR REACTION
+
+class mission_04b_01_isa
+{
+    name = "mission_04b_01_isa";
+    sound[] = { "USER\sounds\mission_04b_01_isa.ogg", 2, 1, 100 };
+    titles[] = {0, ""};
+    customsubtitle[] = {
+        0, "Isabella: Aaah what the fuck?! Shoot it! Make it into a handbag! SHOOT IT IN THE FACE!"
+    };
+    duration = 7;
     avatar = "user\rscMessage\isabella.paa";
     object = "grad_bride";
 };

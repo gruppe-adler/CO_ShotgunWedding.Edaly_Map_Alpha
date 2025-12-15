@@ -23,5 +23,6 @@ class grad_speech{
 
 		class civPanic;
 		class takePictureBeach;
+		class alligatorReaction;
 	};
 };

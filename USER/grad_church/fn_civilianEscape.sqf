@@ -33,7 +33,7 @@ _wp2 waypointAttachVehicle GRAD_SW_churchEscapeCar_2;
 
 		private _units = units _grp;
 		private _inCar = _units select { _x in _car };
-		systemChat format["inCar: %1 | units: %2", _inCar, _units];
+		// systemChat format["inCar: %1 | units: %2", _inCar, _units];
 		(count _inCar) == (count _units)
 	},
 	{
@@ -67,7 +67,7 @@ _wp2 waypointAttachVehicle GRAD_SW_churchEscapeCar_2;
 
 		private _units = units _grp;
 		private _inCar = _units select { _x in _car };
-		systemChat format["inCar: %1 | units: %2", _inCar, _units];
+		//systemChat format["inCar: %1 | units: %2", _inCar, _units];
 		(count _inCar) == (count _units)
 	},
 	{
