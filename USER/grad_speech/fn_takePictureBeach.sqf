@@ -1,5 +1,6 @@
         
 [] spawn {
+
     {
         _x params ["_audioID"];
         private _duration = getNumber (missionConfigFile >> "CfgSounds" >> _audioID >> "duration");
@@ -9,8 +10,7 @@
         
         [[_object, _text, _audioID, _duration, _avatar], "user\rscMessage\createMessageRsc.sqf"] remoteExec ["bis_fnc_execVM"];
         sleep (_duration + 1);
-    } forEach [
-        "mission_01_10_marco",
-        "mission_01_09_marco
-    ];
+    } forEach ["mission_01_10_marco", "mission_01_09_marco"];
+    
 };
+
