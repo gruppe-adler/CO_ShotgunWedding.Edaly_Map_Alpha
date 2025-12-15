@@ -21,5 +21,6 @@ class grad_bridegroom{
 		class ricoReaction;
 		class ricoActions;
 		class getInCar;
+		class ricoDriverAction;
 	};
 };

@@ -11,3 +11,4 @@ _driver setUnitLoadout [[[],[],[],["U_C_FormalSuit_01_tshirt_black_F",[]],[],[],
 _driver moveInDriver _car;
 _driver setBehaviour "CARELESS";
 
+[_driver] call grad_bridegroom_fnc_ricoDriverAction;
