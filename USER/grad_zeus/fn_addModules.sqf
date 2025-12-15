@@ -30,13 +30,7 @@
 };
 
 
-["SHOTGUN WEDDING - INTRO", "Intro Landing Flight",
-{
-  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-  [] remoteExec ["grad_bridegroom_fnc_landingFlight", 2];
-  
-}] call zen_custom_modules_fnc_register;
 
 ["SHOTGUN WEDDING - MISSION RESUME", "Resume Main Mission",
 {
@@ -55,61 +49,16 @@
 
 
 
-["SHOTGUN WEDDING - OUTRO", "Start Outro / End Mission",
+
+
+["SHOTGUN WEDDING - INTRO", "Intro Landing Flight",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-  ["EXTRACTION_DONE"] remoteExec ["fnc_handleWeddingPhase", 2];
+  [] remoteExec ["grad_bridegroom_fnc_landingFlight", 2];
   
 }] call zen_custom_modules_fnc_register;
 
-
-
-
-
-
-
-["SHOTGUN WEDDING - CONVOY SPEED", "Isabella Complains",
-{
-  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
-
-  [] remoteExec ["grad_speech_fnc_convoySpeed", 2];
-}] call zen_custom_modules_fnc_register;
-
-
-/*
-
-// should be semi automatic already
-
-["SHOTGUN WEDDING - MISSION PROGRESS", "Mission 01 - Photo 1",
-{
-  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
-
-  [] remoteExec ["grad_speech_fnc_mission1", 2];
-}] call zen_custom_modules_fnc_register;
-
-["SHOTGUN WEDDING - MISSION PROGRESS", "Mission 02 - Bank",
-{
-  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
-
-  [] remoteExec ["grad_speech_fnc_mission2", 2];
-}] call zen_custom_modules_fnc_register;
-
-["SHOTGUN WEDDING - MISSION PROGRESS", "Mission 03 - Hairdresser",
-{
-  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
-
-  [] remoteExec ["grad_speech_fnc_mission3", 2];
-}] call zen_custom_modules_fnc_register;
-
-["SHOTGUN WEDDING - MISSION PROGRESS", "Mission 04 - Photo 2",
-{
-  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
-
-  [] remoteExec ["grad_speech_fnc_mission4", 2];
-}] call zen_custom_modules_fnc_register;
-
-*/
 
 ["SHOTGUN WEDDING - 01 BEACH", "Take Photo at Beach",
 {
@@ -165,7 +114,22 @@
 }] call zen_custom_modules_fnc_register;
 
 
-["SHOTGUN WEDDING - 03-04 RICO Reaction", "Rico Reaction",
+["SHOTGUN WEDDING - 03-04 RICO", "Spawn Rico",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [asltoagl _position] call grad_bridegroom_fnc_createRicoCar;
+}] call zen_custom_modules_fnc_register;
+
+["SHOTGUN WEDDING - 03-04 RICO", "Rico sings (execute from Driver)",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_bridegroom_fnc_ricoSings", 0];
+
+}] call zen_custom_modules_fnc_register;
+
+["SHOTGUN WEDDING - 03-04 RICO", "Rico Reaction",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
@@ -194,35 +158,16 @@
   [asltoagl _position] remoteExec ["grad_bridegroom_fnc_createRicoAssassin", 2];
 }] call zen_custom_modules_fnc_register;
 
-["SHOTGUN WEDDING - 07", "Don Hector Reacts to Death",
+["SHOTGUN WEDDING - 06 MANSION", "Execute from Bride! (To the mansion)",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-  [] remoteExec ["grad_speech_fnc_mission7", 2];
+   [] remoteExec ["grad_mansion_fnc_toTheMansion", 2];
 }] call zen_custom_modules_fnc_register;
 
 
 
-["SHOTGUN WEDDING - RICO", "Spawn Rico",
-{
-  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
-
-  [asltoagl _position] call grad_bridegroom_fnc_createRicoCar;
-}] call zen_custom_modules_fnc_register;
-
-
-
-["SHOTGUN WEDDING - RICO", "Rico sings",
-{
-  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
-
-  [] remoteExec ["grad_bridegroom_fnc_ricoSings", 0];
-
-}] call zen_custom_modules_fnc_register;
-
-
-
-["SHOTGUN WEDDING - VULNERABILITY", "Make Marco vulnerable",
+["SHOTGUN WEDDING - 06 MANSION", "Make Marco vulnerable",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
@@ -236,7 +181,7 @@
   
 }] call zen_custom_modules_fnc_register;
 
-["SHOTGUN WEDDING - VULNERABILITY", "Make Isa vulnerable",
+["SHOTGUN WEDDING - 06 MANSION", "Make Isa vulnerable",
 {
   params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
@@ -249,6 +194,44 @@
   "Isa damage allowed!" call CBA_fnc_notify;
   
 }] call zen_custom_modules_fnc_register;
+
+
+
+["SHOTGUN WEDDING - 07 EXTRACT", "Don Hector Reacts to Death",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_speech_fnc_mission7", 2];
+}] call zen_custom_modules_fnc_register;
+
+
+["SHOTGUN WEDDING - OUTRO", "Start Outro / End Mission",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  ["EXTRACTION_DONE"] remoteExec ["fnc_handleWeddingPhase", 2];
+  
+}] call zen_custom_modules_fnc_register;
+
+
+["SHOTGUN WEDDING ----", "---------",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+}] call zen_custom_modules_fnc_register;
+
+
+["SHOTGUN WEDDING - CONVOY SPEED", "Isabella Complains",
+{
+  params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+  [] remoteExec ["grad_speech_fnc_convoySpeed", 2];
+}] call zen_custom_modules_fnc_register;
+
+
+
+
+
 
 
 

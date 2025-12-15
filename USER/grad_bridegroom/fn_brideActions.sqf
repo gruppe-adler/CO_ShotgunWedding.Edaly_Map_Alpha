@@ -97,7 +97,7 @@ _unit addAction
     {
         params ["_target", "_caller", "_actionId", "_arguments"]; // script
         
-        [_caller] spawn grad_mansion_fnc_toTheMansion;     
+        [] remoteExec ["grad_mansion_fnc_toTheMansion", 2];   
     },
     nil,		// arguments
     6,		// priority
