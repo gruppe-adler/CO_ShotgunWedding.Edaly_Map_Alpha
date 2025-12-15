@@ -207,6 +207,14 @@ class rico
     customsubtitle[] = {0, ""};
 };
 
+class rico_a_capella
+{
+    name = "rico";
+    sound[] = {"USER\sounds\rico_acapella.ogg", 3, 1, 115};
+    titles[] = {0, ""};
+    customsubtitle[] = {0, ""};
+};
+
 
 
 // --- INTRO

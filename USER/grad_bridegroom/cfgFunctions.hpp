@@ -19,6 +19,7 @@ class grad_bridegroom{
 		class priest;
 		class ricosDeathReaction;
 		class ricoReaction;
+		class ricoActions;
 		class getInCar;
 	};
 };

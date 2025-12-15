@@ -33,4 +33,6 @@ _unit addMPEventHandler ["MPKilled", {
         };
 }];
 
+[_unit] remoteExec ["grad_bridegroom_fnc_ricoActions", 0, _unit];
+
 _unit
