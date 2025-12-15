@@ -96,11 +96,11 @@ donhector_heli3 engineOn true;
 
     private _path2 = [];
     _startMarkerNumber = 1;
-    _finishMarkerNumber = 41;
+    _finishMarkerNumber = 81;
     for "_i" from _startMarkerNumber to _finishMarkerNumber do  {  
     private _marker = call(compile format ["GRAD_hector_vehicle2_path_%1",_i]);
         private _pos = getPos _marker;
-        _pos pushBack (_marker getVariable ["GRAD_SW_speed", 70]);
+        _pos pushBack (_marker getVariable ["GRAD_SW_speed", 20]);
         _path2 pushBack _pos;
     };
     donhector_landvehicle2 setDriveOnPath _path2;

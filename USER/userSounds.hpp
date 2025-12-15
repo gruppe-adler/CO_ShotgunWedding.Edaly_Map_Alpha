@@ -1415,7 +1415,7 @@ class mission_07_01_donhector
     customsubtitle[] = {
         0, "Don Hector: ION Control... This is Don Hector. I am looking at the drone feed. I see Marco is dead. Good."
     };
-    duration = 11;
+    duration = 9;
     avatar = "user\rscMessage\donhector.paa";
     object = "";
 };
@@ -1426,9 +1426,9 @@ class mission_07_02_donhector
     sound[] = { "USER\sounds\mission_07_02_donhector.ogg", 2, 1, 100 };
     titles[] = {0, ""};
     customsubtitle[] = {
-        0, "Don Hector: But... I also see my Isabella. She is not moving. You let my little flower... wither. I paid you for protection. I paid for professionalism."
+        0, "Don Hector: But... I also see my Isabella. She is not moving. You let my little flower... wither."
     };
-    duration = 11;
+    duration = 9;
     avatar = "user\rscMessage\donhector.paa";
     object = "";
 };
@@ -1439,9 +1439,9 @@ class mission_07_03_donhector
     sound[] = { "USER\sounds\mission_07_03_donhector.ogg", 2, 1, 100 };
     titles[] = {0, ""};
     customsubtitle[] = {
-        0, "Don Hector: You have failed the contract. There will be no extraction."
+        0, "Don Hector: I paid you for protection. I paid for professionalism. You have failed the contract. There will be no extraction."
     };
-    duration = 11;
+    duration = 9;
     avatar = "user\rscMessage\donhector.paa";
     object = "";
 };
