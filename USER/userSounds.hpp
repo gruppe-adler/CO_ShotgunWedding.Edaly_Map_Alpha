@@ -181,7 +181,7 @@ class civpanic_11
 class music_intro
 {
     name = "music_intro";
-    sound[] = { "USER\sounds\music_intro.ogg", 2, 1, 100 };
+    sound[] = { "USER\sounds\music_intro.ogg", db-16, 1, 100 };
     titles[] = {0, ""};
     customsubtitle[] = {
         0, ""

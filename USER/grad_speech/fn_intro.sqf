@@ -15,8 +15,8 @@ params ["_plane"];
             private _text = getArray (missionConfigFile >> "CfgSounds" >> _audioID >> "customsubtitle") select 1;
             private _object = call compile (getText (missionConfigFile >> "CfgSounds" >> _audioID >> "object"));
 
-            if (_audioID == "intro_08_marco") then {
-                [["music_intro", 1]] remoteExec ["playsound", 0];
+            if (_audioID == "intro_09a_isa") then {                
+                [["music_intro", 1]] remoteExec ["playSound", 0];
                 [grad_pilot] remoteExec ["grad_speech_fnc_introLocal", 0];
             };
             
